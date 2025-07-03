@@ -78,8 +78,8 @@ def calculate_entropy(data):
     
     return entropy
 
-def analyze_padding(data):
-    """分析数据的填充情况"""
+def analyze_advanced_padding(data):
+    """增强的数据填充分析"""
     if not data:
         return {'padding_detected': False, 'padding_bytes': 0, 'padding_pattern': None}
     
@@ -92,42 +92,203 @@ def analyze_padding(data):
         except:
             data = data.encode('utf-8')
     
-    # 检查常见的填充模式
     padding_info = {
         'padding_detected': False,
         'padding_bytes': 0,
         'padding_pattern': None,
-        'padding_type': None
+        'padding_type': None,
+        'padding_content': None,
+        'protocol_indicators': [],
+        'entropy_analysis': {},
+        'pattern_analysis': {},
+        'block_alignment': {}
     }
     
     if len(data) == 0:
         return padding_info
     
-    # PKCS#7 填充检测
+    # 1. PKCS#7 填充检测（增强版）
     last_byte = data[-1]
-    if last_byte <= 16:  # PKCS#7 最大填充长度
-        potential_padding = data[-last_byte:]
-        if all(b == last_byte for b in potential_padding):
-            padding_info['padding_detected'] = True
-            padding_info['padding_bytes'] = last_byte
-            padding_info['padding_pattern'] = f"0x{last_byte:02x}"
-            padding_info['padding_type'] = 'PKCS#7'
+    if 1 <= last_byte <= 32:  # 扩展检测范围
+        if len(data) >= last_byte:
+            potential_padding = data[-last_byte:]
+            if all(b == last_byte for b in potential_padding):
+                padding_info.update({
+                    'padding_detected': True,
+                    'padding_bytes': last_byte,
+                    'padding_pattern': f"0x{last_byte:02x}",
+                    'padding_type': 'PKCS#7',
+                    'padding_content': potential_padding.hex(':'),
+                    'protocol_indicators': ['TLS', 'AES-CBC', 'SSL']
+                })
+                
+                # 分析填充前的数据
+                payload_data = data[:-last_byte]
+                padding_info['entropy_analysis'] = {
+                    'payload_entropy': calculate_entropy(payload_data),
+                    'padding_entropy': calculate_entropy(potential_padding),
+                    'total_entropy': calculate_entropy(data)
+                }
     
-    # 零填充检测
-    trailing_zeros = 0
-    for i in range(len(data) - 1, -1, -1):
-        if data[i] == 0:
-            trailing_zeros += 1
-        else:
-            break
+    # 2. 零填充检测（增强版）
+    if not padding_info['padding_detected']:
+        trailing_zeros = 0
+        for i in range(len(data) - 1, -1, -1):
+            if data[i] == 0:
+                trailing_zeros += 1
+            else:
+                break
+        
+        if trailing_zeros > 0:
+            # 检查是否是有意义的零填充
+            if trailing_zeros >= 4 or trailing_zeros == len(data) % 8:
+                padding_info.update({
+                    'padding_detected': True,
+                    'padding_bytes': trailing_zeros,
+                    'padding_pattern': "0x00",
+                    'padding_type': 'Zero Padding',
+                    'padding_content': '00:' * trailing_zeros,
+                    'protocol_indicators': ['IPSec', 'Custom Protocol']
+                })
     
-    if trailing_zeros > 0 and not padding_info['padding_detected']:
-        padding_info['padding_detected'] = True
-        padding_info['padding_bytes'] = trailing_zeros
-        padding_info['padding_pattern'] = "0x00"
-        padding_info['padding_type'] = 'Zero Padding'
+    # 3. ANSI X9.23 填充检测
+    if not padding_info['padding_detected'] and len(data) >= 2:
+        last_byte = data[-1]
+        if 1 <= last_byte <= 16 and len(data) >= last_byte:
+            potential_padding = data[-last_byte:]
+            # ANSI X9.23: 前面都是0，最后一个字节是长度
+            if all(b == 0 for b in potential_padding[:-1]) and potential_padding[-1] == last_byte:
+                padding_info.update({
+                    'padding_detected': True,
+                    'padding_bytes': last_byte,
+                    'padding_pattern': f"00...{last_byte:02x}",
+                    'padding_type': 'ANSI X9.23',
+                    'padding_content': potential_padding.hex(':'),
+                    'protocol_indicators': ['Legacy SSL', 'Custom Crypto']
+                })
+    
+    # 4. ISO 10126 填充检测（随机填充）
+    if not padding_info['padding_detected'] and len(data) >= 2:
+        last_byte = data[-1]
+        if 1 <= last_byte <= 16 and len(data) >= last_byte:
+            potential_padding = data[-last_byte:]
+            # ISO 10126: 随机字节 + 长度字节
+            if potential_padding[-1] == last_byte:
+                # 检查随机性（熵值应该较高）
+                random_part = potential_padding[:-1]
+                if len(random_part) > 0:
+                    random_entropy = calculate_entropy(random_part)
+                    if random_entropy > 3.0:  # 相对高的熵值表示随机性
+                        padding_info.update({
+                            'padding_detected': True,
+                            'padding_bytes': last_byte,
+                            'padding_pattern': f"random+{last_byte:02x}",
+                            'padding_type': 'ISO 10126',
+                            'padding_content': potential_padding.hex(':'),
+                            'protocol_indicators': ['Modern TLS', 'Advanced Crypto']
+                        })
+    
+    # 5. 块对齐分析
+    common_block_sizes = [8, 16, 32, 64]
+    for block_size in common_block_sizes:
+        if len(data) % block_size == 0:
+            padding_info['block_alignment'][f'{block_size}_byte'] = True
+            if block_size == 16:
+                padding_info['protocol_indicators'].extend(['AES', 'TLS 1.2+'])
+            elif block_size == 8:
+                padding_info['protocol_indicators'].extend(['3DES', 'Legacy SSL'])
+    
+    # 6. 模式分析
+    if len(data) >= 16:
+        # 检查重复模式
+        patterns = {}
+        for i in range(len(data) - 3):
+            pattern = data[i:i+4]
+            pattern_hex = pattern.hex()
+            patterns[pattern_hex] = patterns.get(pattern_hex, 0) + 1
+        
+        # 找出最常见的模式
+        if patterns:
+            most_common = max(patterns.items(), key=lambda x: x[1])
+            if most_common[1] > 1:
+                padding_info['pattern_analysis'] = {
+                    'most_common_pattern': most_common[0],
+                    'pattern_frequency': most_common[1],
+                    'total_patterns': len(patterns)
+                }
+    
+    # 7. 协议特征分析
+    if padding_info['padding_detected']:
+        # 基于填充类型推断协议
+        protocol_mapping = {
+            'PKCS#7': ['TLS 1.0-1.2', 'SSL 3.0', 'AES-CBC', 'IPSec ESP'],
+            'Zero Padding': ['IPSec AH', 'Custom Protocol', 'Legacy Systems'],
+            'ANSI X9.23': ['Legacy SSL', 'Financial Systems', 'Custom Crypto'],
+            'ISO 10126': ['TLS 1.1+', 'Modern Cryptography', 'High Security Systems']
+        }
+        
+        padding_type = padding_info['padding_type']
+        if padding_type in protocol_mapping:
+            padding_info['protocol_indicators'].extend(protocol_mapping[padding_type])
+        
+        # 去重
+        padding_info['protocol_indicators'] = list(set(padding_info['protocol_indicators']))
     
     return padding_info
+
+def analyze_protocol_characteristics(padding_analysis, tls_data, tcp_data):
+    """基于填充分析推断协议特征"""
+    characteristics = {
+        'likely_protocols': [],
+        'encryption_mode': 'Unknown',
+        'security_level': 'Unknown',
+        'implementation_hints': []
+    }
+    
+    if not padding_analysis.get('padding_detected'):
+        # 无填充可能表示流密码或AEAD模式
+        characteristics.update({
+            'likely_protocols': ['TLS 1.3', 'ChaCha20-Poly1305', 'AES-GCM'],
+            'encryption_mode': 'Stream/AEAD',
+            'security_level': 'Modern'
+        })
+        return characteristics
+    
+    padding_type = padding_analysis.get('padding_type')
+    padding_bytes = padding_analysis.get('padding_bytes', 0)
+    
+    # 基于填充类型分析
+    if padding_type == 'PKCS#7':
+        if padding_bytes <= 16:
+            characteristics.update({
+                'likely_protocols': ['TLS 1.0-1.2', 'AES-CBC'],
+                'encryption_mode': 'CBC',
+                'security_level': 'Standard'
+            })
+            
+            # 基于填充长度进一步分析
+            if padding_bytes == 16:
+                characteristics['implementation_hints'].append('Full block padding - possible timing attack mitigation')
+            elif padding_bytes == 1:
+                characteristics['implementation_hints'].append('Minimal padding - efficiency focused')
+    
+    elif padding_type == 'ISO 10126':
+        characteristics.update({
+            'likely_protocols': ['TLS 1.1+', 'Modern SSL'],
+            'encryption_mode': 'CBC with random padding',
+            'security_level': 'Enhanced',
+            'implementation_hints': ['Random padding for side-channel resistance']
+        })
+    
+    # 基于TLS记录长度分析
+    if tls_data and 'encrypted_length' in tls_data:
+        record_length = tls_data['encrypted_length']
+        if record_length == 16384:  # 最大TLS记录
+            characteristics['implementation_hints'].append('Maximum TLS record size - bulk data transfer')
+        elif record_length < 100:
+            characteristics['implementation_hints'].append('Small record - likely control/handshake data')
+    
+    return characteristics
 
 def extract_text_content(data):
     """提取数据中的文本内容"""
@@ -262,6 +423,7 @@ def deep_packet_analysis(cap_file, target_name):
                 
                 layer_analysis['decoded_data'] = tcp_data
                 
+            # 在 deep_packet_analysis 函数的 TLS 层分析部分修改
             elif layer_name == 'tls':
                 tls_data = {
                     'record_type': safe_int_convert(getattr(layer, 'record_content_type', 0)),
@@ -274,7 +436,15 @@ def deep_packet_analysis(cap_file, target_name):
                     encrypted_data = str(layer.app_data)
                     tls_data['encrypted_data_hex'] = encrypted_data
                     tls_data['encrypted_entropy'] = calculate_entropy(encrypted_data)
-                    tls_data['padding_analysis'] = analyze_padding(encrypted_data)
+                    
+                    # 使用增强的填充分析
+                    tls_data['padding_analysis'] = analyze_advanced_padding(encrypted_data)
+                    
+                    # 协议特征分析
+                    tcp_layer_data = packet_analysis['layers'].get('tcp', {}).get('decoded_data', {})
+                    tls_data['protocol_characteristics'] = analyze_protocol_characteristics(
+                        tls_data['padding_analysis'], tls_data, tcp_layer_data
+                    )
                 
                 layer_analysis['decoded_data'] = tls_data
                 
@@ -555,6 +725,78 @@ def generate_deep_analysis_report(name, analysis_data, output_dir):
         report.append(f"{data['packet_number']:<8} {data['plaintext_length']:<10} {data['ciphertext_length']:<10} "
                      f"{data['length_expansion_ratio']:<8.3f} {data['entropy_difference']:<8.3f} {compression_mark:<6}")
     
+    # 新增：数据包字节统计详细分析
+    report.append("\n📏 数据包字节统计详细分析")
+    report.append("-"*80)
+    report.append(f"{'包号':<8} {'总字节数':<10} {'填充字节':<10} {'内容字节':<10} {'填充率':<8} {'填充类型':<12}")
+    report.append("-"*80)
+    
+    total_bytes_sum = 0
+    total_padding_sum = 0
+    total_content_sum = 0
+    
+    for packet_data in analysis_data['detailed_analysis']:
+        packet_num = packet_data['packet_number']
+        total_bytes = 0
+        padding_bytes = 0
+        content_bytes = 0
+        padding_type = "无填充"
+        
+        # 计算总字节数（从TCP层获取载荷长度）
+        if 'tcp' in packet_data['layers'] and packet_data['layers']['tcp']['decoded_data']:
+            tcp_data = packet_data['layers']['tcp']['decoded_data']
+            total_bytes = tcp_data.get('payload_length', 0)
+        
+        # 计算填充字节数（从TLS层获取填充信息）
+        if 'tls' in packet_data['layers'] and packet_data['layers']['tls']['decoded_data']:
+            tls_data = packet_data['layers']['tls']['decoded_data']
+            padding_info = tls_data.get('padding_analysis', {})
+            if padding_info.get('padding_detected'):
+                padding_bytes = padding_info.get('padding_bytes', 0)
+                padding_type = padding_info.get('padding_type', '未知')
+        
+        # 计算内容字节数
+        content_bytes = max(0, total_bytes - padding_bytes)
+        
+        # 计算填充率
+        padding_ratio = (padding_bytes / total_bytes * 100) if total_bytes > 0 else 0
+        
+        # 累计统计
+        total_bytes_sum += total_bytes
+        total_padding_sum += padding_bytes
+        total_content_sum += content_bytes
+        
+        # 添加到报告
+        report.append(f"{packet_num:<8} {total_bytes:<10} {padding_bytes:<10} {content_bytes:<10} "
+                     f"{padding_ratio:<8.1f}% {padding_type:<12}")
+    
+    # 添加统计汇总
+    report.append("-"*80)
+    report.append(f"{'汇总':<8} {total_bytes_sum:<10} {total_padding_sum:<10} {total_content_sum:<10} "
+                 f"{(total_padding_sum/total_bytes_sum*100 if total_bytes_sum > 0 else 0):<8.1f}% {'总计':<12}")
+    report.append("")
+    
+    # 字节统计分析
+    report.append("📈 字节统计分析")
+    report.append("-"*50)
+    report.append(f"总传输字节数: {total_bytes_sum:,} 字节")
+    report.append(f"总填充字节数: {total_padding_sum:,} 字节")
+    report.append(f"总内容字节数: {total_content_sum:,} 字节")
+    report.append(f"平均填充率: {(total_padding_sum/total_bytes_sum*100 if total_bytes_sum > 0 else 0):.2f}%")
+    
+    if total_bytes_sum > 0:
+        efficiency = (total_content_sum / total_bytes_sum) * 100
+        report.append(f"传输效率: {efficiency:.2f}% (内容字节/总字节)")
+        
+        if efficiency > 90:
+            report.append("✅ 传输效率优秀，填充开销较小")
+        elif efficiency > 80:
+            report.append("⚠️  传输效率良好，但可进一步优化填充")
+        else:
+            report.append("❌ 传输效率较低，填充开销过大")
+    
+    report.append("")
+    
     # 填充分析
     report.append("\n🔧 数据填充分析")
     report.append("-"*50)
@@ -716,3 +958,76 @@ if __name__ == "__main__":
     main('假面骑士')
     main('尼亚加拉瀑布')
     main('孙策')
+
+# 在 create_deep_analysis_charts 函数中添加新的填充分析图表
+def create_padding_analysis_chart(analysis_data):
+    """创建详细的填充分析图表"""
+    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(15, 10))
+    
+    # 1. 填充类型分布
+    padding_types = Counter()
+    protocol_indicators = Counter()
+    
+    for packet_data in analysis_data['detailed_analysis']:
+        for layer_data in packet_data['layers'].values():
+            if 'decoded_data' in layer_data and layer_data['decoded_data']:
+                padding_info = layer_data['decoded_data'].get('padding_analysis', {})
+                if padding_info.get('padding_detected'):
+                    padding_type = padding_info.get('padding_type', 'Unknown')
+                    padding_types[padding_type] += 1
+                    
+                    # 收集协议指示器
+                    indicators = padding_info.get('protocol_indicators', [])
+                    for indicator in indicators:
+                        protocol_indicators[indicator] += 1
+    
+    # 绘制填充类型饼图
+    if padding_types:
+        ax1.pie(padding_types.values(), labels=padding_types.keys(), autopct='%1.1f%%')
+        ax1.set_title('填充类型分布')
+    
+    # 2. 协议指示器分布
+    if protocol_indicators:
+        top_protocols = dict(protocol_indicators.most_common(8))
+        ax2.bar(range(len(top_protocols)), list(top_protocols.values()))
+        ax2.set_xticks(range(len(top_protocols)))
+        ax2.set_xticklabels(list(top_protocols.keys()), rotation=45)
+        ax2.set_title('可能的协议分布')
+    
+    # 3. 填充长度分布
+    padding_lengths = []
+    for packet_data in analysis_data['detailed_analysis']:
+        for layer_data in packet_data['layers'].values():
+            if 'decoded_data' in layer_data and layer_data['decoded_data']:
+                padding_info = layer_data['decoded_data'].get('padding_analysis', {})
+                if padding_info.get('padding_detected'):
+                    padding_lengths.append(padding_info.get('padding_bytes', 0))
+    
+    if padding_lengths:
+        ax3.hist(padding_lengths, bins=range(1, max(padding_lengths)+2), alpha=0.7)
+        ax3.set_title('填充长度分布')
+        ax3.set_xlabel('填充字节数')
+        ax3.set_ylabel('频次')
+    
+    # 4. 熵值分析
+    payload_entropies = []
+    padding_entropies = []
+    
+    for packet_data in analysis_data['detailed_analysis']:
+        for layer_data in packet_data['layers'].values():
+            if 'decoded_data' in layer_data and layer_data['decoded_data']:
+                padding_info = layer_data['decoded_data'].get('padding_analysis', {})
+                entropy_analysis = padding_info.get('entropy_analysis', {})
+                if entropy_analysis:
+                    payload_entropies.append(entropy_analysis.get('payload_entropy', 0))
+                    padding_entropies.append(entropy_analysis.get('padding_entropy', 0))
+    
+    if payload_entropies and padding_entropies:
+        ax4.scatter(payload_entropies, padding_entropies, alpha=0.6)
+        ax4.set_xlabel('载荷熵值')
+        ax4.set_ylabel('填充熵值')
+        ax4.set_title('载荷vs填充熵值关系')
+        ax4.plot([0, 8], [0, 8], 'r--', alpha=0.5)  # 对角线参考
+    
+    plt.tight_layout()
+    return fig

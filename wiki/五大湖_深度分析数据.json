@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-07-03T21:26:30.005456",
+  "timestamp": "2025-07-03T22:25:09.064280",
   "total_packets": 29,
   "detailed_analysis": [
     {
@@ -37,7 +37,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -233,7 +248,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -288,7 +318,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -339,7 +384,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -390,7 +450,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -441,7 +516,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -492,7 +582,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -543,7 +648,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -594,7 +714,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -645,7 +780,32 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [
+                "3DES",
+                "Legacy SSL",
+                "AES",
+                "TLS 1.2+"
+              ],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {
+                "8_byte": true,
+                "16_byte": true,
+                "32_byte": true,
+                "64_byte": true
+              }
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -696,7 +856,32 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [
+                "3DES",
+                "Legacy SSL",
+                "AES",
+                "TLS 1.2+"
+              ],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {
+                "8_byte": true,
+                "16_byte": true,
+                "32_byte": true,
+                "64_byte": true
+              }
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -747,7 +932,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -810,7 +1010,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -861,7 +1076,27 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [
+                "3DES",
+                "Legacy SSL"
+              ],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {
+                "8_byte": true
+              }
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -912,7 +1147,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -963,7 +1213,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -1026,7 +1291,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -1091,7 +1371,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -1240,7 +1535,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -1389,7 +1699,22 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {}
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -1453,7 +1778,31 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [
+                "3DES",
+                "Legacy SSL",
+                "AES",
+                "TLS 1.2+"
+              ],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {
+                "8_byte": true,
+                "16_byte": true,
+                "32_byte": true
+              }
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
@@ -1504,7 +1853,31 @@
               "padding_detected": false,
               "padding_bytes": 0,
               "padding_pattern": null,
-              "padding_type": null
+              "padding_type": null,
+              "padding_content": null,
+              "protocol_indicators": [
+                "3DES",
+                "Legacy SSL",
+                "AES",
+                "TLS 1.2+"
+              ],
+              "entropy_analysis": {},
+              "pattern_analysis": {},
+              "block_alignment": {
+                "8_byte": true,
+                "16_byte": true,
+                "32_byte": true
+              }
+            },
+            "protocol_characteristics": {
+              "likely_protocols": [
+                "TLS 1.3",
+                "ChaCha20-Poly1305",
+                "AES-GCM"
+              ],
+              "encryption_mode": "Stream/AEAD",
+              "security_level": "Modern",
+              "implementation_hints": []
             }
           }
         },
