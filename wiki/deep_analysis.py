@@ -365,11 +365,12 @@ def create_deep_analysis_charts(name, analysis_data, output_dir):
         plaintext_entropies = []
         ciphertext_entropies = []
         
+        # 在create_deep_analysis_charts函数中
         for packet_data in analysis_data['detailed_analysis']:
-            if 'http2' in packet_data['layers'] and 'tls' in packet_data['layers']:
-                http2_entropy = packet_data['layers']['http2']['decoded_data'].get('plaintext_entropy', 0)
+            if 'tcp' in packet_data['layers'] and 'tls' in packet_data['layers']:
+                tcp_entropy = packet_data['layers']['tcp']['decoded_data'].get('payload_entropy', 0)
                 tls_entropy = packet_data['layers']['tls']['decoded_data'].get('encrypted_entropy', 0)
-                plaintext_entropies.append(http2_entropy)
+                plaintext_entropies.append(tcp_entropy)  # 使用TCP载荷熵值
                 ciphertext_entropies.append(tls_entropy)
         
         if plaintext_entropies and ciphertext_entropies:
