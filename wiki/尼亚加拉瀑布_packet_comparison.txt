@@ -1,0 +1,1465 @@
+HTTP/2 数据包密文明文对比分析
+生成时间: 2025-07-03 11:53:53.902188
+================================================================================
+
+数据包 #1084 (第1个)
+时间戳: 2025-07-03 09:43:36.684610
+------------------------------------------------------------
+TCP信息:
+  Stream: 70
+  Sequence: 3964
+  Payload: 17:03:03:00:68:98:e2:e8:55:d3:30:3f:9d:ac:48:8b:04:79:1e:0d:21:3b:ed:a4:49:ac:e0:3e:d4:ed:45:47:72:a3:10:61:bc:e7:99:c6:f5:f9:cf:04:b3:8b:a9:f1:e4:d3:cc:f5:2d:21:c1:6e:22:bc:8b:da:49:06:fe:32:4f:35:8a:30:bc:00:8d:b5:85:75:71:2b:db:77:7b:98:76:0e:b6:f1:4d:15:f6:59:7c:f2:58:61:61:aa:cf:de:4a:47:84:7e:07:53:42:4b:c3:a1:34:43:ad
+
+HTTP/2信息:
+  Type: 1
+  Stream ID: 15
+  Length: 78
+  Flags: 0x25
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m HEADERS, Stream ID: 15, Length 78, GET /wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83
+[0m[1m[32m	Length:[0m[1m 78
+[0m[1m[32m	Type:[0m[1m HEADERS (1)
+[0m[1m[32m	Flags:[0m[1m 0x25, Priority, End Headers, End Stream
+[0m[1m[32m	00.0 ..0. = Unused:[0m[1m 0x00
+[0m[1m[32m	..1. .... = Priority:[0m[1m True
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... .1.. = End Headers:[0m[1m True
+[0m[1m[32m	.... ...1 = End Stream:[0m[1m True
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0000 1111 = Stream Identifier:[0m[1m 15
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	1... .... .... .... .... .... .... .... = Exclusive:[0m[1m True
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0000 0000 = Stream Dependency:[0m[1m 0
+[0m[1m[32m	Weight:[0m[1m 255
+[0m[1m[32m	Weight real:[0m[1m 256
+[0m[1m[32m	Header Block Fragment:[0m[1m 82e78704ae63c1ba99857036add02b76f2b81a56ec2abf0ab81b55e855840ae07157aeaaf3eae0755780abe157036add795799e3e2e1d0dfdedde6e5e4cddbdad9d8d7d6d5d4ccc1d2
+[0m[1m[32m	Header Length:[0m[1m 1454
+[0m[1m[32m	Header Count:[0m[1m 26
+[0m[1m[32m	Header:[0m[1m :method: GET
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name:[0m[1m :method
+[0m[1m[32m	Value Length:[0m[1m 3
+[0m[1m[32m	Value:[0m[1m GET
+[0m[1m[32m	:[0m[1mmethod: GET
+[0m[1m[32m	Unescaped:[0m[1m GET
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Index:[0m[1m 2
+[0m[1m[32m	:[0m[1mauthority: zh.wikipedia.org
+[0m[1m[32m	:[0m[1mscheme: https
+[0m[1m[32m	:[0m[1mpath: /wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83
+[0m[1m[32m	user-agent:[0m[1m Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[0m[1m[32m	accept:[0m[1m text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+[0m[1m[32m	referer:[0m[1m https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+[0m[1m[32m	accept-encoding:[0m[1m gzip, deflate, br, zstd
+[0m[1m[32m	accept-language:[0m[1m zh-CN,zh;q=0.9
+[0m[1m[32m	cookie:[0m[1m WMF-Uniq=D6ZGWZsA71gRm7cEETLJzAIkAAEBAFvdjeIjIcf5-RLRlHs2nUsgS73YE2I9Vd7T
+[0m[1m[32m	Full request URI:[0m[1m https://zh.wikipedia.org/wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83
+[0m[1m[32m	Header:[0m[1m :authority: zh.wikipedia.org
+[0m[1m[32m	Header:[0m[1m :scheme: https
+[0m[1m[32m	Header:[0m[1m :path: /wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83
+[0m[1m[32m	Header:[0m[1m upgrade-insecure-requests: 1
+[0m[1m[32m	Header:[0m[1m user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[0m[1m[32m	Header:[0m[1m accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+[0m[1m[32m	Header:[0m[1m sec-fetch-site: same-origin
+[0m[1m[32m	Header:[0m[1m sec-fetch-mode: navigate
+[0m[1m[32m	Header:[0m[1m sec-fetch-user: ?1
+[0m[1m[32m	Header:[0m[1m sec-fetch-dest: document
+[0m[1m[32m	Header:[0m[1m sec-ch-ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+[0m[1m[32m	Header:[0m[1m sec-ch-ua-mobile: ?0
+[0m[1m[32m	Header:[0m[1m sec-ch-ua-platform: "Windows"
+[0m[1m[32m	Header:[0m[1m referer: https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+[0m[1m[32m	Header:[0m[1m accept-encoding: gzip, deflate, br, zstd
+[0m[1m[32m	Header:[0m[1m accept-language: zh-CN,zh;q=0.9
+[0m[1m[32m	Header:[0m[1m cookie: WMF-Uniq=D6ZGWZsA71gRm7cEETLJzAIkAAEBAFvdjeIjIcf5-RLRlHs2nUsgS73YE2I9Vd7T
+[0m[1m[32m	Header:[0m[1m cookie: zhwikimwclientpreferences=vector-feature-custom-font-size-clientpref-0
+[0m[1m[32m	Header:[0m[1m cookie: zhwikiBlockID=564933%2178eee08a0ecc0e4e95c3b9be7a1aeb42cf6b17f86ba66d336b5d71cc600d823f860fe73d64596c72bf9f29fca5fa5fdc44e436ea0c3736b01e7822c74d7eb707
+[0m[1m[32m	Header:[0m[1m cookie: WMF-Last-Access=03-Jul-2025
+[0m[1m[32m	Header:[0m[1m cookie: WMF-Last-Access-Global=03-Jul-2025
+[0m[1m[32m	Header:[0m[1m cookie: NetworkProbeLimit=0.001
+[0m[1m[32m	Header:[0m[1m cookie: GeoIP=JP:::35.69:139.69:v4
+[0m[1m[32m	Header:[0m[1m cookie: zhwikimwuser-sessionId=9dfdeb9c2aee3bc73400
+[0m[1m[32m	Header:[0m[1m priority: u=0, i
+[0m[1m[32m	Name Length:[0m[1m 10
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name Length:[0m[1m 5
+[0m[1m[32m	Name Length:[0m[1m 25
+[0m[1m[32m	Name Length:[0m[1m 10
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 9
+[0m[1m[32m	Name Length:[0m[1m 16
+[0m[1m[32m	Name Length:[0m[1m 18
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name Length:[0m[1m 15
+[0m[1m[32m	Name Length:[0m[1m 15
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 8
+[0m[1m[32m	Name:[0m[1m :authority
+[0m[1m[32m	Name:[0m[1m :scheme
+[0m[1m[32m	Name:[0m[1m :path
+[0m[1m[32m	Name:[0m[1m upgrade-insecure-requests
+[0m[1m[32m	Name:[0m[1m user-agent
+[0m[1m[32m	Name:[0m[1m accept
+[0m[1m[32m	Name:[0m[1m sec-fetch-site
+[0m[1m[32m	Name:[0m[1m sec-fetch-mode
+[0m[1m[32m	Name:[0m[1m sec-fetch-user
+[0m[1m[32m	Name:[0m[1m sec-fetch-dest
+[0m[1m[32m	Name:[0m[1m sec-ch-ua
+[0m[1m[32m	Name:[0m[1m sec-ch-ua-mobile
+[0m[1m[32m	Name:[0m[1m sec-ch-ua-platform
+[0m[1m[32m	Name:[0m[1m referer
+[0m[1m[32m	Name:[0m[1m accept-encoding
+[0m[1m[32m	Name:[0m[1m accept-language
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m priority
+[0m[1m[32m	Value Length:[0m[1m 16
+[0m[1m[32m	Value Length:[0m[1m 5
+[0m[1m[32m	Value Length:[0m[1m 60
+[0m[1m[32m	Value Length:[0m[1m 1
+[0m[1m[32m	Value Length:[0m[1m 111
+[0m[1m[32m	Value Length:[0m[1m 135
+[0m[1m[32m	Value Length:[0m[1m 11
+[0m[1m[32m	Value Length:[0m[1m 8
+[0m[1m[32m	Value Length:[0m[1m 2
+[0m[1m[32m	Value Length:[0m[1m 8
+[0m[1m[32m	Value Length:[0m[1m 65
+[0m[1m[32m	Value Length:[0m[1m 2
+[0m[1m[32m	Value Length:[0m[1m 9
+[0m[1m[32m	Value Length:[0m[1m 58
+[0m[1m[32m	Value Length:[0m[1m 23
+[0m[1m[32m	Value Length:[0m[1m 14
+[0m[1m[32m	Value Length:[0m[1m 73
+[0m[1m[32m	Value Length:[0m[1m 70
+[0m[1m[32m	Value Length:[0m[1m 151
+[0m[1m[32m	Value Length:[0m[1m 27
+[0m[1m[32m	Value Length:[0m[1m 34
+[0m[1m[32m	Value Length:[0m[1m 23
+[0m[1m[32m	Value Length:[0m[1m 26
+[0m[1m[32m	Value Length:[0m[1m 43
+[0m[1m[32m	Value Length:[0m[1m 6
+[0m[1m[32m	Value:[0m[1m zh.wikipedia.org
+[0m[1m[32m	Value:[0m[1m https
+[0m[1m[32m	Value:[0m[1m /wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83
+[0m[1m[32m	Value:[0m[1m 1
+[0m[1m[32m	Value:[0m[1m Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[0m[1m[32m	Value:[0m[1m text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+[0m[1m[32m	Value:[0m[1m same-origin
+[0m[1m[32m	Value:[0m[1m navigate
+[0m[1m[32m	Value:[0m[1m ?1
+[0m[1m[32m	Value:[0m[1m document
+[0m[1m[32m	Value:[0m[1m "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+[0m[1m[32m	Value:[0m[1m ?0
+[0m[1m[32m	Value:[0m[1m "Windows"
+[0m[1m[32m	Value:[0m[1m https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+[0m[1m[32m	Value:[0m[1m gzip, deflate, br, zstd
+[0m[1m[32m	Value:[0m[1m zh-CN,zh;q=0.9
+[0m[1m[32m	Value:[0m[1m WMF-Uniq=D6ZGWZsA71gRm7cEETLJzAIkAAEBAFvdjeIjIcf5-RLRlHs2nUsgS73YE2I9Vd7T
+[0m[1m[32m	Value:[0m[1m zhwikimwclientpreferences=vector-feature-custom-font-size-clientpref-0
+[0m[1m[32m	Value:[0m[1m zhwikiBlockID=564933%2178eee08a0ecc0e4e95c3b9be7a1aeb42cf6b17f86ba66d336b5d71cc600d823f860fe73d64596c72bf9f29fca5fa5fdc44e436ea0c3736b01e7822c74d7eb707
+[0m[1m[32m	Value:[0m[1m WMF-Last-Access=03-Jul-2025
+[0m[1m[32m	Value:[0m[1m WMF-Last-Access-Global=03-Jul-2025
+[0m[1m[32m	Value:[0m[1m NetworkProbeLimit=0.001
+[0m[1m[32m	Value:[0m[1m GeoIP=JP:::35.69:139.69:v4
+[0m[1m[32m	Value:[0m[1m zhwikimwuser-sessionId=9dfdeb9c2aee3bc73400
+[0m[1m[32m	Value:[0m[1m u=0, i
+[0m[1m[32m	Unescaped:[0m[1m zh.wikipedia.org
+[0m[1m[32m	Unescaped:[0m[1m https
+[0m[1m[32m	Unescaped:[0m[1m /wiki/尼亚加拉瀑布
+[0m[1m[32m	Unescaped:[0m[1m 1
+[0m[1m[32m	Unescaped:[0m[1m Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[0m[1m[32m	Unescaped:[0m[1m text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+[0m[1m[32m	Unescaped:[0m[1m same-origin
+[0m[1m[32m	Unescaped:[0m[1m navigate
+[0m[1m[32m	Unescaped:[0m[1m ?1
+[0m[1m[32m	Unescaped:[0m[1m document
+[0m[1m[32m	Unescaped:[0m[1m "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+[0m[1m[32m	Unescaped:[0m[1m ?0
+[0m[1m[32m	Unescaped:[0m[1m "Windows"
+[0m[1m[32m	Unescaped:[0m[1m https://zh.wikipedia.org/wiki/Wikipedia:首页
+[0m[1m[32m	Unescaped:[0m[1m gzip, deflate, br, zstd
+[0m[1m[32m	Unescaped:[0m[1m zh-CN,zh;q=0.9
+[0m[1m[32m	Unescaped:[0m[1m WMF-Uniq=D6ZGWZsA71gRm7cEETLJzAIkAAEBAFvdjeIjIcf5-RLRlHs2nUsgS73YE2I9Vd7T
+[0m[1m[32m	Unescaped:[0m[1m zhwikimwclientpreferences=vector-feature-custom-font-size-clientpref-0
+[0m[1m[32m	Unescaped:[0m[1m zhwikiBlockID=564933!78eee08a0ecc0e4e95c3b9be7a1aeb42cf6b17f86ba66d336b5d71cc600d823f860fe73d64596c72bf9f29fca5fa5fdc44e436ea0c3736b01e7822c74d7eb707
+[0m[1m[32m	Unescaped:[0m[1m WMF-Last-Access=03-Jul-2025
+[0m[1m[32m	Unescaped:[0m[1m WMF-Last-Access-Global=03-Jul-2025
+[0m[1m[32m	Unescaped:[0m[1m NetworkProbeLimit=0.001
+[0m[1m[32m	Unescaped:[0m[1m GeoIP=JP:::35.69:139.69:v4
+[0m[1m[32m	Unescaped:[0m[1m zhwikimwuser-sessionId=9dfdeb9c2aee3bc73400
+[0m[1m[32m	Unescaped:[0m[1m u=0, i
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Index:[0m[1m 103
+[0m[1m[32m	Index:[0m[1m 7
+[0m[1m[32m	Index:[0m[1m 4
+[0m[1m[32m	Index:[0m[1m 99
+[0m[1m[32m	Index:[0m[1m 98
+[0m[1m[32m	Index:[0m[1m 97
+[0m[1m[32m	Index:[0m[1m 80
+[0m[1m[32m	Index:[0m[1m 95
+[0m[1m[32m	Index:[0m[1m 94
+[0m[1m[32m	Index:[0m[1m 93
+[0m[1m[32m	Index:[0m[1m 102
+[0m[1m[32m	Index:[0m[1m 101
+[0m[1m[32m	Index:[0m[1m 100
+[0m[1m[32m	Index:[0m[1m 77
+[0m[1m[32m	Index:[0m[1m 91
+[0m[1m[32m	Index:[0m[1m 90
+[0m[1m[32m	Index:[0m[1m 89
+[0m[1m[32m	Index:[0m[1m 88
+[0m[1m[32m	Index:[0m[1m 87
+[0m[1m[32m	Index:[0m[1m 86
+[0m[1m[32m	Index:[0m[1m 85
+[0m[1m[32m	Index:[0m[1m 84
+[0m[1m[32m	Index:[0m[1m 76
+[0m[1m[32m	Index:[0m[1m 65
+[0m[1m[32m	Index:[0m[1m 82
+[0m[1m[32m	cookie:[0m[1m zhwikimwclientpreferences=vector-feature-custom-font-size-clientpref-0
+[0m[1m[32m	cookie:[0m[1m zhwikiBlockID=564933%2178eee08a0ecc0e4e95c3b9be7a1aeb42cf6b17f86ba66d336b5d71cc600d823f860fe73d64596c72bf9f29fca5fa5fdc44e436ea0c3736b01e7822c74d7eb707
+[0m[1m[32m	cookie:[0m[1m WMF-Last-Access=03-Jul-2025
+[0m[1m[32m	cookie:[0m[1m WMF-Last-Access-Global=03-Jul-2025
+[0m[1m[32m	cookie:[0m[1m NetworkProbeLimit=0.001
+[0m[1m[32m	cookie:[0m[1m GeoIP=JP:::35.69:139.69:v4
+[0m[1m[32m	cookie:[0m[1m zhwikimwuser-sessionId=9dfdeb9c2aee3bc73400
+[0m
+
+  提取的帧数据长度: 100 字节
+  提取的帧数据(十六进制): d3303f9dac488b04791e0d213beda449ace03ed4ed454772a31061bce799c6f5f9cf04b38ba9f1e4d3ccf52d21c16e22bc8b...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 200 字符
+  十六进制数据: d3303f9dac488b04791e0d213beda449ace03ed4ed454772a31061bce799c6f5f9cf04b38ba9f1e4d3ccf52d21c16e22bc8bda4906fe324f358a30bc008db58575712bdb777b98760eb6f14d15f6597cf2586161aacfde4a47847e0753424bc3a13443ad
+
+================================================================================
+
+数据包 #1096 (第2个)
+时间戳: 2025-07-03 09:43:36.952399
+------------------------------------------------------------
+TCP信息:
+  Stream: 70
+  Sequence: 28919
+  Payload: 87:11:ec:74:49:40:df:d2:88:00:62:53:be:94:78:4e:db:f7:b4:69:ac:4f:a7:9b:cf:ec:02:0f:8a:00:69:24:b4:b5:74:de:5d:1a:38:88:c3:b1:99:6f:0a:ab:3b:83:47:2a:bd:aa:fd:5c:63:5b:cb:b7:64:29:01:3d:11:c1:94:0a:11:0e:5c:68:5a:b2:b1:48:2e:99:31:66:a6:b8:81:18:ea:b0:31:01:2a:14:b1:17:bf:83:f0:31:49:eb:7e:44:6f:b8:c1:56:bf:c7:f4:84:41:75:df:c6:f5:7e:33:6c:f6:ed:d4:d2:60:d8:8d:b3:86:e9:05:57:90:5c:9f:ed:fc:05:9a:43:d0:13:d0:a5:e9:c2:91:54:f9:90:a7:e4:ae:cf:8f:47:7b:00:d1:53:5e:48:2e:92:46:b5:07:fc:f9:8c:6d:83:70:67:4d:1e:76:d3:93:6e:b0:62:f0:19:e5:82:9a:e6:db:53:36:87:78:0a:47:2d:7f:b9:0f:4e:08:70:d9:55:2a:db:4f:d5:53:1a:fc:f4:b0:ab:7a:a9:47:c6:41:cd:5e:24:d1:ca:2b:74:ad:26:fa:41:4c:49:39:b5:c9:ca:a5:2a:e4:33:98:02:c6:34:29:11:62:51:e7:e3:0c:ef:d6:86:3a:ba:e7:82:f0:97:82:9b:3b:39:d6:ab:df:df:a8:a1:3a:60:36:fe:60:ed:de:eb:92:be:bb:e2:9c:6d:c7:ac:ee:e8:75:87:85:94:6d:08:41:72:34:6c:dc:bc:f8:9c:14:38:64:cf:73:31:a2:1d:bb:1f:17:1e:27:90:97:87:be:04:23:b4:fd:24:e0:66:12:03:e8:d7:12:88:33:3a:e2:4b:31:4a:bb:cc:e4:f0:53:ff:2d:bb:d7:3e:81:c4:e2:c3:21:3a:a8:ca:d0:7e:c6:f7:94:86:03:b6:6c:d6:39:6f:9d:df:be:17:1f:26:3b:32:c9:41:f5:34:bd:32:64:9e:e3:c2:85:18:7f:59:da:1d:ca:6a:e0:43:65:7e:ac:df:72:52:00:3e:ca:0c:c2:60:70:b4:db:5d:7d:bc:52:a1:95:ce:af:9c:fc:f8:6a:ab:45:80:bd:14:67:03:00:94:65:37:90:13:a2:3e:15:d3:38:2d:e4:b0:f8:3b:56:78:26:07:a6:9c:b0:ad:45:96:23:41:72:5c:12:15:04:46:3a:94:3f:29:ca:a3:c8:f2:72:6f:23:7e:7b:99:18:7d:2a:a5:8e:0e:2c:33:39:ab:43:60:5c:c9:42:ed:13:d8:e8:7d:87:34:06:e5:76:96:41:6c:e1:f2:f5:92:84:ec:99:a4:b4:2d:47:61:f0:2a:ae:7d:1d:a6:99:09:2f:45:fc:45:4f:8f:2d:e3:2e:5f:0b:ca:a4:4c:1a:62:80:d0:c0:2e:92:a9:3e:8a:96:53:d5:24:a7:62:b7:29:0c:ac:d9:44:a2:50:43:07:10:2d:7f:91:48:91:d4:53:e4:b3:bd:77:5c:99:9d:72:82:13:84:4c:ad:ff:bd:57:89:25:98:27:ea:bf:70:59:4c:44:7e:1e:8b:3f:5a:f6:9a:a9:99:e9:a9:18:50:39:b0:d4:24:dd:cb:cd:d0:0f:60:49:64:59:0d:69:78:bb:24:c5:ba:e9:c7:56:f2:fc:cf:21:4f:c0:5c:57:d2:18:ee:33:30:22:64:d4:52:42:7b:07:b7:3b:ed:84:e0:3d:4e:f3:78:aa:d1:f1:f7:9c:8c:6c:ef:93:d4:35:0d:9b:bf:0e:ac:22:6f:93:ba:8b:13:8c:c5:c4:96:65:bf:8a:2f:f9:c5:12:54:2a:fa:17:f7:94:5c:6d:26:b2:db:fa:76:10:cc:11:26:89:43:14:c1:ad:7a:52:89:21:d4:db:ea:17:0f:1e:96:a5:86:bc:c9:c7:fd:66:21:da:a7:e9:52:30:89:7d:31:0d:b4:2d:61:65:54:17:79:df:e9:42:b4:d6:cf:a4:93:5d:64:e1:31:05:d5:db:cf:c6:93:34:b5:83:82:69:7c:c8:7d:80:e5:70:3f:9e:96:d3:e6:30:c6:8d:33:44:fb:4b:e8:98:58:4a:40:e7:90:8d:c2:fc:bc:1c:1e:47:6b:ad:16:57:e3:b5:12:b4:c9:b0:67:85:e1:99:61:2b:3c:cd:d8:ea:36:85:a4:d7:44:9a:a4:88:c6:4b:eb:62:01:b9:cf:3b:64:83:59:fb:59:cf:75:18:23:b7:97:12:b8:71:f3:70:b8:f9:70:a8:c1:ed:41:d8:d2:c5:d1:14:92:64:99:01:b6:72:09:85:82:77:0d:a3:68:59:94:c1:64:7e:12:5b:d5:07:68:02:67:f0:76:14:c5:c0:a8:b3:ec:a3:d4:c2:c9:2f:18:e1:02:b2:8b:44:a9:88:d3:47:b1:2f:53:9c:d0:31:6d:7b:18:46:52:e5:c0:ce:84:42:37:82:f7:65:a1:c9:b3:bd:ce:aa:b0:6d:b0:da:e9:9e:6e:4a:48:e2:35:04:84:7c:5e:86:0f:66:07:61:7f:9c:c5:e1:b7:38:a4:20:d9:c4:94:d1:65:49:94:ad:37:06:61:b0:cd:7e:4d:64:18:1b:51:79:40:6d:d6:7e:d8:ea:4c:fc:f6:7a:9e:76:da:31:f0:91:7e:a3:3e:93:4b:6a:86:e9:30:47:49:bf:90:ac:b7:22:9f:2c:f8:b6:45:60:b6:d7:58:dc:91:80:cc:ce:62:70:af:f3:54:75:84:6f:57:16:70:0c:45:90:77:3b:5e:b9:01:21:1d:83:aa:18:5d:fc:8b:ca:b6:ff:f9:81:67:28:2e:c1:19:01:16:04:14:d4:af:03:15:82:95:46:f0:5a:c4:96:3e:97:39:2d:b2:3e:d5:52:d3:b7:3d:f1:1a:b6:15:23:a4:b8:71:f4:ea:53:3d:67:4c:78:78:e7:a7:f8:87:f2:a1:f5:c7:89:13:a0:10:9f:26:66:33:9b:9f:61:5b:bb:76:6d:9e:13:91:1c:41:e8:83:1a:7e:22:e7:df:29:22:b0:9e:0d:4d:4a:c2:16:3f:4b:fd:b5:84:09:4b:cf:5d:cd:81:80:c8:52:60:42:0c:b3:c8:9f:1e:61:d1:d9:6c:c8:46:69:5b:b7:21:c6:ef:0d:9f:f4:2c:74:d8:c1:c5:a2:02:ac:d1:17:13:e2:2c:f5:b1:fb:c8:d9:11:93:c9:2d:8f:1d:eb:41:8e:35:1a:28:00:f2:ee:79:03:1b:ac:8f:7b:c1:10:e3:88:45:58:96:1d:aa:ad:48:ee:42:7b:c0:c6:5c:df:be:3b:6a:a3:c7:7b:9e:6d:ac:82:3f:50:8d:a8:10:2f:90:13:d5:7e:0a:af:72:27:0c:0e:6e:82:93:d9:1f:3f:23:42:d3:e0:b5:c7:ec:50:6a:1c:e7:af:c9:e0:11:e0:a4:6b:de:5d:8e:03:9c:af:f9:f8:8e:5f:e4:64:c8:2f:e1:b9:b7:ad:0c:6b:65:f0:f2:76:86:c9:fb:02:e4:7e:cc:47:03:87:e0:fb:94:c4:ea:dc:7a:a3:0d:d6:93:e9:e4:a8:3f:2e:11:00:62:a5:72:e3:e1:14:23:df:08:8d:04:25:0a:69:c3:32:f0:b3:3f:d5:b4:4d:aa:da:fa:99:c2:03:5d:2d:f1:2c:fe:87:6b:45:43:88:8d:f3:84:e9:f7:06:43:09:4f:98:d6:5e:4b:d7:31:ad:2d:17:cf:0c:56:d5:45:18:8d:29:0b:c5:33:d3:13:9a:c2:5d:11:75:07:c9:b7:c7:45:35:4a:94:c6:6d:84:95:fc:0a:a7:0f:68:b4:7c:0a:60:d5:7f:88:6c:79:34:11:e1:fc:0a:ef:ef:5f:c7:81:b4:4d:ef:fc:f3:e1:30:42:8b:6d:1a:92:e5:db:8c:85:85:1e:7d:81:8a:9f:c9:9f:68:ed:98:d0:ee:5e:ab:eb:43:af:a3:7e:56:2b:76:a2:00:34:f3:0d:ed:34:bf:d9:66:11:d6:0b:e2:da:85:05:10:6a:61:1b:60:b7:58:c1:7f:11:24:e0:60:c6:be:72:ca:8c:65:74:76:7f:03:83:6f:ed:93:32:b1:a9:4c:ac:37:ac:3d:db:e5:32:fd:02:5c:05:76:7e:8d:d0:df:4d:aa:67:9f:1f:52:d6:df:a9:4a:9b:ea:9f:37:ec:04:b7:33:16:6f:f9:b1:11:fe:3d:67:7e:0c:86:5d:2a:5e:fd:4c:e8:78:61:88:1b:ae:36:7f:de:f3:9d:47:24:d3:7a:a3:75:79:aa:94:d3:75:da:7d:06:51:45:48:0f:29:2d:ea:5a:2d:85:57:4c:ef:cd:f7:dc:8d:5c:a4:d8:fe:ac:7e:a6:f4:4b:67:36:db:7d:0a:4c:6b:ef:a0:d7:0b:1b:46:75:48:fa:cf:49:6f:38:73:84:86:a0:7b:10:dd:8e:e1:e7:ff:91:ec:14:26:7d:0e:57:db:c0:1a:4b:69:9f:31:76:88:9b:51:16:c6:e8:b7:4b:f0:d6:70:46:44:87:46:c9:9a:22:e4:6d:4b:e6:7b:a1:4e:f4:ea:56:09:12:4a:af:28:a0:0d:d4:3d:3e:2e:ea:86:3e:af:c1:e6:89:f2:5a:f5:7c:8a:00:61:c1:f3:91:6f:65:3c:91:27:11:6d:af:c3:31:46:07:f5:b8:86:1f:1e:bc:39:86:84:d8:de:e6:cd:b8:df:93:c9:73:02:99:95:58:d3:dc:fd:52:dc:13:24:f0:79:a4:27:0b:cc:2d:73:d5:19:dc:13:ef:f4:32:66:f1:a7:b0:0c:49:ae:f4:29:53:d8:e2:93:65:8a:6d:c6:1d:20:ec:6d:20:2f:7d:b5:f3:c1:d8:50:e4:77:29:11:07:f8:cb:79:fd:c9:bf:f7:12:c2:61:14:44:dc:9f:78:40:d8:bc:5b:cf:bb:05:85:d2:79:11:92:78:bd:0f:fd:21:5d:2d:c8:0d:8a:4c:92:66:68:ab:17:f8:40:28:55:15:64:6a:6b:4a:47:0e:75:31:2c:fb:39:16:35:9a:92:3e:b7:dd:e0:d0:99:ba:b3:a7:d3:18:0b:57:1d:77:d4:b0:6d:31:8b:0d:a8:5b:d1:46:58:ed:ec:03:e3:70:71:61:0f:ae:68:7f:61:fc:c7:62:11:2a:2e:5c:d0:b2:79:08:bf:93:2e:72:5c:c5:aa:bc:60:be:db:60:b9:86:63:e0:ed:8d:a9:14:b4:0d:da:a1:0c:6a:b3:2b:0d:70:e7:cd:65:c8:75:48:20:db:4e:c9:ba:30:c9:61:c8:d6:4a:e6:f9:77:1d:48:1a:b2:7a:cb:bb:bb:ff:72:29:80:72:43:4d:fe:0d:3d:65:ad:87:0e:fe:16:f4:79:b4:2b:41:0a:d9:0c:98:fc:dc:28:8c:4c:5c:a5:0e:d3:de:ba:f4:25:5a:be:f3:8f:2a:84:6a:59:d6:4a:4c:ce:5c:4c:d2:3a:39:d3:83:b1:6b:50:e6:c2:45:82:d6:08:33:64:e2:1e:29:78:13:15:19:d9:15:80:4e:f9:87:32:68:fb:d4:82:01:33:27:2f:c0:90:8d:d6:0a:a7:4f:e5:13:fe:08:85:8a:54:e3:73:04:49:ad:1c:26:0c:7c:56:f9:0e:de:9f:39:77:4c:b7:bb:0b:35:5a:f0:6d:28:b3:61:07:30:98:20:aa:20:df:17:cc:8b:f5:0d:a1:a2:cd:d9:58:6e:9b:34:ae:1e:d6:a9:86:c1:f6:42:a1:0b:a1:fd:51:ce:92:15:00:97:08:88:70:ba:87:be:c3:d6:62:d7:39:e9:19:c0:1d:9c:68:74:ad:0b:81:9c:46:67:97:27:83:18:7a:62:05:1b:e6:06:97:88:b0:6f:9d:44:08:ce:09:0b:40:70:4d:56:95:80:d8:c8:58:b6:df:a8:56:17:9d:f0:dc:f2:24:39:5a:bf:7b:ec:a0:a7:6e:38:f8:04:87:9d:89:9e:b1:98:3c:e9:61:2e:d1:dc:32:c3:f6:b3:2a:4e:71:af:5b:52:72:37:60:83:7c:58:61:d6:fa:d2:c1:9c:89:cc:f4:3b:9f:ce:3a:f1:24:e8:d4:18:ad:50:7e:37:a1:29:e9:f4:2e:b7:4c:dd:e6:08:5e:50:9f:58:53:5a:9b:52:7d:32:a6:4e:ef:7e:23:02:c4:a4:8d:6e:93:a1:03:bf:a6:71:ef:f4:38:82:b5:5f:f9:4f:44:7c:54:89:b8:b2:85:2b:42:11:f7:4c:14:1d:ca:00:19:34:0d:05:7f:ef:20:bc:46:77:6b:c5:87:de:75:f5:7c:7c:eb:5a:66:1e:97:05:2f:e7:72:9d:50:54:1e:60:a8:1e:7a:1e:8a:d6:84:10:6c:e4:18:df:71:6e:be:ed:6d:d5:dc:84:e6:c7:ed:a8:bd:da:14:fd:27:4a:ae:a3:f4:16:21:56:db:26:dd:e3:4a:54:04:b7:ef:d4:90:29:9f:c8:6a:3d:6f:de:45:ce:63:6e:80:47:48:23:72:1b:fd:08:a5:5d:bc:a0:b2:3f:61:96:6c:8c:aa:9a:01:2d:9b:d9:7e:a6:e0:30:af:dd:b0:50:64:d6:6e:fa:ff:71:01:0f:d8:cc:08:db:a8:8e:dd:65:8d:ed:98:a4:9c:f0:38:0d:87:3a:8f:0a:a8:e5:32:34:10:fb:0e:00:0c:ef:a1:83:b5:c2:2e:c6:84:da:10:f8:e9:c4:70:53:f2:fc:80:14:b0:69:83:bb:21:ca:9d:2f:9e:06:77:cf:0a:e5:c8:0a:7e:c1:ab:54:29:dd:f9:bf:0f:73:2c:fa:88:26:fb:d5:77:98:b3:f3:4e:18:42:ce:35:c3:e9:eb:35:58:6c:12:cf:c5:af:20:62:67:4e:98:f1:1c:60:e5:96:f6:9a:4b:ee:17:df:47:bf:d3:d4:51:4d:2c:3f:35:41:40:3f:86:65:c1:fc:5b:2a:4b:69:6a:d5:6c:95:36:ec:a6:9f:6a:95:32:2c:3a:a4:1f:12:0a:95:77:15:ae:8b:af:51:0b:c7:d5:c6:8a:bf:08:fa:1f:8d:37:da:df:a7:6a:5e:8c:9f:a8:dd:3f:66:19:38:96:2b:f0:24:78:31:e3:9c:a3:ca:70:38:78:f7:48:5d:81:23:46:cb:5b:15:c7:06:75:75:30:58:39:32:e4:d5:2d:4e:6a:5f:f3:38:f2:95:48:db:7e:b2:89:88:9a:2a:dd:6f:d9:9d:c5:5a:91:92:97:53:d5:ea:de:11:cb:5b:20:10:e0:99:6a:c9:93:67:06:8b:48:eb:68:f2:90:72:8b:63:ad:a4:20:0d:25:da:fc:6d:28:e7:49:f9:6d:67:9a:49:b8:ba:0f:b7:5c:b8:58:fa:ca:2b:46:b3:da:09:2d:c8:03:87:0c:33:1e:20:d0:15:cd:c5:19:e4:61:5f:42:74:1d:d2:f6:9a:2c:6a:72:b7:50:c8:b2:2a:12:56:3b:ad:64:f3:5c:32:b1:6a:8b:91:93:72:b8:3a:2e:50:f1:cb:ad:40:17:fb:8e:ca:bd:83:19:18:71:47:28:74:f7:84:f9:24:9b:cc:20:5f:69:e1:0c:67:ea:b7:1f:07:18:0c:87:17:03:03:3f:da:ba:9b:53:51:51:1c:c6:82:17:00:68:5b:a0:fb:b6:18:fb:0a:a9:48:34:bb:a9:e1:ab:80:1d:99:65:13:82:98:11:d7:f9:8d:32:e6:42:90
+
+HTTP/2信息:
+  Type: 1
+  Stream ID: 15
+  Length: 898
+  Flags: 0x04
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m HEADERS, Stream ID: 15, Length 898, 200 OK
+[0m[1m[32m	Length:[0m[1m 898
+[0m[1m[32m	Type:[0m[1m HEADERS (1)
+[0m[1m[32m	Flags:[0m[1m 0x04, End Headers
+[0m[1m[32m	00.0 ..0. = Unused:[0m[1m 0x00
+[0m[1m[32m	..0. .... = Priority:[0m[1m False
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... .1.. = End Headers:[0m[1m True
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0000 1111 = Stream Identifier:[0m[1m 15
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Header Block Fragment […]:[0m[1m 88611d5468752c203033204a756c20323032352030313a32333a353520474d5476226d772d7765622e636f6466772e6d61696e2d353936376639633862392d73396637620016782d636f6e74656e742d747970652d6f7074696f6e73076e6f736e6966665b027a6800
+[0m[1m[32m	Header Length:[0m[1m 1181
+[0m[1m[32m	Header Count:[0m[1m 22
+[0m[1m[32m	Header:[0m[1m :status: 200 OK
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name:[0m[1m :status
+[0m[1m[32m	Value Length:[0m[1m 3
+[0m[1m[32m	Value:[0m[1m 200
+[0m[1m[32m	:[0m[1mstatus: 200
+[0m[1m[32m	Unescaped:[0m[1m 200
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Index:[0m[1m 8
+[0m[1m[32m	date:[0m[1m Thu, 03 Jul 2025 01:23:55 GMT
+[0m[1m[32m	server:[0m[1m mw-web.codfw.main-5967f9c8b9-s9f7b
+[0m[1m[32m	content-language:[0m[1m zh
+[0m[1m[32m	last-modified:[0m[1m Wed, 02 Jul 2025 12:14:02 GMT
+[0m[1m[32m	content-type:[0m[1m text/html; charset=UTF-8
+[0m[1m[32m	content-encoding:[0m[1m gzip
+[0m[1m[32m	age:[0m[1m 1182
+[0m[1m[32m	accept-ranges:[0m[1m bytes
+[0m[1m[32m	vary:[0m[1m Accept-Encoding,Cookie,Accept-Language,Authorization
+[0m[1m[32m	strict-transport-security:[0m[1m max-age=106384710; includeSubDomains; preload
+[0m[1m[32m	set-cookie:[0m[1m WMF-DP=9b6;Path=/;HttpOnly;secure;Expires=Thu, 03 Jul 2025 00:00:00 GMT
+[0m[1m[32m	cache-control:[0m[1m private, s-maxage=0, max-age=0, must-revalidate, no-transform
+[0m[1m[32m	content-length:[0m[1m 37388
+[0m[1m[32m	Time since request:[0m[1m 0.267789000 seconds
+[0m[1m[32m	Request in frame:[0m[1m 1084
+[0m[1m[32m	Header:[0m[1m date: Thu, 03 Jul 2025 01:23:55 GMT
+[0m[1m[32m	Header:[0m[1m server: mw-web.codfw.main-5967f9c8b9-s9f7b
+[0m[1m[32m	Header:[0m[1m x-content-type-options: nosniff
+[0m[1m[32m	Header:[0m[1m content-language: zh
+[0m[1m[32m	Header:[0m[1m accept-ch: 
+[0m[1m[32m	Header:[0m[1m last-modified: Wed, 02 Jul 2025 12:14:02 GMT
+[0m[1m[32m	Header:[0m[1m content-type: text/html; charset=UTF-8
+[0m[1m[32m	Header:[0m[1m content-encoding: gzip
+[0m[1m[32m	Header:[0m[1m age: 1182
+[0m[1m[32m	Header:[0m[1m accept-ranges: bytes
+[0m[1m[32m	Header:[0m[1m vary: Accept-Encoding,Cookie,Accept-Language,Authorization
+[0m[1m[32m	Header:[0m[1m x-cache: cp5021 miss, cp5021 hit/2
+[0m[1m[32m	Header:[0m[1m x-cache-status: hit-front
+[0m[1m[32m	Header:[0m[1m server-timing: cache;desc="hit-front", host;desc="cp5021"
+[0m[1m[32m	Header:[0m[1m strict-transport-security: max-age=106384710; includeSubDomains; preload
+[0m[1m[32m	Header:[0m[1m report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+[0m[1m[32m	Header:[0m[1m nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+[0m[1m[32m	Header:[0m[1m set-cookie: WMF-DP=9b6;Path=/;HttpOnly;secure;Expires=Thu, 03 Jul 2025 00:00:00 GMT
+[0m[1m[32m	Header:[0m[1m x-client-ip: 154.64.226.11
+[0m[1m[32m	Header:[0m[1m cache-control: private, s-maxage=0, max-age=0, must-revalidate, no-transform
+[0m[1m[32m	Header:[0m[1m content-length: 37388
+[0m[1m[32m	Name Length:[0m[1m 4
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 22
+[0m[1m[32m	Name Length:[0m[1m 16
+[0m[1m[32m	Name Length:[0m[1m 9
+[0m[1m[32m	Name Length:[0m[1m 13
+[0m[1m[32m	Name Length:[0m[1m 12
+[0m[1m[32m	Name Length:[0m[1m 16
+[0m[1m[32m	Name Length:[0m[1m 3
+[0m[1m[32m	Name Length:[0m[1m 13
+[0m[1m[32m	Name Length:[0m[1m 4
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 13
+[0m[1m[32m	Name Length:[0m[1m 25
+[0m[1m[32m	Name Length:[0m[1m 9
+[0m[1m[32m	Name Length:[0m[1m 3
+[0m[1m[32m	Name Length:[0m[1m 10
+[0m[1m[32m	Name Length:[0m[1m 11
+[0m[1m[32m	Name Length:[0m[1m 13
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name:[0m[1m date
+[0m[1m[32m	Name:[0m[1m server
+[0m[1m[32m	Name:[0m[1m x-content-type-options
+[0m[1m[32m	Name:[0m[1m content-language
+[0m[1m[32m	Name:[0m[1m accept-ch
+[0m[1m[32m	Name:[0m[1m last-modified
+[0m[1m[32m	Name:[0m[1m content-type
+[0m[1m[32m	Name:[0m[1m content-encoding
+[0m[1m[32m	Name:[0m[1m age
+[0m[1m[32m	Name:[0m[1m accept-ranges
+[0m[1m[32m	Name:[0m[1m vary
+[0m[1m[32m	Name:[0m[1m x-cache
+[0m[1m[32m	Name:[0m[1m x-cache-status
+[0m[1m[32m	Name:[0m[1m server-timing
+[0m[1m[32m	Name:[0m[1m strict-transport-security
+[0m[1m[32m	Name:[0m[1m report-to
+[0m[1m[32m	Name:[0m[1m nel
+[0m[1m[32m	Name:[0m[1m set-cookie
+[0m[1m[32m	Name:[0m[1m x-client-ip
+[0m[1m[32m	Name:[0m[1m cache-control
+[0m[1m[32m	Name:[0m[1m content-length
+[0m[1m[32m	Value Length:[0m[1m 29
+[0m[1m[32m	Value Length:[0m[1m 34
+[0m[1m[32m	Value Length:[0m[1m 7
+[0m[1m[32m	Value Length:[0m[1m 2
+[0m[1m[32m	Value Length:[0m[1m 0
+[0m[1m[32m	Value Length:[0m[1m 29
+[0m[1m[32m	Value Length:[0m[1m 24
+[0m[1m[32m	Value Length:[0m[1m 4
+[0m[1m[32m	Value Length:[0m[1m 4
+[0m[1m[32m	Value Length:[0m[1m 5
+[0m[1m[32m	Value Length:[0m[1m 52
+[0m[1m[32m	Value Length:[0m[1m 25
+[0m[1m[32m	Value Length:[0m[1m 9
+[0m[1m[32m	Value Length:[0m[1m 42
+[0m[1m[32m	Value Length:[0m[1m 45
+[0m[1m[32m	Value Length:[0m[1m 203
+[0m[1m[32m	Value Length:[0m[1m 94
+[0m[1m[32m	Value Length:[0m[1m 71
+[0m[1m[32m	Value Length:[0m[1m 13
+[0m[1m[32m	Value Length:[0m[1m 61
+[0m[1m[32m	Value Length:[0m[1m 5
+[0m[1m[32m	Value:[0m[1m Thu, 03 Jul 2025 01:23:55 GMT
+[0m[1m[32m	Value:[0m[1m mw-web.codfw.main-5967f9c8b9-s9f7b
+[0m[1m[32m	Value:[0m[1m nosniff
+[0m[1m[32m	Value:[0m[1m zh
+[0m[1m[32m	Value:[0m[1m 
+[0m[1m[32m	Value:[0m[1m Wed, 02 Jul 2025 12:14:02 GMT
+[0m[1m[32m	Value:[0m[1m text/html; charset=UTF-8
+[0m[1m[32m	Value:[0m[1m gzip
+[0m[1m[32m	Value:[0m[1m 1182
+[0m[1m[32m	Value:[0m[1m bytes
+[0m[1m[32m	Value:[0m[1m Accept-Encoding,Cookie,Accept-Language,Authorization
+[0m[1m[32m	Value:[0m[1m cp5021 miss, cp5021 hit/2
+[0m[1m[32m	Value:[0m[1m hit-front
+[0m[1m[32m	Value:[0m[1m cache;desc="hit-front", host;desc="cp5021"
+[0m[1m[32m	Value:[0m[1m max-age=106384710; includeSubDomains; preload
+[0m[1m[32m	Value:[0m[1m { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+[0m[1m[32m	Value:[0m[1m { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+[0m[1m[32m	Value:[0m[1m WMF-DP=9b6;Path=/;HttpOnly;secure;Expires=Thu, 03 Jul 2025 00:00:00 GMT
+[0m[1m[32m	Value:[0m[1m 154.64.226.11
+[0m[1m[32m	Value:[0m[1m private, s-maxage=0, max-age=0, must-revalidate, no-transform
+[0m[1m[32m	Value:[0m[1m 37388
+[0m[1m[32m	Unescaped:[0m[1m Thu, 03 Jul 2025 01:23:55 GMT
+[0m[1m[32m	Unescaped:[0m[1m mw-web.codfw.main-5967f9c8b9-s9f7b
+[0m[1m[32m	Unescaped:[0m[1m nosniff
+[0m[1m[32m	Unescaped:[0m[1m zh
+[0m[1m[32m	Unescaped:[0m[1m 
+[0m[1m[32m	Unescaped:[0m[1m Wed, 02 Jul 2025 12:14:02 GMT
+[0m[1m[32m	Unescaped:[0m[1m text/html; charset=UTF-8
+[0m[1m[32m	Unescaped:[0m[1m gzip
+[0m[1m[32m	Unescaped:[0m[1m 1182
+[0m[1m[32m	Unescaped:[0m[1m bytes
+[0m[1m[32m	Unescaped:[0m[1m Accept-Encoding,Cookie,Accept-Language,Authorization
+[0m[1m[32m	Unescaped:[0m[1m cp5021 miss, cp5021 hit/2
+[0m[1m[32m	Unescaped:[0m[1m hit-front
+[0m[1m[32m	Unescaped:[0m[1m cache;desc="hit-front", host;desc="cp5021"
+[0m[1m[32m	Unescaped:[0m[1m max-age=106384710; includeSubDomains; preload
+[0m[1m[32m	Unescaped:[0m[1m { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+[0m[1m[32m	Unescaped:[0m[1m { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+[0m[1m[32m	Unescaped:[0m[1m WMF-DP=9b6;Path=/;HttpOnly;secure;Expires=Thu, 03 Jul 2025 00:00:00 GMT
+[0m[1m[32m	Unescaped:[0m[1m 154.64.226.11
+[0m[1m[32m	Unescaped:[0m[1m private, s-maxage=0, max-age=0, must-revalidate, no-transform
+[0m[1m[32m	Unescaped:[0m[1m 37388
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Index:[0m[1m 33
+[0m[1m[32m	Index:[0m[1m 54
+[0m[1m[32m	Index:[0m[1m 27
+[0m[1m[32m	Index:[0m[1m 44
+[0m[1m[32m	Index:[0m[1m 31
+[0m[1m[32m	Index:[0m[1m 26
+[0m[1m[32m	Index:[0m[1m 21
+[0m[1m[32m	Index:[0m[1m 18
+[0m[1m[32m	Index:[0m[1m 59
+[0m[1m[32m	Index:[0m[1m 56
+[0m[1m[32m	Index:[0m[1m 55
+[0m[1m[32m	Index:[0m[1m 24
+[0m[1m[32m	Index:[0m[1m 28
+[0m
+
+  提取的帧数据长度: 2911 字节
+  提取的帧数据(十六进制): 006253be94784edbf7b469ac4fa79bcfec020f8a006924b4b574de5d1a3888c3b1996f0aab3b83472abdaafd5c635bcbb764...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 5822 字符
+  十六进制数据: 006253be94784edbf7b469ac4fa79bcfec020f8a006924b4b574de5d1a3888c3b1996f0aab3b83472abdaafd5c635bcbb76429013d11c1940a110e5c685ab2b1482e993166a6b88118eab031012a14b117bf83f03149eb7e446fb8c156bfc7f4844175dfc6f57e336cf6edd4d260d88db386e90557905c9fedfc059a43d013d0a5e9c29154f990a7e4aecf8f477b00d1535e482e9246b507fcf98c6d8370674d1e76d3936eb062f019e5829ae6db533687780a472d7fb90f4e0870d9552adb4fd5531afcf4b0ab7aa947c641cd5e24d1ca2b74ad26fa414c4939b5c9caa52ae4339802c63429116251e7e30cefd6863abae782f097829b3b39d6abdfdfa8a13a6036fe60eddeeb92bebbe29c6dc7aceee8758785946d084172346cdcbcf89c143864cf7331a21dbb1f171e27909787be0423b4fd24e0661203e8d71288333ae24b314abbcce4f053ff2dbbd73e81c4e2c3213aa8cad07ec6f7948603b66cd6396f9ddfbe171f263b32c941f534bd32649ee3c285187f59da1dca6ae043657eacdf7252003eca0cc26070b4db5d7dbc52a195ceaf9cfcf86aab4580bd146703009465379013a23e15d3382de4b0f83b56782607a69cb0ad45962341725c121504463a943f29caa3c8f2726f237e7b99187d2aa58e0e2c3339ab43605cc942ed13d8e87d873406e57696416ce1f2f59284ec99a4b42d4761f02aae7d1da699092f45fc454f8f2de32e5f0bcaa44c1a6280d0c02e92a93e8a9653d524a762b7290cacd944a2504307102d7f914891d453e4b3bd775c999d728213844cadffbd5789259827eabf70594c447e1e8b3f5af69aa999e9a9185039b0d424ddcbcdd00f604964590d6978bb24c5bae9c756f2fccf214fc05c57d218ee33302264d452427b07b73bed84e03d4ef378aad1f1f79c8c6cef93d4350d9bbf0eac226f93ba8b138cc5c49665bf8a2ff9c512542afa17f7945c6d26b2dbfa7610cc1126894314c1ad7a528921d4dbea170f1e96a586bcc9c7fd6621daa7e95230897d310db42d6165541779dfe942b4d6cfa4935d64e13105d5dbcfc69334b58382697cc87d80e5703f9e96d3e630c68d3344fb4be898584a40e7908dc2fcbc1c1e476bad1657e3b512b4c9b06785e199612b3ccdd8ea3685a4d7449aa488c64beb6201b9cf3b648359fb59cf751823b79712b871f370b8f970a8c1ed41d8d2c5d11492649901b672098582770da3685994c1647e125bd507680267f07614c5c0a8b3eca3d4c2c92f18e102b28b44a988d347b12f539cd0316d7b184652e5c0ce84423782f765a1c9b3bdceaab06db0dae99e6e4a48e23504847c5e860f6607617f9cc5e1b738a420d9c494d1654994ad370661b0cd7e4d64181b5179406dd67ed8ea4cfcf67a9e76da31f0917ea33e934b6a86e9304749bf90acb7229f2cf8b64560b6d758dc9180ccce6270aff35475846f5716700c4590773b5eb901211d83aa185dfc8bcab6fff98167282ec11901160414d4af0315829546f05ac4963e97392db23ed552d3b73df11ab61523a4b871f4ea533d674c7878e7a7f887f2a1f5c78913a0109f2666339b9f615bbb766d9e13911c41e8831a7e22e7df2922b09e0d4d4ac2163f4bfdb584094bcf5dcd8180c85260420cb3c89f1e61d1d96cc846695bb721c6ef0d9ff42c74d8c1c5a202acd11713e22cf5b1fbc8d91193c92d8f1deb418e351a2800f2ee79031bac8f7bc110e3884558961daaad48ee427bc0c65cdfbe3b6aa3c77b9e6dac823f508da8102f9013d57e0aaf72270c0e6e8293d91f3f2342d3e0b5c7ec506a1ce7afc9e011e0a46bde5d8e039caff9f88e5fe464c82fe1b9b7ad0c6b65f0f27686c9fb02e47ecc470387e0fb94c4eadc7aa30dd693e9e4a83f2e110062a572e3e11423df088d04250a69c332f0b33fd5b44daadafa99c2035d2df12cfe876b4543888df384e9f70643094f98d65e4bd731ad2d17cf0c56d545188d290bc533d3139ac25d117507c9b7c745354a94c66d8495fc0aa70f68b47c0a60d57f886c793411e1fc0aefef5fc781b44deffcf3e130428b6d1a92e5db8c85851e7d818a9fc99f68ed98d0ee5eabeb43afa37e562b76a20034f30ded34bfd96611d60be2da8505106a611b60b758c17f1124e060c6be72ca8c6574767f03836fed9332b1a94cac37ac3ddbe532fd025c05767e8dd0df4daa679f1f52d6dfa94a9bea9f37ec04b733166ff9b111fe3d677e0c865d2a5efd4ce87861881bae367fdef39d4724d37aa37579aa94d375da7d065145480f292dea5a2d85574cefcdf7dc8d5ca4d8feac7ea6f44b6736db7d0a4c6befa0d70b1b467548facf496f38738486a07b10dd8ee1e7ff91ec14267d0e57dbc01a4b699f3176889b5116c6e8b74bf0d67046448746c99a22e46d4be67ba14ef4ea5609124aaf28a00dd43d3e2eea863eafc1e689f25af57c8a0061c1f3916f653c9127116dafc3314607f5b8861f1ebc398684d8dee6cdb8df93c97302999558d3dcfd52dc1324f079a4270bcc2d73d519dc13eff43266f1a7b00c49aef42953d8e293658a6dc61d20ec6d202f7db5f3c1d850e477291107f8cb79fdc9bff712c2611444dc9f7840d8bc5bcfbb0585d279119278bd0ffd215d2dc80d8a4c926668ab17f840285515646a6b4a470e75312cfb3916359a923eb7dde0d099bab3a7d3180b571d77d4b06d318b0da85bd14658edec03e37071610fae687f61fcc762112a2e5cd0b27908bf932e725cc5aabc60bedb60b98663e0ed8da914b40ddaa10c6ab32b0d70e7cd65c8754820db4ec9ba30c961c8d64ae6f9771d481ab27acbbbbbff72298072434dfe0d3d65ad870efe16f479b42b410ad90c98fcdc288c4c5ca50ed3debaf4255abef38f2a846a59d64a4cce5c4cd23a39d383b16b50e6c24582d6083364e21e2978131519d915804ef9873268fbd4820133272fc0908dd60aa74fe513fe08858a54e3730449ad1c260c7c56f90ede9f39774cb7bb0b355af06d28b36107309820aa20df17cc8bf50da1a2cdd9586e9b34ae1ed6a986c1f642a10ba1fd51ce92150097088870ba87bec3d662d739e919c01d9c6874ad0b819c4667972783187a62051be6069788b06f9d4408ce090b40704d569580d8c858b6dfa856179df0dcf224395abf7beca0a76e38f804879d899eb1983ce9612ed1dc32c3f6b32a4e71af5b52723760837c5861d6fad2c19c89ccf43b9fce3af124e8d418ad507e37a129e9f42eb74cdde6085e509f58535a9b527d32a64eef7e2302c4a48d6e93a103bfa671eff43882b55ff94f447c5489b8b2852b4211f74c141dca0019340d057fef20bc46776bc587de75f57c7ceb5a661e97052fe7729d50541e60a81e7a1e8ad684106ce418df716ebeed6dd5dc84e6c7eda8bdda14fd274aaea3f4162156db26dde34a5404b7efd490299fc86a3d6fde45ce636e80474823721bfd08a55dbca0b23f61966c8caa9a012d9bd97ea6e030afddb05064d66efaff71010fd8cc08dba88edd658ded98a49cf0380d873a8f0aa8e5323410fb0e000cefa183b5c22ec684da10f8e9c47053f2fc8014b06983bb21ca9d2f9e0677cf0ae5c80a7ec1ab5429ddf9bf0f732cfa8826fbd57798b3f34e1842ce35c3e9eb35586c12cfc5af2062674e98f11c60e596f69a4bee17df47bfd3d4514d2c3f3541403f8665c1fc5b2a4b696ad56c9536eca69f6a95322c3aa41f120a957715ae8baf510bc7d5c68abf08fa1f8d37dadfa76a5e8c9fa8dd3f661938962bf0247831e39ca3ca703878f7485d812346cb5b15c706757530583932e4d52d4e6a5ff338f29548db7eb289889a2add6fd99dc55a91929753d5eade11cb5b2010e0996ac99367068b48eb68f290728b63ada4200d25dafc6d28e749f96d679a49b8ba0fb75cb858faca2b46b3da092dc803870c331e20d015cdc519e4615f42741dd2f69a2c6a72b750c8b22a12563bad64f35c32b16a8b919372b83a2e50f1cbad4017fb8ecabd83191871472874f784f9249bcc205f69e10c67eab71f07180c871703033fdaba9b5351511cc6821700685ba0fbb618fb0aa94834bba9e1ab801d996513829811d7f98d32e64290
+
+================================================================================
+
+数据包 #1120 (第3个)
+时间戳: 2025-07-03 09:43:37.013542
+------------------------------------------------------------
+TCP信息:
+  Stream: 70
+  Sequence: 47899
+  Payload: d2:6b:b0:7e:ba:c9:ea:3d:3d:a9:31:8b:b2:03:ba:4c:17:38:db:16:19:0d:94:6d:1f:55:85:97:f8:75:db:18:2d:1d:c6:df:ea:3a:e9:3b:56:63:58:2c:7e:65:05:b2:a5:1e:f1:b7:c1:4a:25:e9:9e:1f:04:e9:70:ea:4d:a1:62:e8:9d:14:a0:2e:10:18:5a:f1:ef:4f:0a:e0:fb:97:10:a2:f4:bb:3c:7a:94:07:42:68:26:de:76:79:12:eb:c5:0f:76:3b:bf:f8:87:06:db:aa:26:1d:03:98:56:27:fe:69:02:78:79:60:27:7a:df:d0:0e:eb:f6:21:7a:13:ca:d6:e9:4b:40:b5:3d:eb:0c:e4:97:ef:c2:d9:53:a2:e1:25:76:6b:3c:24:7a:a5:f4:cf:13:2a:30:ae:4c:cf:a3:14:10:02:cd:9e:74:91:ed:69:e4:1a:e4:db:73:5c:70:ec:81:be:c5:f6:ee:52:5a:15:6f:5a:53:6e:fc:e1:b6:fc:ee:90:a5:98:0b:c0:1f:51:33:b5:3d:49:6a:e8:50:42:12:53:ef:24:53:82:85:14:45:7b:8a:42:b8:2b:04:57:d9:94:41:19:1b:b7:64:c7:82:a4:ee:df:01:06:50:d7:ef:c2:cf:a5:17:03:03:1d:35:2f:47:5d:f1:c6:54:d2:4d:c3:c6:c3:4c:22:53:4a:91:02:ba:d1:62:ae:ea:e2:80:e9:af:72:e9:14:f7:da:0e:b9:b2:26:e6:13:70:02:90:dc:c1:c0:23:ee:ef:6f:dd:b6:2f:1f:c1:75:dd:2f:7f:8c:e4:38:2b:73:7a:ea:7f:ba:33:36:d0:61:64:66:2b:4e:52:27:a3:79:b7:9f:03:13:f9:0f:1c:5e:fa:04:3d:1b:f0:da:13:b0:74:6a:5f:8c:b0:66:8b:17:9e:1a:0a:82:f3:47:1e:57:68:30:3e:99:88:57:01:ad:66:b8:d6:65:da:cd:47:41:40:0f:50:15:e3:7f:1d:60:70:95:0c:ff:1d:21:1b:f7:0a:c7:89:fe:2a:50:b5:84:17:49:93:83:1c:94:33:3c:05:f4:c5:ab:c2:66:09:1b:3c:45:fa:7b:f2:72:ce:a4:ee:49:08:b5:95:01:29:13:4c:f8:02:99:c7:b6:e4:1a:f3:9d:46:bb:6b:1b:27:19:7b:63:16:78:41:b2:d9:a9:8a:76:ca:37:a9:f1:a9:ee:34:f5:49:03:42:de:8b:4d:9f:77:65:55:c5:95:4e:4d:ed:a7:ca:76:34:df:51:cc:d3:fe:04:1a:bb:7d:49:81:3f:96:0d:7c:e9:3b:23:1c:ef:5d:d4:26:b8:dc:f3:b6:75:2c:cf:4c:73:82:c9:f6:8e:a8:61:40:2b:2f:12:c2:16:de:bf:5b:cb:6a:e9:a5:9e:38:80:cc:23:cf:c9:66:18:a1:02:82:8f:e7:3c:cc:84:ac:0f:91:38:a7:ec:60:3d:6e:80:fd:20:30:3b:50:e3:a8:b9:8e:aa:b4:a6:d1:6a:69:cc:d0:6d:18:ed:41:e6:59:4d:60:52:27:83:c7:e7:5c:be:41:a0:6b:90:af:83:74:5d:78:10:0f:6c:63:77:a9:6e:41:86:fb:72:4f:ef:07:52:4c:42:5e:f9:dd:b8:c9:f2:ac:ba:20:24:b0:a4:ac:18:7e:a9:58:86:26:c5:a0:13:5d:a0:11:26:ba:1d:bf:4c:0a:c6:fc:ac:8d:5a:6f:e0:9d:95:5b:47:8d:cb:48:3b:e0:2c:0f:c1:04:93:6f:37:ce:b6:61:d1:f9:c0:10:66:78:b7:a7:81:3f:b0:6b:ac:b7:bc:2a:36:0b:0b:2d:ad:48:cd:1d:f9:ae:46:f6:69:92:32:7c:58:0a:d4:b4:52:73:34:43:fa:23:04:7e:93:9a:3b:0b:81:2f:87:76:47:06:cf:c3:89:c9:6f:14:3c:9c:bf:a3:0b:df:74:20:96:35:4b:f6:23:e9:5d:cf:32:e1:bc:b0:9d:40:e7:28:6b:63:23:73:e6:9e:a2:3f:22:a9:01:18:0d:8d:90:83:8d:90:db:63:4d:73:8c:a0:75:29:f4:b2:11:18:94:79:c0:40:f5:a6:2b:34:2d:3f:b6:ba:c1:07:ec:5a:a4:82:e3:a4:f3:08:88:32:e1:6a:0c:b4:12:7e:ec:f0:00:ca:ea:ac:ac:85:7c:45:7d:ac:56:03:32:1f:00:9b:85:8e:ec:cc:5c:c1:c1:9d:5f:80:f5:33:95:a0:f4:38:21:a0:7d:8d:9a:0f:a9:bd:86:94:96:57:c5:7b:b4:9f:ae:27:79:14:94:87:0a:0d:0f:6d:b0:c8:ab:3a:e0:b0:0b:83:3d:b4:07:68:e9:07:99:7b:56:20:c5:a2:02:c6:b5:5b:10:b8:d4:e2:b1:88:56:b4:12:98:81:65:e6:18:d2:aa:44:65:21:bb:24:10:d7:d7:71:89:13:01:5d:d6:9c:6f:03:86:9b:7c:c5:f9:cb:2c:29:a1:03:95:20:5e:2f:ce:75:19:5a:57:4c:57:c9:f3:f2:94:bf:9b:c6:bf:d6:81:73:d6:5b:c7:4e:0f:82:53:c1:1f:2d:fc:04:25:2c:c9:a3:09:14:b4:6c:27:53:03:29:07:16:74:2a:f5:ee:67:d6:98:ef:6c:d4:69:02:c0:8f:d4:c0:6d:d6:47:e0:16:84:22:10:31:c9:61:0f:d5:eb:b9:44:89:fe:bd:47:da:59:41:2e:76:45:e2:27:8d:9e:a9:5e:e6:b8:bb:23:7c:b1:f3:6e:10:b7:54:5d:41:ba:ce:d9:7e:db:9b:65:93:d8:08:70:e4:8c:ea:72:be:5e:75:81:a6:ee:ec:1d:e1:a4:ef:72:88:fd:a7:82:83:e3:14:63:11:64:6b:19:cd:78:b6:c1:2a:39:fe:06:9b:9f:77:6b:98:b9:22:83:f8:93:76:67:1a:85:58:ca:f6:9a:28:63:87:2c:5f:0d:61:10:8c:fe:00:a6:73:44:e1:fb:61:07:64:ed:b7:d7:1b:f7:63:da:5f:dc:9c:4a:fa:de:3c:20:4a:f1:ed:78:b1:52:74:11:5a:fc:ec:8b:f6:ed:91:f8:19:4f:59:67:1d:cd:2e:47:90:ff:6a:0f:85:d2:f6:09:0e:a8:89:e3:2a:98:01:69:bb:ea:de:99:42:29:13:17:db:da:79:b1:89:df:f1:c8:e5:1e:70:80:5f:c6:e0:6c:6c:ad:6d:93:e0:ce:52:cc:b5:bc:3a:df:f0:03:ad:c5:7b:37:cd:52:5c:d4:9a:56:62:90:61:37:3c:ca:f2:d5:f4:a3:da:40:bb:2b:39:0b:1d:bd:a3:c2:95:16:a8:fc:85:61:ee:06:75:7d:5e:bb:39:11:f6:3d:83:76:85:75:36:64:b4:82:1d:79:56:1d:86:ee:1c:58:94:ea:96:34:33:25:8d:ea:79:ae:f7:99:73:35:af:bc:4c:55:27:b9:4e:47:c9:37:6e:3a:a2:74:63:96:fe:d9:20:1a:a6:69:e2:ef:2c:69:f2:31:ed:6a:b6:b8:15:c5:3f:c0:61:b8:65:3b:c4:f3:23:c6:8b:f0:98:3c:e1:94:b2:c1:3e:28:f1:15:b2:be:46:4b:c1:b6:49:9c:f5:6d:84:a3:c1:37:2f:5c:bd:87:48:6e:29:01:e9:8d:44:24:ea:14:04:a0:20:79:05:45:91:d0:ac:e4:45:94:80:2b:db:90:3d:de:75:f8:ad:6e:7f:99:9f:6a:db:9d:7d:7f:d5:9c:12:a9:d6:c5:34:11:29:33:85:84:82:15:63:2d:36:f4:a3:6d:f1:f8:e1:93:f7:df:40:b9:ca:c1:3e:3d:eb:5f:59
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 15
+  Length: 16320
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 15, Length 16320 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 16320
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0000 1111 = Stream Identifier:[0m[1m 15
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m 83a7730f4ecd3d3c34f760929b7bf070eee19eb907f7c9fbfdb9079f9387cf49a60be4f9c2dc839d063781a05e38b31b7eb5ebec3d4a79cb099bbced844df3cdbaeb4b0f26e61edc336abdef90d5c6667580fbd6a0ea5a6a9ad51a2e74f285e5b0dd44c984b289913b51e67923fd75b5cee
+[0m[1m[32m	Connection window size (before):[0m[1m 15722299
+[0m[1m[32m	Connection window size (after):[0m[1m 15705979
+[0m[1m[32m	Stream window size (before):[0m[1m 6277839
+[0m[1m[32m	Stream window size (after):[0m[1m 6261519
+[0m
+
+  提取的帧数据长度: 1451 字节
+  提取的帧数据(十六进制): a9318bb203ba4c1738db16190d946d1f558597f875db182d1dc6dfea3ae93b5663582c7e6505b2a51ef1b7c14a25e99e1f04...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 2902 字符
+  十六进制数据: a9318bb203ba4c1738db16190d946d1f558597f875db182d1dc6dfea3ae93b5663582c7e6505b2a51ef1b7c14a25e99e1f04e970ea4da162e89d14a02e10185af1ef4f0ae0fb9710a2f4bb3c7a9407426826de767912ebc50f763bbff88706dbaa261d03985627fe6902787960277adfd00eebf6217a13cad6e94b40b53deb0ce497efc2d953a2e125766b3c247aa5f4cf132a30ae4ccfa3141002cd9e7491ed69e41ae4db735c70ec81bec5f6ee525a156f5a536efce1b6fcee90a5980bc01f5133b53d496ae850421253ef2453828514457b8a42b82b0457d99441191bb764c782a4eedf010650d7efc2cfa51703031d352f475df1c654d24dc3c6c34c22534a9102bad162aeeae280e9af72e914f7da0eb9b226e613700290dcc1c023eeef6fddb62f1fc175dd2f7f8ce4382b737aea7fba3336d06164662b4e5227a379b79f0313f90f1c5efa043d1bf0da13b0746a5f8cb0668b179e1a0a82f3471e5768303e99885701ad66b8d665dacd4741400f5015e37f1d6070950cff1d211bf70ac789fe2a50b584174993831c94333c05f4c5abc266091b3c45fa7bf272cea4ee4908b5950129134cf80299c7b6e41af39d46bb6b1b27197b63167841b2d9a98a76ca37a9f1a9ee34f5490342de8b4d9f776555c5954e4deda7ca7634df51ccd3fe041abb7d49813f960d7ce93b231cef5dd426b8dcf3b6752ccf4c7382c9f68ea861402b2f12c216debf5bcb6ae9a59e3880cc23cfc96618a102828fe73ccc84ac0f9138a7ec603d6e80fd20303b50e3a8b98eaab4a6d16a69ccd06d18ed41e6594d60522783c7e75cbe41a06b90af83745d78100f6c6377a96e4186fb724fef07524c425ef9ddb8c9f2acba2024b0a4ac187ea9588626c5a0135da01126ba1dbf4c0ac6fcac8d5a6fe09d955b478dcb483be02c0fc104936f37ceb661d1f9c0106678b7a7813fb06bacb7bc2a360b0b2dad48cd1df9ae46f66992327c580ad4b452733443fa23047e939a3b0b812f87764706cfc389c96f143c9cbfa30bdf742096354bf623e95dcf32e1bcb09d40e7286b632373e69ea23f22a901180d8d90838d90db634d738ca07529f4b211189479c040f5a62b342d3fb6bac107ec5aa482e3a4f3088832e16a0cb4127eecf000caeaacac857c457dac5603321f009b858eeccc5cc1c19d5f80f53395a0f43821a07d8d9a0fa9bd86949657c57bb49fae27791494870a0d0f6db0c8ab3ae0b00b833db40768e907997b5620c5a202c6b55b10b8d4e2b18856b412988165e618d2aa446521bb2410d7d7718913015dd69c6f03869b7cc5f9cb2c29a10395205e2fce75195a574c57c9f3f294bf9bc6bfd68173d65bc74e0f8253c11f2dfc04252cc9a30914b46c275303290716742af5ee67d698ef6cd46902c08fd4c06dd647e01684221031c9610fd5ebb94489febd47da59412e7645e2278d9ea95ee6b8bb237cb1f36e10b7545d41baced97edb9b6593d80870e48cea72be5e7581a6eeec1de1a4ef7288fda78283e3146311646b19cd78b6c12a39fe069b9f776b98b92283f89376671a8558caf69a2863872c5f0d61108cfe00a67344e1fb610764edb7d71bf763da5fdc9c4afade3c204af1ed78b15274115afcec8bf6ed91f8194f59671dcd2e4790ff6a0f85d2f6090ea889e32a980169bbeade9942291317dbda79b189dff1c8e51e70805fc6e06c6cad6d93e0ce52ccb5bc3adff003adc57b37cd525cd49a56629061373ccaf2d5f4a3da40bb2b390b1dbda3c29516a8fc8561ee06757d5ebb3911f63d837685753664b4821d79561d86ee1c5894ea963433258dea79aef7997335afbc4c5527b94e47c9376e3aa2746396fed9201aa669e2ef2c69f231ed6ab6b815c53fc061b8653bc4f323c68bf0983ce194b2c13e28f115b2be464bc1b6499cf56d84a3c1372f5cbd87486e2901e98d4424ea1404a02079054591d0ace44594802bdb903dde75f8ad6e7f999f6adb9d7d7fd59c12a9d6c53411293385848215632d36f4a36df1f8e193f7df40b9cac13e3deb5f59
+
+================================================================================
+
+数据包 #1125 (第4个)
+时间戳: 2025-07-03 09:43:37.030206
+------------------------------------------------------------
+TCP信息:
+  Stream: 70
+  Sequence: 55199
+  Payload: bf:e2:00:a4:3c:00:35:31:57:b9:b4:2f:ad:dd:92:af:89:7a:9c:de:1c:27:bc:bb:36:86:60:dc:9d:eb:00:a1:ca:36:a0:8e:0b:39:a4:2d:1f:0b:aa:fe:c8:2c:34:80:11:4c:e6:88:9f:bf:89:52:a9:91:b2:f7:ec:0c:4e:1e:eb:0c:24:22:17:70:53:21:51:29:47:66:97:57:21:e2:9b:07:20:92:84:a8:a6:2c:33:2c:93:a5:9d:70:8f:e3:63:6e:e9:b6:ab:fa:9f:5b:4a:67:0a:18:94:95:d5:95:ac:bb:73:b5:f4:71:38:49:e8:f6:6d:d1:da:19:3c:0d:de:ea:bb:43:8a:a6:56:da:fe:63:17:98:81:99:5b:fa:19:55:5d:fe:80:74:85:a1:2b:5e:4c:20:6e:fa:85:c2:d7:f8:bb:79:38:bf:c3:0f:17:5c:7e:11:03:8b:d1:fc:78:75:1d:9c:c9:f4:e7:9e:48:66:5b:19:97:66:67:78:0a:87:f2:f4:04:db:ac:34:b7:84:39:7c:8b:30:1c:af:de:d4:ae:d7:e6:39:81:c0:2e:22:d8:28:17:b7:d0:27:46:7c:74:80:16:ab:0f:36:fb:3c:b5:39:57:69:e3:5c:d1:96:e5:ef:c5:30:3d:1a:f9:59:1d:ef:f4:3d:28:86:5f:8f:3d:4e:71:53:15:c9:6e:c5:74:e3:9c:d3:31:b8:54:52:6e:4e:15:58:1d:5a:b4:67:89:64:e6:be:d5:5b:d1:cb:4b:0a:80:82:61:5a:31:c9:87:d0:2d:c3:28:10:00:7e:6c:59:70:53:06:b6:c7:b9:be:ac:80:98:83:46:52:b8:37:ce:c6:b1:43:2e:78:a9:17:d9:96:dd:d7:12:87:b7:90:1b:ff:61:34:13:e8:e1:1e:10:1c:32:04:ef:69:74:93:cd:6e:be:59:37:3a:d7:34:7d:e9:56:09:35:ea:5a:69:8c:58:03:7b:e2:48:00:4c:54:02:4d:50:d1:88:f3:6d:62:4c:e4:3a:10:5b:ff:44:3b:3f:ae:ae:f6:f9:28:c9:cf:aa:17:15:f6:50:31:08:37:89:e5:90:0a:30:67:5d:0b:3a:33:ef:85:c1:de:85:fa
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 15
+  Length: 7451
+  Flags: 0x01
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 15, Length 7451
+[0m[1m[32m	Length:[0m[1m 7451
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x01, End Stream
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...1 = End Stream:[0m[1m True
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0000 1111 = Stream Identifier:[0m[1m 15
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	3 Body fragments (37388 bytes):[0m[1m #1096(13617), #1120(16320), #1125(7451)
+[0m[1m[32m	Frame:[0m[1m 1096, payload: 0-13616 (13617 bytes)
+[0m[1m[32m	Body fragment count:[0m[1m 3
+[0m[1m[32m	Reassembled body length:[0m[1m 37388
+[0m[1m[32m	Reassembled body data […]:[0m[1m 1f8b0800000000000003edbdfb77db469228fc73fc576099f58efdd994484a9448d9d62e25cb93ece6e1899dc9b737c9ea8024282222090e004a96333947b6635b7e3bf12b8edf8e1fb263cbf22b9625cb3e67b3f3c3de1fe6267bcfdcccec3d678e3c2390d47d9cf9
+[0m[1m[32m	Content-encoded entity body (gzip):[0m[1m 37388 bytes -> 166340 bytes
+[0m[1m[32m	Data […]:[0m[1m 3c21444f43545950452068746d6c3e0a3c68746d6c20636c6173733d22636c69656e742d6e6f6a7320766563746f722d666561747572652d6c616e67756167652d696e2d6865616465722d656e61626c656420766563746f722d666561747572652d6c616e67756167652d696e2d6d61696
+[0m[1m[32m	Connection window size (before):[0m[1m 15705979
+[0m[1m[32m	Connection window size (after):[0m[1m 15698528
+[0m[1m[32m	Stream window size (before):[0m[1m 6261519
+[0m[1m[32m	Stream window size (after):[0m[1m 6254068
+[0m[1m[32m	Frame:[0m[1m 1120, payload: 13617-29936 (16320 bytes)
+[0m[1m[32m	Frame:[0m[1m 1125, payload: 29937-37387 (7451 bytes)
+[0m[1m	<!DOCTYPE html>\n
+[0m[1m	 […]<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-
+[0m[1m	<head>\n
+[0m[1m	<meta charset="UTF-8">\n
+[0m[1m	<title>尼亚加拉瀑布 - 维基百科，自由的百科全书</title>\n
+[0m[1m	 […]<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-featu
+[0m[1m[32m	 […]RLSTATE={"ext.gadget.large-font":[0m[1m"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.kartographer.style":"ready","ext.c
+[0m[1m[32m	 […]<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":[0m[1m"+\\","watchToken":"+\\","csrfToken":"+\\"});mw.user.options.set({
+[0m[1m	}];});});</script>\n
+[0m[1m	 […]<link rel="stylesheet" href="/w/load.php?lang=zh-cn&amp;modules=ext.cite.styles%7Cext.kartographer.style%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7C
+[0m[1m	<script async="" src="/w/load.php?lang=zh-cn&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>\n
+[0m[1m	<meta name="ResourceLoaderDynamicStyles" content="">\n
+[0m[1m	<link rel="stylesheet" href="/w/load.php?lang=zh-cn&amp;modules=ext.gadget.large-font&amp;only=styles&amp;skin=vector-2022">\n
+[0m[1m	<link rel="stylesheet" href="/w/load.php?lang=zh-cn&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">\n
+[0m[1m	<meta name="generator" content="MediaWiki 1.45.0-wmf.7">\n
+[0m[1m	<meta name="referrer" content="origin">\n
+[0m[1m	<meta name="referrer" content="origin-when-cross-origin">\n
+[0m[1m[32m	<meta name="robots" content="max-image-preview:[0m[1mstandard">\n
+[0m[1m	<meta name="format-detection" content="telephone=no">\n
+[0m[1m[32m	<meta property="og:[0m[1mimage" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/1200px-3Falls_Niagara.jpg">\n
+[0m[1m[32m	<meta property="og:[0m[1mimage:width" content="1200">\n
+[0m[1m[32m	<meta property="og:[0m[1mimage:height" content="798">\n
+[0m[1m[32m	<meta property="og:[0m[1mimage" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/960px-3Falls_Niagara.jpg">\n
+[0m[1m[32m	<meta property="og:[0m[1mimage:width" content="800">\n
+[0m[1m[32m	<meta property="og:[0m[1mimage:height" content="532">\n
+[0m[1m[32m	<meta property="og:[0m[1mimage:width" content="640">\n
+[0m[1m[32m	<meta property="og:[0m[1mimage:height" content="426">\n
+[0m[1m	<meta name="viewport" content="width=1120">\n
+[0m[1m[32m	<meta property="og:[0m[1mtitle" content="尼亚加拉瀑布 - 维基百科，自由的百科全书">\n
+[0m[1m[32m	<meta property="og:[0m[1mtype" content="website">\n
+[0m[1m	<link rel="preconnect" href="//upload.wikimedia.org">\n
+[0m[1m[32m	<link rel="alternate" media="only screen and (max-width:[0m[1m 640px)" href="//zh.m.wikipedia.org/wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m	<link rel="alternate" type="application/x-wiki" title="编辑本页" href="/w/index.php?title=%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83&amp;action=edit">\n
+[0m[1m	<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">\n
+[0m[1m	<link rel="icon" href="/static/favicon/wikipedia.ico">\n
+[0m[1m	<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (zh)">\n
+[0m[1m	<link rel="EditURI" type="application/rsd+xml" href="//zh.wikipedia.org/w/api.php?action=rsd">\n
+[0m[1m[32m	<link rel="canonical" href="https:[0m[1m//zh.wikipedia.org/wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh" href="https:[0m[1m//zh.wikipedia.org/wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh-Hans" href="https:[0m[1m//zh.wikipedia.org/zh-hans/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh-Hans-CN" href="https:[0m[1m//zh.wikipedia.org/zh-cn/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh-Hans-MY" href="https:[0m[1m//zh.wikipedia.org/zh-my/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh-Hans-SG" href="https:[0m[1m//zh.wikipedia.org/zh-sg/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh-Hant" href="https:[0m[1m//zh.wikipedia.org/zh-hant/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh-Hant-HK" href="https:[0m[1m//zh.wikipedia.org/zh-hk/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh-Hant-MO" href="https:[0m[1m//zh.wikipedia.org/zh-mo/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="zh-Hant-TW" href="https:[0m[1m//zh.wikipedia.org/zh-tw/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="alternate" hreflang="x-default" href="https:[0m[1m//zh.wikipedia.org/wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83">\n
+[0m[1m[32m	<link rel="license" href="https:[0m[1m//creativecommons.org/licenses/by-sa/4.0/deed.zh">\n
+[0m[1m[32m	<link rel="alternate" type="application/atom+xml" title="Wikipedia的Atom feed" href="/w/index.php?title=Special:[0m[1m%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom">\n
+[0m[1m	<link rel="dns-prefetch" href="//meta.wikimedia.org" />\n
+[0m[1m	<link rel="dns-prefetch" href="auth.wikimedia.org">\n
+[0m[1m	</head>\n
+[0m[1m	 […]<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-尼亚加拉瀑布 rootpage-尼亚加拉瀑布 skin-vector-2022 action-view"><a class="mw-j
+[0m[1m	<div class="vector-header-container">\n
+[0m[1m	\t<header class="vector-header mw-header no-font-mode-scale">\n
+[0m[1m	\t\t<div class="vector-header-start">\n
+[0m[1m	\t\t\t<nav class="vector-main-menu-landmark" aria-label="站点">\n
+[0m[1m	\t\t\t\t\n
+[0m[1m	<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="主菜单"  lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="主菜单"  >\n
+[0m[1m	 […]\t<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " 
+[0m[1m	\n
+[0m[1m	<span class="vector-dropdown-label-text">主菜单</span>\n
+[0m[1m	\t</label>\n
+[0m[1m	\t<div class="vector-dropdown-content">\n
+[0m[1m	\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">\n
+[0m[1m	\t\t\n
+[0m[1m	<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">\n
+[0m[1m	\t<div\n
+[0m[1m	\tclass="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"\n
+[0m[1m	\tdata-feature-name="main-menu-pinned"\n
+[0m[1m	\tdata-pinnable-element-id="vector-main-menu"\n
+[0m[1m	\tdata-pinned-container-id="vector-main-menu-pinned-container"\n
+[0m[1m	\tdata-unpinned-container-id="vector-main-menu-unpinned-container"\n
+[0m[1m	>\n
+[0m[1m	\t<div class="vector-pinnable-header-label">主菜单</div>\n
+[0m[1m	\t<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">移至侧栏</button>\n
+[0m[1m	\t<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">隐藏</button>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\n
+[0m[1m	<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-heading">\n
+[0m[1m	\t\t导航\n
+[0m[1m	\t</div>\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m[32m	 […]\t\t\t<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Wikipedia:[0m[1m%E9%A6%96%E9%A1%B5" title="访问首页\u200B[z]" accesskey="z"><span>首页</span></a></li><li id="n-indexpage" class="mw-list-item"><a href="/wiki/
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\n
+[0m[1m	\t\n
+[0m[1m	<div id="p-help" class="vector-menu mw-portlet mw-portlet-help"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-heading">\n
+[0m[1m	\t\t帮助\n
+[0m[1m	\t</div>\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m[32m	 […]\t\t\t<li id="n-help" class="mw-list-item"><a href="/wiki/Help:[0m[1m%E7%9B%AE%E5%BD%95" title="寻求帮助"><span>帮助</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:%E7%A4%BE%E7%BE%A4%E9%A6%96%E9%A1%B5"
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t</div>\n
+[0m[1m	\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t</nav>\n
+[0m[1m	\t\t\t\n
+[0m[1m[32m	<a href="/wiki/Wikipedia:[0m[1m%E9%A6%96%E9%A1%B5" class="mw-logo">\n
+[0m[1m	\t<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">\n
+[0m[1m	\t<span class="mw-logo-container skin-invert">\n
+[0m[1m[32m	\t\t<img class="mw-logo-wordmark" alt="维基百科" src="/static/images/mobile/copyright/wikipedia-wordmark-zh-hans.svg" style="width:[0m[1m 6.5625em; height: 1.4375em;">\n
+[0m[1m[32m	\t\t<img class="mw-logo-tagline" alt="自由的百科全书" src="/static/images/mobile/copyright/wikipedia-tagline-zh-hans.svg" width="102" height="14" style="width:[0m[1m 6.375em; height: 0.875em;">\n
+[0m[1m	\t</span>\n
+[0m[1m	</a>\n
+[0m[1m	\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t<div class="vector-header-end">\n
+[0m[1m	\t\t\t\n
+[0m[1m	<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">\n
+[0m[1m[32m	 […]\t<a href="/wiki/Special:[0m[1m%E6%90%9C%E7%B4%A2" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="搜索维基百科\u200B[f]" accesskey="f"><
+[0m[1m	\n
+[0m[1m	<span>搜索</span>\n
+[0m[1m	\t</a>\n
+[0m[1m	\t<div class="vector-typeahead-search-container">\n
+[0m[1m	\t\t<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">\n
+[0m[1m	\t\t\t<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">\n
+[0m[1m	\t\t\t\t<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">\n
+[0m[1m	\t\t\t\t\t<div class="cdx-text-input cdx-text-input--has-start-icon">\n
+[0m[1m	\t\t\t\t\t\t<input\n
+[0m[1m	\t\t\t\t\t\t\tclass="cdx-text-input__input mw-searchInput"\n
+[0m[1m	\t\t\t\t\t\t\t type="search" name="search" placeholder="搜索维基百科" aria-label="搜索维基百科" autocapitalize="sentences" spellcheck="false" title="搜索维基百科\u200B[f]" accesskey="f" id="searchInput"\n
+[0m[1m	\t\t\t\t\t\t\t>\n
+[0m[1m	\t\t\t\t\t\t<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>\n
+[0m[1m	\t\t\t\t\t</div>\n
+[0m[1m[32m	\t\t\t\t\t<input type="hidden" name="title" value="Special:[0m[1m搜索">\n
+[0m[1m	\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t<button class="cdx-button cdx-search-input__end-button">搜索</button>\n
+[0m[1m	\t\t\t</form>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t<nav class="vector-user-links vector-user-links-wide" aria-label="个人工具">\n
+[0m[1m	\t<div class="vector-user-links-main">\n
+[0m[1m	\t\n
+[0m[1m	<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\n
+[0m[1m	<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t<nav class="vector-appearance-landmark" aria-label="外观">\n
+[0m[1m	\t\t\n
+[0m[1m	<div id="vector-appearance-dropdown" class="vector-dropdown "  title="更改页面字体大小、宽度和颜色的外观"  lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="外观"  >\n
+[0m[1m	 […]\t<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only 
+[0m[1m	\n
+[0m[1m	<span class="vector-dropdown-label-text">外观</span>\n
+[0m[1m	\t</label>\n
+[0m[1m	\t<div class="vector-dropdown-content">\n
+[0m[1m	\n
+[0m[1m	\n
+[0m[1m	\t\t\t<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">\n
+[0m[1m	\t\t\t\t\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t</nav>\n
+[0m[1m	\t\n
+[0m[1m	<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\n
+[0m[1m	<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m[32m	 […]\t\t\t<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https:[0m[1m//donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=zh.wiki
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:[0m[1m%E5%88%9B%E5%BB%BA%E8%B4%A6%E6%88%B7&amp;returnto=%E5%B0%BC%E4%BA%9A%E5%
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:[0m[1m%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6
+[0m[1m	</li>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t</div>\n
+[0m[1m	\t\n
+[0m[1m	<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out user-links-collapsible-item"  title="更多选项"  lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="个人工具"  >\n
+[0m[1m	 […]\t<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only 
+[0m[1m	\n
+[0m[1m	<span class="vector-dropdown-label-text">个人工具</span>\n
+[0m[1m	\t</label>\n
+[0m[1m	\t<div class="vector-dropdown-content">\n
+[0m[1m	\n
+[0m[1m	\n
+[0m[1m	\t\t\n
+[0m[1m	<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="用户菜单"  lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m[32m	 […]\t\t\t<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https:[0m[1m//donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=zh.wikipedia.org&amp;uselang=zh"><span>资助维基百科
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	</nav>\n
+[0m[1m	\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t</header>\n
+[0m[1m	</div>\n
+[0m[1m	<div class="mw-page-container">\n
+[0m[1m	\t<div class="mw-page-container-inner">\n
+[0m[1m	\t\t<div class="vector-sitenotice-container">\n
+[0m[1m	\t\t\t<div id="siteNotice"><!-- CentralNotice --></div>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t<div class="vector-column-start">\n
+[0m[1m	\t\t\t<div class="vector-main-menu-container">\n
+[0m[1m	\t\t<div id="mw-navigation">\n
+[0m[1m	\t\t\t<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="站点">\n
+[0m[1m	\t\t\t\t<div id="vector-main-menu-pinned-container" class="vector-pinned-container">\n
+[0m[1m	\t\t\t\t\n
+[0m[1m	\t\t\t\t</div>\n
+[0m[1m	\t\t</nav>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t</div>\n
+[0m[1m	\t<div class="vector-sticky-pinned-container">\n
+[0m[1m	\t\t\t\t<nav id="mw-panel-toc" aria-label="目录" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">\n
+[0m[1m	\t\t\t\t\t<div id="vector-toc-pinned-container" class="vector-pinned-container">\n
+[0m[1m	\t\t\t\t\t<div id="vector-toc" class="vector-toc vector-pinnable-element">\n
+[0m[1m	\t<div\n
+[0m[1m	\tclass="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"\n
+[0m[1m	\tdata-feature-name="toc-pinned"\n
+[0m[1m	\tdata-pinnable-element-id="vector-toc"\n
+[0m[1m	\t\n
+[0m[1m	\t\n
+[0m[1m	>\n
+[0m[1m	\t<h2 class="vector-pinnable-header-label">目录</h2>\n
+[0m[1m	\t<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">移至侧栏</button>\n
+[0m[1m	\t<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">隐藏</button>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\n
+[0m[1m	\t<ul class="vector-toc-contents" id="mw-panel-toc-list">\n
+[0m[1m	\t\t<li id="toc-mw-content-text"\n
+[0m[1m	\t\t\tclass="vector-toc-list-item vector-toc-level-1">\n
+[0m[1m	\t\t\t<a href="#" class="vector-toc-link">\n
+[0m[1m	\t\t\t\t<div class="vector-toc-text">序言</div>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	\t\t</li>\n
+[0m[1m	\t\t<li id="toc-形成"\n
+[0m[1m	\t\tclass="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">\n
+[0m[1m	\t\t<a class="vector-toc-link" href="#形成">\n
+[0m[1m	\t\t\t<div class="vector-toc-text">\n
+[0m[1m	\t\t\t\t<span class="vector-toc-numb">1</span>\n
+[0m[1m	\t\t\t\t<span>形成</span>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</a>\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul id="toc-形成-sublist" class="vector-toc-list">\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t</li>\n
+[0m[1m	\t<li id="toc-特點"\n
+[0m[1m	\t\tclass="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">\n
+[0m[1m	\t\t<a class="vector-toc-link" href="#特點">\n
+[0m[1m	\t\t\t<div class="vector-toc-text">\n
+[0m[1m	\t\t\t\t<span class="vector-toc-numb">2</span>\n
+[0m[1m	\t\t\t\t<span>特点</span>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</a>\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul id="toc-特點-sublist" class="vector-toc-list">\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t</li>\n
+[0m[1m	\t<li id="toc-穿越瀑布"\n
+[0m[1m	\t\tclass="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">\n
+[0m[1m	\t\t<a class="vector-toc-link" href="#穿越瀑布">\n
+[0m[1m	\t\t\t<div class="vector-toc-text">\n
+[0m[1m	\t\t\t\t<span class="vector-toc-numb">3</span>\n
+[0m[1m	\t\t\t\t<span>穿越瀑布</span>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</a>\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul id="toc-穿越瀑布-sublist" class="vector-toc-list">\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t</li>\n
+[0m[1m	\t<li id="toc-參見"\n
+[0m[1m	\t\tclass="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">\n
+[0m[1m	\t\t<a class="vector-toc-link" href="#參見">\n
+[0m[1m	\t\t\t<div class="vector-toc-text">\n
+[0m[1m	\t\t\t\t<span class="vector-toc-numb">4</span>\n
+[0m[1m	\t\t\t\t<span>参见</span>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</a>\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul id="toc-參見-sublist" class="vector-toc-list">\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t</li>\n
+[0m[1m	\t<li id="toc-參考資料"\n
+[0m[1m	\t\tclass="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">\n
+[0m[1m	\t\t<a class="vector-toc-link" href="#參考資料">\n
+[0m[1m	\t\t\t<div class="vector-toc-text">\n
+[0m[1m	\t\t\t\t<span class="vector-toc-numb">5</span>\n
+[0m[1m	\t\t\t\t<span>参考资料</span>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</a>\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul id="toc-參考資料-sublist" class="vector-toc-list">\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t</li>\n
+[0m[1m	\t<li id="toc-外部連結"\n
+[0m[1m	\t\tclass="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">\n
+[0m[1m	\t\t<a class="vector-toc-link" href="#外部連結">\n
+[0m[1m	\t\t\t<div class="vector-toc-text">\n
+[0m[1m	\t\t\t\t<span class="vector-toc-numb">6</span>\n
+[0m[1m	\t\t\t\t<span>外部链接</span>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</a>\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul id="toc-外部連結-sublist" class="vector-toc-list">\n
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t</li>\n
+[0m[1m	</ul>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t</div>\n
+[0m[1m	\t\t</nav>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t<div class="mw-content-container">\n
+[0m[1m	\t\t\t<main id="content" class="mw-body">\n
+[0m[1m	\t\t\t\t<header class="mw-body-header vector-page-titlebar no-font-mode-scale">\n
+[0m[1m	\t\t\t\t\t<nav aria-label="目录" class="vector-toc-landmark">\n
+[0m[1m	\t\t\t\t\t\t\n
+[0m[1m	<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="目录"  lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="开关目录"  >\n
+[0m[1m	 […]\t<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " ar
+[0m[1m	\n
+[0m[1m	<span class="vector-dropdown-label-text">开关目录</span>\n
+[0m[1m	\t</label>\n
+[0m[1m	\t<div class="vector-dropdown-content">\n
+[0m[1m	\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t\t<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t</nav>\n
+[0m[1m	\t\t\t\t\t<h1 id="firstHeading" class="firstHeading mw-first-heading" lang="zh-Hans-CN" dir="ltr"><span class="mw-page-title-main">尼亚加拉瀑布</span></h1>\n
+[0m[1m	\t\t\t\t\t\t\t\n
+[0m[1m	<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	 […]\t<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="前往另一种语言写成的文章
+[0m[1m	 […]\t<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading
+[0m[1m	\n
+[0m[1m	<span class="vector-dropdown-label-text">121种语言</span>\n
+[0m[1m	\t</label>\n
+[0m[1m	\t<div class="vector-dropdown-content">\n
+[0m[1m	\n
+[0m[1m	\t\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\t\n
+[0m[1m[32m	 […]\t\t\t\t<li class="interlanguage-link interwiki-af mw-list-item"><a href="https:[0m[1m//af.wikipedia.org/wiki/Niagara-waterval" title="Niagara-waterval – 南非荷兰语" lang="af" hreflang="af" data-title="Niagara-waterval" data-languag
+[0m[1m	\t\t\t</ul>\n
+[0m[1m[32m	 […]\t\t\t<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https:[0m[1m//www.wikidata.org/wiki/Special:EntityPage/Q34221#sitelinks-wikipedia" title="编辑跨语言链接" class="wbc-edit
+[0m[1m	\t\t</div>\n
+[0m[1m	\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	</header>\n
+[0m[1m	\t\t\t\t<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">\n
+[0m[1m	\t\t\t\t\t<div class="vector-page-toolbar-container">\n
+[0m[1m	\t\t\t\t\t\t<div id="left-navigation">\n
+[0m[1m	\t\t\t\t\t\t\t<nav aria-label="命名空间">\n
+[0m[1m	\t\t\t\t\t\t\t\t\n
+[0m[1m	<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m	 […]\t\t\t<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83" title="浏览条目正文\u200B[c]" accesskey="c"><span>条目</span></a></li><li id=
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t\t\t\n
+[0m[1m	<div id="vector-variants-dropdown" class="vector-dropdown "   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="更改语言变体"   >\n
+[0m[1m	 […]\t<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><spa
+[0m[1m	\t</label>\n
+[0m[1m	\t<div class="vector-dropdown-content">\n
+[0m[1m	\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\n
+[0m[1m	<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m	 […]\t\t\t<li id="ca-varlang-0" class="ca-variants-zh mw-list-item"><a href="/zh/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83" lang="zh" hreflang="zh"><span>不转换</span></a></li><li id="ca-varlang-1" class="ca-variants-zh-H
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t\t</nav>\n
+[0m[1m	\t\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t\t\t<div id="right-navigation" class="vector-collapsible">\n
+[0m[1m	\t\t\t\t\t\t\t<nav aria-label="查看">\n
+[0m[1m	\t\t\t\t\t\t\t\t\n
+[0m[1m	<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m	 […]\t\t\t<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83"><span>阅读</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t\t</nav>\n
+[0m[1m	\t\t\t\t\n
+[0m[1m	\t\t\t\t\t\t\t<nav class="vector-page-tools-landmark" aria-label="页面工具">\n
+[0m[1m	\t\t\t\t\t\t\t\t\n
+[0m[1m	<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="工具"  >\n
+[0m[1m	 […]\t<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  >
+[0m[1m	\t</label>\n
+[0m[1m	\t<div class="vector-dropdown-content">\n
+[0m[1m	\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t\t\t\t<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">\n
+[0m[1m	\t\t\t\t\t\t\n
+[0m[1m	<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">\n
+[0m[1m	\t<div\n
+[0m[1m	\tclass="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"\n
+[0m[1m	\tdata-feature-name="page-tools-pinned"\n
+[0m[1m	\tdata-pinnable-element-id="vector-page-tools"\n
+[0m[1m	\tdata-pinned-container-id="vector-page-tools-pinned-container"\n
+[0m[1m	\tdata-unpinned-container-id="vector-page-tools-unpinned-container"\n
+[0m[1m	>\n
+[0m[1m	\t<div class="vector-pinnable-header-label">工具</div>\n
+[0m[1m	\t<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">移至侧栏</button>\n
+[0m[1m	\t<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">隐藏</button>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\n
+[0m[1m	<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="更多选项"  lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-heading">\n
+[0m[1m	\t\t操作\n
+[0m[1m	\t</div>\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m	 […]\t\t\t<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83"><span>阅读</span></a></li><li id="ca-more-edit" class="vector-more-collap
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-heading">\n
+[0m[1m	\t\t常规\n
+[0m[1m	\t</div>\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m[32m	 […]\t\t\t<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:[0m[1m%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83" title="列出所有与本页相链的页面\u200B[j]" accesskey="
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	<div id="p-electronpdfservice-sidebar-portlet-heading" class="vector-menu mw-portlet mw-portlet-electronpdfservice-sidebar-portlet-heading"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-heading">\n
+[0m[1m	\t\t打印/导出\n
+[0m[1m	\t</div>\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m[32m	 […]\t\t\t<li id="electron-print_pdf" class="mw-list-item"><a href="/w/index.php?title=Special:[0m[1mDownloadAsPdf&amp;page=%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83&amp;action=show-download-screen"><span>下载为PDF</span></a></
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<div class="vector-menu-heading">\n
+[0m[1m	\t\t在其他项目中\n
+[0m[1m	\t</div>\n
+[0m[1m	\t<div class="vector-menu-content">\n
+[0m[1m	\t\t\n
+[0m[1m	\t\t<ul class="vector-menu-content-list">\n
+[0m[1m	\t\t\t\n
+[0m[1m[32m	 […]\t\t\t<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https:[0m[1m//commons.wikimedia.org/wiki/Niagara_Falls" hreflang="en"><span>维基共享资源</span></a></li><li id="t-wikibase" class="wb-otherproject-l
+[0m[1m	\t\t</ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t\t</nav>\n
+[0m[1m	\t\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t<div class="vector-column-end no-font-mode-scale">\n
+[0m[1m	\t\t\t\t\t<div class="vector-sticky-pinned-container">\n
+[0m[1m	\t\t\t\t\t\t<nav class="vector-page-tools-landmark" aria-label="页面工具">\n
+[0m[1m	\t\t\t\t\t\t\t<div id="vector-page-tools-pinned-container" class="vector-pinned-container">\n
+[0m[1m	\t\t\t\t\n
+[0m[1m	\t\t\t\t\t\t\t</div>\n
+[0m[1m	\t\t</nav>\n
+[0m[1m	\t\t\t\t\t\t<nav class="vector-appearance-landmark" aria-label="外观">\n
+[0m[1m	\t\t\t\t\t\t\t<div id="vector-appearance-pinned-container" class="vector-pinned-container">\n
+[0m[1m	\t\t\t\t<div id="vector-appearance" class="vector-appearance vector-pinnable-element">\n
+[0m[1m	\t<div\n
+[0m[1m	\tclass="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"\n
+[0m[1m	\tdata-feature-name="appearance-pinned"\n
+[0m[1m	\tdata-pinnable-element-id="vector-appearance"\n
+[0m[1m	\tdata-pinned-container-id="vector-appearance-pinned-container"\n
+[0m[1m	\tdata-unpinned-container-id="vector-appearance-unpinned-container"\n
+[0m[1m	>\n
+[0m[1m	\t<div class="vector-pinnable-header-label">外观</div>\n
+[0m[1m	\t<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">移至侧栏</button>\n
+[0m[1m	\t<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">隐藏</button>\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\n
+[0m[1m	</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t\t</div>\n
+[0m[1m	\t\t</nav>\n
+[0m[1m	\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>\n
+[0m[1m	\t\t\t\t\t<div class="vector-body-before-content">\n
+[0m[1m	\t\t\t\t\t\t\t<div class="mw-indicators">\n
+[0m[1m	 […]\t\t<div id="mw-indicator-coordinates" class="mw-indicator"><div class="mw-parser-output"><span id="coordinates"><a href="/wiki/%E5%9C%B0%E7%90%86%E5%9D%90%E6%A0%87" class="mw-redirect" title="地理坐标">坐标</a>：<style data-m
+[0m[1m[32m	 […]\t\t<div id="mw-indicator-noteTA-c4e8dbf1" class="mw-indicator"><div class="mw-parser-output"><span class="skin-invert" typeof="mw:[0m[1mFile"><span title="本页使用了标题或全文手工转换"><img alt="本页使用了标题或全
+[0m[1m	\t\t</div>\n
+[0m[1m	\n
+[0m[1m	\t\t\t\t\t\t<div id="siteSub" class="noprint">维基百科，自由的百科全书</div>\n
+[0m[1m	\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t\t<div id="contentSub" lang="zh-Hans-CN" dir="ltr"><div id="mw-content-subtitle" lang="zh-Hans-CN" dir="ltr"></div></div>\n
+[0m[1m	\t\t\t\t\t\n
+[0m[1m	\t\t\t\t\t\n
+[0m[1m	 […]\t\t\t\t\t<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="zh-Hans-CN" dir="ltr"><div id="noteTA-c4e8dbf1" class="noteTA"><div class="noteTA-group"><div data-noteta-group-source="mo
+[0m[1m[32m	 […]<style data-mw-deduplicate="TemplateStyles:[0m[1mr85100532">.mw-parser-output .hatnote{font-size:small}.mw-parser-output div.hatnote{padding-left:2em;margin-bottom:0.8em;margin-top:0.8em}.mw-parser-output .hatnote-notice-img::after{content
+[0m[1m[32m	 […]<style data-mw-deduplicate="TemplateStyles:[0m[1mr83732082">.mw-parser-output .infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent}.mw-parser-output .
+[0m[1m	 […]<p><b>尼亚加拉瀑布</b>（英语：<span lang="en">Niagara Falls</span>，源自<a href="/wiki/%E5%8D%B0%E7%AC%AC%E5%AE%89%E8%AF%AD" class="mw-redirect" title="印第安语">北美原住民语言</a>，意为“雷神之水”
+[0m[1m	 […]</p><p>整个瀑布跨越<a href="/wiki/%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大">加拿大</a>的<a href="/wiki/%E5%AE%89%E5%A4%A7%E7%95%A5%E7%9C%81" title="安大略省">安大略省</a>和<a href="/wiki/%E7%BE%8E%E5%9B%BD" ti
+[0m[1m	</p>\n
+[0m[1m[32m	<meta property="mw:[0m[1mPageProp/toc">\n
+[0m[1m	 […]<div class="mw-heading mw-heading2"><h2 id="形成"><span id=".E5.BD.A2.E6.88.90"></span>形成</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%
+[0m[1m[32m	 […]<figure class="mw-halign-left" typeof="mw:[0m[1mFile/Thumb"><a href="/wiki/File:Niagara_01.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Niagara_01.jpg/500px-Niagara_01.jpg" decoding="async"
+[0m[1m	 […]<p>据研究瀑布是在约一万年前的<a href="/wiki/%E5%86%B0%E6%B2%B3%E6%99%82%E6%9C%9F" class="mw-redirect" title="冰川时期">冰川时期</a>形成，而同时期的<a href="/wiki/%E5%8C%97%E7%BE%8E%E6%B4%B2" title="北美
+[0m[1m	</p>\n
+[0m[1m	 […]<div class="mw-heading mw-heading2"><h2 id="特點"><span id=".E7.89.B9.E9.BB.9E"></span>特点</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%
+[0m[1m	 […]<p>尼亚加拉河连接<a href="/wiki/%E4%BC%8A%E5%88%A9%E6%B9%96" title="伊利湖">伊利湖</a>和<a href="/wiki/%E5%AE%89%E5%A4%A7%E7%95%A5%E6%B9%96" title="安大略湖">安大略湖</a>并分隔<a href="/wiki/%E7%BE%8E%E5%9C%8
+[0m[1m	</p>\n
+[0m[1m	 […]<ul><li><b><a href="/wiki/%E9%A9%AC%E8%B9%84%E7%80%91%E5%B8%83" title="马蹄瀑布">马蹄瀑布</a></b>（<span title="英语文本"><span lang="en">Horseshoe Falls</span></span>）为大瀑布，也称<b>加拿大瀑布</b>（<spa
+[0m[1m	 […]<li><b><a href="/wiki/%E7%BE%8E%E5%9C%8B%E7%80%91%E5%B8%83" title="美国瀑布">美国瀑布</a></b>（<span title="英语文本"><span lang="en">American Falls</span></span>）为中瀑布，在东侧美国境内，占尼亚加拉
+[0m[1m	 […]<li><b><a href="/wiki/%E5%B8%83%E9%87%8C%E9%81%94%E7%88%BE%E7%B6%AD%E7%88%BE%E7%80%91%E5%B8%83" title="布里达尔维尔瀑布">布里达尔维尔瀑布</a></b>（<span title="英语文本"><span lang="en">Bridal Veil Falls</span></
+[0m[1m	 […]<div class="mw-heading mw-heading2"><h2 id="穿越瀑布"><span id=".E7.A9.BF.E8.B6.8A.E7.80.91.E5.B8.83"></span>穿越瀑布</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%
+[0m[1m	<p><span class="anchor" id="Over_The_Falls"></span>\n
+[0m[1m	</p>\n
+[0m[1m[32m	 […]<link rel="mw-deduplicated-inline-style" href="mw-data:[0m[1mTemplateStyles:r85100532"><div role="note" class="hatnote navigation-not-searchable">参见：<span class="ilh-all" data-orig-title="曾穿越尼加拉大瀑布的人物列表" d
+[0m[1m[32m	 […]<figure class="mw-default-size" typeof="mw:[0m[1mFile/Thumb"><a href="/wiki/File:Annie_Taylor.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/4/47/Annie_Taylor.jpg/250px-Annie_Taylor.jpg" decoding=
+[0m[1m	 […]<p>1829年10月，自称为“洋基飞跃者”<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>（Yankee Leaper）的<span class="ilh-all
+[0m[1m	 […]</p><p>1901年10月24日，来自<a href="/wiki/%E5%AF%86%E8%A5%BF%E6%A0%B9%E5%B7%9E" title="密歇根州">密歇根州</a>的63岁女教师<a href="/wiki/%E5%AE%89%E5%A6%AE%C2%B7%E5%9F%83%E5%BE%B7%E6%A3%AE%C2%B7%E6%B3%B0%E5%8B%92" t
+[0m[1m	 […]</p><p>在泰勒向瀑布挑战的数年后，<a href="/wiki/%E7%B4%90%E7%B4%84" class="mw-redirect" title="纽约">纽约</a>和<a href="/wiki/%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大">加拿大</a>两地都制定了相关法
+[0m[1m	 […]</p><p>1960年7月9日，7岁美国男孩罗杰·伍德沃德（Roger Woodward）成为第一位仅穿救生衣从<a href="/wiki/%E9%A9%AC%E8%B9%84%E7%80%91%E5%B8%83" title="马蹄瀑布">马蹄瀑布</a>跌落而幸存的人，被
+[0m[1m	</p>\n
+[0m[1m	 […]<div class="mw-heading mw-heading2"><h2 id="參見"><span id=".E5.8F.83.E8.A6.8B"></span>参见</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%
+[0m[1m	<ul><li><a href="/wiki/%E4%BA%94%E5%A4%A7%E6%B9%96" title="五大湖">五大湖</a></li>\n
+[0m[1m	<li><a href="/wiki/%E4%BC%8A%E7%93%9C%E8%8B%8F%E7%80%91%E5%B8%83" title="伊瓜苏瀑布">伊瓜苏瀑布</a></li></ul>\n
+[0m[1m	 […]<div class="mw-heading mw-heading2"><h2 id="參考資料"><span id=".E5.8F.83.E8.80.83.E8.B3.87.E6.96.99"></span>参考资料</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%
+[0m[1m[32m	<div class="reflist" style="list-style-type:[0m[1m decimal;">\n
+[0m[1m	<ol class="references">\n
+[0m[1m[32m	 […]<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation news"><a rel="nofollow" class="external text" href="https:[0m[1m//web.archive.org/web/20171002
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https:[0m[1m//www.almanac.com/fact/sam-patc
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation news">Thompson, Carolyn. Seeking Out Death-- Or Defying It:[0m[1m For Niagara Falls, It's a Bu
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Parish, Charles Carlin, <i>Queen of the Mist:[0m[1m The Story of Annie Edson Taylor, First Person Ever to Go Over Ni
+[0m[1m	</li>\n
+[0m[1m	 […]<li id="cite_note-ten-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-ten_5-0"><sup><b>5.0</b></sup></a> <a href="#cite_ref-ten_5-1"><sup><b>5.1</b></sup></a></span> <span class="reference-text"><cite class="citation news"><a 
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http:[0m[1m//www.nflibrary.ca/ForAdults/LocalHistoryMaterials/Stunters
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="cite_note-Goat_Island-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-Goat_Island_7-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http:[0m[1m//www.
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http:[0m[1m//www.infoniagara.com/history/ro
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https:[0m[1m//web.archive.org/web/201107061
+[0m[1m	</li>\n
+[0m[1m[32m	 […]<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https:[0m[1m//www.niagarafallsinfo.com/ni
+[0m[1m	</li>\n
+[0m[1m	</ol></div>\n
+[0m[1m	 […]<div class="mw-heading mw-heading2"><h2 id="外部連結"><span id=".E5.A4.96.E9.83.A8.E9.80.A3.E7.B5.90"></span>外部链接</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%
+[0m[1m[32m	 […]<ul><li><a rel="nofollow" class="external text" href="https:[0m[1m//www.niagarafalls.ca/">官方网站</a> （<a rel="nofollow" class="external text" href="//web.archive.org/web/20100314114019/http://www.niagarafalls.ca/">页面存档备
+[0m[1m[32m	 […]<li><a rel="nofollow" class="external text" href="http:[0m[1m//www.niagaraparks.com/webcam/webcam.php">尼亚加拉瀑布</a> （<a rel="nofollow" class="external text" href="//web.archive.org/web/20070221212047/http://www.niagaraparks.com
+[0m[1m[32m	 […]<li><a rel="nofollow" class="external text" href="http:[0m[1m//www.hanifworld.com/NiagaraFalls.htm">尼亚加拉瀑布图片</a> （<a rel="nofollow" class="external text" href="//web.archive.org/web/20070228171804/http://www.hanifworld.co
+[0m[1m[32m	 […]<style data-mw-deduplicate="TemplateStyles:[0m[1mr82655521">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:#f9f9f9;display:flow-root}.mw-parser-output 
+[0m[1m	<div class="side-box-flex">\n
+[0m[1m[32m	 […]<div class="side-box-image"><span class="noviewer" typeof="mw:[0m[1mFile"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png" decoding="async" width="30" height="40" class=
+[0m[1m[32m	 […]<div class="side-box-text plainlist"><a href="/wiki/%E7%BB%B4%E5%9F%BA%E5%85%B1%E4%BA%AB%E8%B5%84%E6%BA%90" title="维基共享资源">维基共享资源</a>中相关的多媒体资源：<a href="https:[0m[1m//commons.wikimedia.org/wiki/Ni
+[0m[1m	</div>\n
+[0m[1m[32m	 […]<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:[0m[1mr84265675">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hl
+[0m[1m[32m	<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https:[0m[1m//viaf.org/viaf/63144814433030518574">VIAF</a></span></li></ul>\n
+[0m[1m[32m	</div></td></tr><tr><th scope="row" class="navbox-group" style="width:[0m[1m1%">各地</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0px"><div style="padding:0em 0.25em">\n
+[0m[1m[32m	<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https:[0m[1m//catalogue.bnf.fr/ark:/12148/cb11958980s">法国</a></span></li>\n
+[0m[1m[32m	<li><span class="uid"><a rel="nofollow" class="external text" href="https:[0m[1m//data.bnf.fr/ark:/12148/cb11958980s">BnF data</a></span></li>\n
+[0m[1m[32m	<li><span class="uid"><a rel="nofollow" class="external text" href="https:[0m[1m//d-nb.info/gnd/4117863-4">德国</a></span></li>\n
+[0m[1m[32m	<li><span class="uid"><a rel="nofollow" class="external text" href="http:[0m[1m//olduli.nli.org.il/F/?func=find-b&amp;local_base=NLX10&amp;find_code=UID&amp;request=987007529584305171">以色列</a></span></li>\n
+[0m[1m[32m	<li><span class="uid"><a rel="nofollow" class="external text" href="https:[0m[1m//id.loc.gov/authorities/sh85091701">美国</a></span></li>\n
+[0m[1m[32m	<li><span class="uid"><a rel="nofollow" class="external text" href="https:[0m[1m//libris.kb.se/jgvxx7920mk0xt6">瑞典</a></span></li></ul>\n
+[0m[1m[32m	</div></td></tr><tr><th scope="row" class="navbox-group" style="width:[0m[1m1%">地理</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em">\n
+[0m[1m[32m	<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https:[0m[1m//www.worldwaterfalldatabase.com/index.php/waterfall/106">世界瀑布</a></span></li></ul>\n
+[0m[1m[32m	</div></td></tr><tr><th scope="row" class="navbox-group" style="width:[0m[1m1%">其他</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0px"><div style="padding:0em 0.25em">\n
+[0m[1m[32m	<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https:[0m[1m//catalog.archives.gov/id/10045898">NARA</a></span></li></ul>\n
+[0m[1m	</div></td></tr></tbody></table></div>\n
+[0m[1m	<!-- \n
+[0m[1m	NewPP limit report\n
+[0m[1m	Parsed by mw‐web.codfw.main‐5d6bf9997f‐pwp49\n
+[0m[1m[32m	Cached time:[0m[1m 20250702132445\n
+[0m[1m[32m	Cache expiry:[0m[1m 2592000\n
+[0m[1m[32m	Reduced expiry:[0m[1m false\n
+[0m[1m[32m	Complications:[0m[1m [show‐toc]\n
+[0m[1m[32m	CPU time usage:[0m[1m 0.545 seconds\n
+[0m[1m[32m	Real time usage:[0m[1m 0.722 seconds\n
+[0m[1m[32m	Preprocessor visited node count:[0m[1m 2069/1000000\n
+[0m[1m[32m	Revision size:[0m[1m 10523/2097152 bytes\n
+[0m[1m[32m	Post‐expand include size:[0m[1m 149580/2097152 bytes\n
+[0m[1m[32m	Template argument size:[0m[1m 5429/2097152 bytes\n
+[0m[1m[32m	Highest expansion depth:[0m[1m 24/100\n
+[0m[1m[32m	Expensive parser function count:[0m[1m 13/500\n
+[0m[1m[32m	Unstrip recursion depth:[0m[1m 1/20\n
+[0m[1m[32m	Unstrip post‐expand size:[0m[1m 26459/5000000 bytes\n
+[0m[1m[32m	Lua time usage:[0m[1m 0.339/10.000 seconds\n
+[0m[1m[32m	Lua memory usage:[0m[1m 23095001/52428800 bytes\n
+[0m[1m[32m	Number of Wikibase entities loaded:[0m[1m 1/500\n
+[0m[1m	-->\n
+[0m[1m	<!--\n
+[0m[1m	Transclusion expansion time report (%,ms,calls,template)\n
+[0m[1m	100.00%  613.817      1 -total\n
+[0m[1m[32m	 23.31%  143.082      1 Template:[0m[1mInfobox_waterfall\n
+[0m[1m[32m	 22.95%  140.854      1 Template:[0m[1mInfobox\n
+[0m[1m[32m	 20.53%  126.042      1 Template:[0m[1mReflist\n
+[0m[1m[32m	 13.51%   82.902      1 Template:[0m[1mLang-en\n
+[0m[1m[32m	 10.74%   65.954      1 Template:[0m[1mAuthority_control\n
+[0m[1m[32m	  9.92%   60.908      1 Template:[0m[1mNoteTA\n
+[0m[1m[32m	  7.64%   46.906      1 Template:[0m[1mISBN\n
+[0m[1m[32m	  7.37%   45.226      1 Template:[0m[1mOtheruses\n
+[0m[1m[32m	  6.84%   41.987      1 Template:[0m[1mHatnote\n
+[0m[1m	-->\n
+[0m[1m	\n
+[0m[1m[32m	<!-- Saved in parser cache with key zhwiki:[0m[1mpcache:101719:|#|:idhash:userlang=zh-cn!zh-cn and timestamp 20250702132445 and revision id 85320723. Rendering was triggered because: page-view\n
+[0m[1m	 -->\n
+[0m[1m[32m	 […]</div><!--esi <esi:[0m[1minclude src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://zh.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; positi
+[0m[1m[32m	 […]<div class="printfooter" data-nosnippet="" lang="zh-Hans-CN" dir="ltr">检索自“<a dir="ltr" href="https:[0m[1m//zh.wikipedia.org/w/index.php?title=尼亚加拉瀑布&amp;oldid=85320723">https://zh.wikipedia.org/w/index.php?title=尼亚
+[0m[1m[32m	 […]\t\t\t\t\t<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:[0m[1m%E9%A1%B5%E9%9D%A2%E5%88%86%E7%B1%BB" title="Special:页面分类">分类</a>：\u200B<u
+[0m[1m	\t\t\t\t</div>\n
+[0m[1m	\t\t\t</main>\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t<div class="mw-footer-container">\n
+[0m[1m	\t\t\t\n
+[0m[1m	<footer id="footer" class="mw-footer"  lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t<ul id="footer-info">\n
+[0m[1m[32m	\t<li id="footer-info-lastmod"> 本页面最后修订于2024年12月15日 (星期日) 15:[0m[1m21。</li>\n
+[0m[1m[32m	 […]\t<li id="footer-info-copyright">本站的全部文字在<a href="/wiki/Wikipedia:[0m[1mCC_BY-SA_4.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" title="Wikipedia:CC BY-SA 4.0协议文本">知识共享 署名-相同方式共享 4.0协议</a>之条
+[0m[1m[32m	Wikipedia&#174;和维基百科标志是<a rel="nofollow" class="external text" href="https:[0m[1m//wikimediafoundation.org/zh">维基媒体基金会</a>的注册商标；维基&#8482;是维基媒体基金会的商标。<br />\n
+[0m[1m[32m	维基媒体基金会是按美国国内税收法501(c)(3)登记的<a class="external text" href="https:[0m[1m//donate.wikimedia.org/wiki/Special:MyLanguage/Tax_deductibility">非营利慈善机构</a>。<br /></li>\n
+[0m[1m	</ul>\n
+[0m[1m	\n
+[0m[1m	\t<ul id="footer-places">\n
+[0m[1m[32m	\t<li id="footer-places-privacy"><a href="https:[0m[1m//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">隐私政策</a></li>\n
+[0m[1m[32m	\t<li id="footer-places-about"><a href="/wiki/Wikipedia:[0m[1m%E5%85%B3%E4%BA%8E">关于维基百科</a></li>\n
+[0m[1m[32m	\t<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:[0m[1m%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E">免责声明</a></li>\n
+[0m[1m[32m	\t<li id="footer-places-wm-codeofconduct"><a href="https:[0m[1m//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">行为准则</a></li>\n
+[0m[1m[32m	\t<li id="footer-places-developers"><a href="https:[0m[1m//developer.wikimedia.org">开发者</a></li>\n
+[0m[1m[32m	\t<li id="footer-places-statslink"><a href="https:[0m[1m//stats.wikimedia.org/#/zh.wikipedia.org">统计</a></li>\n
+[0m[1m[32m	\t<li id="footer-places-cookiestatement"><a href="https:[0m[1m//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie声明</a></li>\n
+[0m[1m	 […]\t<li id="footer-places-mobileview"><a href="//zh.m.wikipedia.org/w/index.php?title=%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">手机版视图<
+[0m[1m	</ul>\n
+[0m[1m	\n
+[0m[1m	\t<ul id="footer-icons" class="noprint">\n
+[0m[1m[32m	 […]\t<li id="footer-copyrightico"><a href="https:[0m[1m//www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images
+[0m[1m[32m	 […]\t<li id="footer-poweredbyico"><a href="https:[0m[1m//www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/a
+[0m[1m	</ul>\n
+[0m[1m	\n
+[0m[1m	</footer>\n
+[0m[1m	\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t</div> \n
+[0m[1m	</div> \n
+[0m[1m	<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">\n
+[0m[1m	\t<div id="vector-sticky-header" class="vector-sticky-header">\n
+[0m[1m	\t\t<div class="vector-sticky-header-start">\n
+[0m[1m	\t\t\t<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">\n
+[0m[1m	 […]\t\t\t\t<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-i
+[0m[1m	\n
+[0m[1m	<span>搜索</span>\n
+[0m[1m	\t\t\t</button>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t\t\n
+[0m[1m	\t\t<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">\n
+[0m[1m	\t\t\t<div class="vector-typeahead-search-container">\n
+[0m[1m	\t\t\t\t<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">\n
+[0m[1m	\t\t\t\t\t<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">\n
+[0m[1m	\t\t\t\t\t\t<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">\n
+[0m[1m	\t\t\t\t\t\t\t<div class="cdx-text-input cdx-text-input--has-start-icon">\n
+[0m[1m	\t\t\t\t\t\t\t\t<input\n
+[0m[1m	\t\t\t\t\t\t\t\t\tclass="cdx-text-input__input mw-searchInput"\n
+[0m[1m	\t\t\t\t\t\t\t\t\t\n
+[0m[1m	\t\t\t\t\t\t\t\t\ttype="search" name="search" placeholder="搜索维基百科">\n
+[0m[1m	\t\t\t\t\t\t\t\t<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>\n
+[0m[1m	\t\t\t\t\t\t\t</div>\n
+[0m[1m[32m	\t\t\t\t\t\t\t<input type="hidden" name="title" value="Special:[0m[1m搜索">\n
+[0m[1m	\t\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t\t\t<button class="cdx-button cdx-search-input__end-button">搜索</button>\n
+[0m[1m	\t\t\t\t\t</form>\n
+[0m[1m	\t\t\t\t</div>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t<div class="vector-sticky-header-context-bar">\n
+[0m[1m	\t\t\t\t<nav aria-label="目录" class="vector-toc-landmark">\n
+[0m[1m	\t\t\t\t\t\t\n
+[0m[1m	\t\t\t\t\t<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"   lang="zh-Hans-CN" dir="ltr">\n
+[0m[1m	\t\t\t\t\t\t<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="开关目录"  >\n
+[0m[1m	 […]\t\t\t\t\t\t<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon
+[0m[1m	\n
+[0m[1m	<span class="vector-dropdown-label-text">开关目录</span>\n
+[0m[1m	\t\t\t\t\t\t</label>\n
+[0m[1m	\t\t\t\t\t\t<div class="vector-dropdown-content">\n
+[0m[1m	\t\t\t\t\t\n
+[0m[1m	\t\t\t\t\t\t<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">\n
+[0m[1m	\t\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t\t\n
+[0m[1m	\t\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t\t\t</div>\n
+[0m[1m	\t\t\t</nav>\n
+[0m[1m	\t\t\t\t<div class="vector-sticky-header-context-bar-primary" aria-hidden="true"  lang="zh-Hans-CN" dir="ltr"><span class="mw-page-title-main">尼亚加拉瀑布</span></div>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t<div class="vector-sticky-header-end" aria-hidden="true">\n
+[0m[1m	\t\t\t<div class="vector-sticky-header-icons">\n
+[0m[1m	 […]\t\t\t\t<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class=
+[0m[1m	\n
+[0m[1m	<span></span>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	 […]\t\t\t<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span cl
+[0m[1m	\n
+[0m[1m	<span></span>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	 […]\t\t\t<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span cl
+[0m[1m	\n
+[0m[1m	<span></span>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	 […]\t\t\t<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-hea
+[0m[1m	\n
+[0m[1m	<span></span>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	 […]\t\t\t<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span
+[0m[1m	\n
+[0m[1m	<span></span>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	 […]\t\t\t<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span cl
+[0m[1m	\n
+[0m[1m	<span></span>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	 […]\t\t\t<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-hea
+[0m[1m	\n
+[0m[1m	<span></span>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t\t<div class="vector-sticky-header-buttons">\n
+[0m[1m	 […]\t\t\t\t<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-la
+[0m[1m	\n
+[0m[1m	<span>121种语言</span>\n
+[0m[1m	\t\t\t</button>\n
+[0m[1m	 […]\t\t\t<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-h
+[0m[1m	\n
+[0m[1m	<span>添加话题</span>\n
+[0m[1m	\t\t\t</a>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t\t\t<div class="vector-sticky-header-icon-end">\n
+[0m[1m	\t\t\t\t<div class="vector-user-links">\n
+[0m[1m	\t\t\t\t</div>\n
+[0m[1m	\t\t\t</div>\n
+[0m[1m	\t\t</div>\n
+[0m[1m	\t</div>\n
+[0m[1m	</div>\n
+[0m[1m	<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">\n
+[0m[1m	\t<ul>\n
+[0m[1m	\t\t\n
+[0m[1m	\t</ul>\n
+[0m[1m	</div>\n
+[0m[1m[32m	 […]<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":[0m[1m"mw-web.codfw.main-5967f9c8b9-s9f7b","wgBackendResponseTime":192,"wgKartographerLiveData":{"_92a233635cae43ab2721ca57d289c2281dfcb20c":[{"type":"Feature","geome
+[0m[1m[32m	 […]<script type="application/ld+json">{"@context":[0m[1m"https:\/\/schema.org","@type":"Article","name":"\u5c3c\u4e9a\u52a0\u62c9\u7011\u5e03","url":"https:\/\/zh.wikipedia.org\/wiki\/%E5%B0%BC%E4%BA%9A%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83","s
+[0m[1m	</body>\n
+[0m[1m	</html>
+[0m
+
+  提取的帧数据长度: 419 字节
+  提取的帧数据(十六进制): b9b42faddd92af897a9cde1c27bcbb368660dc9deb00a1ca36a08e0b39a42d1f0baafec82c3480114ce6889fbf8952a991b2...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 838 字符
+  十六进制数据: b9b42faddd92af897a9cde1c27bcbb368660dc9deb00a1ca36a08e0b39a42d1f0baafec82c3480114ce6889fbf8952a991b2f7ec0c4e1eeb0c24221770532151294766975721e29b07209284a8a62c332c93a59d708fe3636ee9b6abfa9f5b4a670a189495d595acbb73b5f4713849e8f66dd1da193c0ddeeabb438aa656dafe63179881995bfa19555dfe807485a12b5e4c206efa85c2d7f8bb7938bfc30f175c7e11038bd1fc78751d9cc9f4e79e48665b19976667780a87f2f404dbac34b784397c8b301cafded4aed7e63981c02e22d82817b7d027467c748016ab0f36fb3cb5395769e35cd196e5efc5303d1af9591deff43d28865f8f3d4e715315c96ec574e39cd331b854526e4e15581d5ab4678964e6bed55bd1cb4b0a8082615a31c987d02dc32810007e6c59705306b6c7b9beac8098834652b837cec6b1432e78a917d996ddd71287b7901bff613413e8e11e101c3204ef697493cd6ebe59373ad7347de9560935ea5a698c58037be248004c54024d50d188f36d624ce43a105bff443b3faeaef6f928c9cfaa1715f65031083789e5900a30675d0b3a33ef85c1de85fa
+
+================================================================================
+

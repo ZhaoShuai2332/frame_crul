@@ -1,0 +1,869 @@
+HTTP/2 数据包密文明文对比分析
+生成时间: 2025-07-03 11:53:54.708197
+================================================================================
+
+数据包 #645 (第1个)
+时间戳: 2025-07-03 10:03:00.160924
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 4785
+  Payload: 17:03:03:00:4e:43:ca:f1:3c:ac:1c:6b:23:9f:b5:98:99:06:55:10:01:12:bb:7c:42:0d:07:59:5b:06:bb:c8:37:70:5e:d1:6a:2f:42:49:51:ad:06:54:49:ad:a2:52:69:32:dc:4e:39:a6:c8:0c:b9:0d:4b:79:f2:ed:c9:27:7d:2d:d7:02:4a:82:dc:b3:8c:c9:f2:40:e6:1c:2c:2a:bc:c1:9e
+
+HTTP/2信息:
+  Type: 1
+  Stream ID: 21
+  Length: 52
+  Flags: 0x25
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m HEADERS, Stream ID: 21, Length 52, GET /wiki/%E5%AD%99%E7%AD%96
+[0m[1m[32m	Length:[0m[1m 52
+[0m[1m[32m	Type:[0m[1m HEADERS (1)
+[0m[1m[32m	Flags:[0m[1m 0x25, Priority, End Headers, End Stream
+[0m[1m[32m	00.0 ..0. = Unused:[0m[1m 0x00
+[0m[1m[32m	..1. .... = Priority:[0m[1m True
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... .1.. = End Headers:[0m[1m True
+[0m[1m[32m	.... ...1 = End Stream:[0m[1m True
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	1... .... .... .... .... .... .... .... = Exclusive:[0m[1m True
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0000 0000 = Stream Dependency:[0m[1m 0
+[0m[1m[32m	Weight:[0m[1m 255
+[0m[1m[32m	Weight real:[0m[1m 256
+[0m[1m[32m	Header Block Fragment:[0m[1m 82e987049363c1ba99857036ac37d57df5703aac37d57dcfe5e4e3d1e1e0dfe8e7e6cedddcdbdad9d8d7d6d5d4cdd3
+[0m[1m[32m	Header Length:[0m[1m 1457
+[0m[1m[32m	Header Count:[0m[1m 27
+[0m[1m[32m	Header:[0m[1m :method: GET
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name:[0m[1m :method
+[0m[1m[32m	Value Length:[0m[1m 3
+[0m[1m[32m	Value:[0m[1m GET
+[0m[1m[32m	:[0m[1mmethod: GET
+[0m[1m[32m	Unescaped:[0m[1m GET
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Index:[0m[1m 2
+[0m[1m[32m	:[0m[1mauthority: zh.wikipedia.org
+[0m[1m[32m	:[0m[1mscheme: https
+[0m[1m[32m	:[0m[1mpath: /wiki/%E5%AD%99%E7%AD%96
+[0m[1m[32m	user-agent:[0m[1m Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[0m[1m[32m	accept:[0m[1m text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+[0m[1m[32m	referer:[0m[1m https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+[0m[1m[32m	accept-encoding:[0m[1m gzip, deflate, br, zstd
+[0m[1m[32m	accept-language:[0m[1m zh-CN,zh;q=0.9
+[0m[1m[32m	cookie:[0m[1m WMF-Uniq=D6ZGWZsA71gRm7cEETLJzAIkAAEBAFvdjeIjIcf5-RLRlHs2nUsgS73YE2I9Vd7T
+[0m[1m[32m	Full request URI:[0m[1m https://zh.wikipedia.org/wiki/%E5%AD%99%E7%AD%96
+[0m[1m[32m	Header:[0m[1m :authority: zh.wikipedia.org
+[0m[1m[32m	Header:[0m[1m :scheme: https
+[0m[1m[32m	Header:[0m[1m :path: /wiki/%E5%AD%99%E7%AD%96
+[0m[1m[32m	Header:[0m[1m upgrade-insecure-requests: 1
+[0m[1m[32m	Header:[0m[1m user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[0m[1m[32m	Header:[0m[1m accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+[0m[1m[32m	Header:[0m[1m sec-fetch-site: same-origin
+[0m[1m[32m	Header:[0m[1m sec-fetch-mode: navigate
+[0m[1m[32m	Header:[0m[1m sec-fetch-user: ?1
+[0m[1m[32m	Header:[0m[1m sec-fetch-dest: document
+[0m[1m[32m	Header:[0m[1m sec-ch-ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+[0m[1m[32m	Header:[0m[1m sec-ch-ua-mobile: ?0
+[0m[1m[32m	Header:[0m[1m sec-ch-ua-platform: "Windows"
+[0m[1m[32m	Header:[0m[1m referer: https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+[0m[1m[32m	Header:[0m[1m accept-encoding: gzip, deflate, br, zstd
+[0m[1m[32m	Header:[0m[1m accept-language: zh-CN,zh;q=0.9
+[0m[1m[32m	Header:[0m[1m cookie: WMF-Uniq=D6ZGWZsA71gRm7cEETLJzAIkAAEBAFvdjeIjIcf5-RLRlHs2nUsgS73YE2I9Vd7T
+[0m[1m[32m	Header:[0m[1m cookie: zhwikimwclientpreferences=vector-feature-custom-font-size-clientpref-0
+[0m[1m[32m	Header:[0m[1m cookie: zhwikiBlockID=564933%2178eee08a0ecc0e4e95c3b9be7a1aeb42cf6b17f86ba66d336b5d71cc600d823f860fe73d64596c72bf9f29fca5fa5fdc44e436ea0c3736b01e7822c74d7eb707
+[0m[1m[32m	Header:[0m[1m cookie: WMF-Last-Access=03-Jul-2025
+[0m[1m[32m	Header:[0m[1m cookie: WMF-Last-Access-Global=03-Jul-2025
+[0m[1m[32m	Header:[0m[1m cookie: GeoIP=JP:::35.69:139.69:v4
+[0m[1m[32m	Header:[0m[1m cookie: zhwikimwuser-sessionId=9dfdeb9c2aee3bc73400
+[0m[1m[32m	Header:[0m[1m cookie: zhwikidismissASN=86056623
+[0m[1m[32m	Header:[0m[1m cookie: NetworkProbeLimit=0.001
+[0m[1m[32m	Header:[0m[1m priority: u=0, i
+[0m[1m[32m	Name Length:[0m[1m 10
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name Length:[0m[1m 5
+[0m[1m[32m	Name Length:[0m[1m 25
+[0m[1m[32m	Name Length:[0m[1m 10
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 9
+[0m[1m[32m	Name Length:[0m[1m 16
+[0m[1m[32m	Name Length:[0m[1m 18
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name Length:[0m[1m 15
+[0m[1m[32m	Name Length:[0m[1m 15
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 8
+[0m[1m[32m	Name:[0m[1m :authority
+[0m[1m[32m	Name:[0m[1m :scheme
+[0m[1m[32m	Name:[0m[1m :path
+[0m[1m[32m	Name:[0m[1m upgrade-insecure-requests
+[0m[1m[32m	Name:[0m[1m user-agent
+[0m[1m[32m	Name:[0m[1m accept
+[0m[1m[32m	Name:[0m[1m sec-fetch-site
+[0m[1m[32m	Name:[0m[1m sec-fetch-mode
+[0m[1m[32m	Name:[0m[1m sec-fetch-user
+[0m[1m[32m	Name:[0m[1m sec-fetch-dest
+[0m[1m[32m	Name:[0m[1m sec-ch-ua
+[0m[1m[32m	Name:[0m[1m sec-ch-ua-mobile
+[0m[1m[32m	Name:[0m[1m sec-ch-ua-platform
+[0m[1m[32m	Name:[0m[1m referer
+[0m[1m[32m	Name:[0m[1m accept-encoding
+[0m[1m[32m	Name:[0m[1m accept-language
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m cookie
+[0m[1m[32m	Name:[0m[1m priority
+[0m[1m[32m	Value Length:[0m[1m 16
+[0m[1m[32m	Value Length:[0m[1m 5
+[0m[1m[32m	Value Length:[0m[1m 24
+[0m[1m[32m	Value Length:[0m[1m 1
+[0m[1m[32m	Value Length:[0m[1m 111
+[0m[1m[32m	Value Length:[0m[1m 135
+[0m[1m[32m	Value Length:[0m[1m 11
+[0m[1m[32m	Value Length:[0m[1m 8
+[0m[1m[32m	Value Length:[0m[1m 2
+[0m[1m[32m	Value Length:[0m[1m 8
+[0m[1m[32m	Value Length:[0m[1m 65
+[0m[1m[32m	Value Length:[0m[1m 2
+[0m[1m[32m	Value Length:[0m[1m 9
+[0m[1m[32m	Value Length:[0m[1m 58
+[0m[1m[32m	Value Length:[0m[1m 23
+[0m[1m[32m	Value Length:[0m[1m 14
+[0m[1m[32m	Value Length:[0m[1m 73
+[0m[1m[32m	Value Length:[0m[1m 70
+[0m[1m[32m	Value Length:[0m[1m 151
+[0m[1m[32m	Value Length:[0m[1m 27
+[0m[1m[32m	Value Length:[0m[1m 34
+[0m[1m[32m	Value Length:[0m[1m 26
+[0m[1m[32m	Value Length:[0m[1m 43
+[0m[1m[32m	Value Length:[0m[1m 25
+[0m[1m[32m	Value Length:[0m[1m 23
+[0m[1m[32m	Value Length:[0m[1m 6
+[0m[1m[32m	Value:[0m[1m zh.wikipedia.org
+[0m[1m[32m	Value:[0m[1m https
+[0m[1m[32m	Value:[0m[1m /wiki/%E5%AD%99%E7%AD%96
+[0m[1m[32m	Value:[0m[1m 1
+[0m[1m[32m	Value:[0m[1m Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[0m[1m[32m	Value:[0m[1m text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+[0m[1m[32m	Value:[0m[1m same-origin
+[0m[1m[32m	Value:[0m[1m navigate
+[0m[1m[32m	Value:[0m[1m ?1
+[0m[1m[32m	Value:[0m[1m document
+[0m[1m[32m	Value:[0m[1m "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+[0m[1m[32m	Value:[0m[1m ?0
+[0m[1m[32m	Value:[0m[1m "Windows"
+[0m[1m[32m	Value:[0m[1m https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+[0m[1m[32m	Value:[0m[1m gzip, deflate, br, zstd
+[0m[1m[32m	Value:[0m[1m zh-CN,zh;q=0.9
+[0m[1m[32m	Value:[0m[1m WMF-Uniq=D6ZGWZsA71gRm7cEETLJzAIkAAEBAFvdjeIjIcf5-RLRlHs2nUsgS73YE2I9Vd7T
+[0m[1m[32m	Value:[0m[1m zhwikimwclientpreferences=vector-feature-custom-font-size-clientpref-0
+[0m[1m[32m	Value:[0m[1m zhwikiBlockID=564933%2178eee08a0ecc0e4e95c3b9be7a1aeb42cf6b17f86ba66d336b5d71cc600d823f860fe73d64596c72bf9f29fca5fa5fdc44e436ea0c3736b01e7822c74d7eb707
+[0m[1m[32m	Value:[0m[1m WMF-Last-Access=03-Jul-2025
+[0m[1m[32m	Value:[0m[1m WMF-Last-Access-Global=03-Jul-2025
+[0m[1m[32m	Value:[0m[1m GeoIP=JP:::35.69:139.69:v4
+[0m[1m[32m	Value:[0m[1m zhwikimwuser-sessionId=9dfdeb9c2aee3bc73400
+[0m[1m[32m	Value:[0m[1m zhwikidismissASN=86056623
+[0m[1m[32m	Value:[0m[1m NetworkProbeLimit=0.001
+[0m[1m[32m	Value:[0m[1m u=0, i
+[0m[1m[32m	Unescaped:[0m[1m zh.wikipedia.org
+[0m[1m[32m	Unescaped:[0m[1m https
+[0m[1m[32m	Unescaped:[0m[1m /wiki/孙策
+[0m[1m[32m	Unescaped:[0m[1m 1
+[0m[1m[32m	Unescaped:[0m[1m Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[0m[1m[32m	Unescaped:[0m[1m text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+[0m[1m[32m	Unescaped:[0m[1m same-origin
+[0m[1m[32m	Unescaped:[0m[1m navigate
+[0m[1m[32m	Unescaped:[0m[1m ?1
+[0m[1m[32m	Unescaped:[0m[1m document
+[0m[1m[32m	Unescaped:[0m[1m "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+[0m[1m[32m	Unescaped:[0m[1m ?0
+[0m[1m[32m	Unescaped:[0m[1m "Windows"
+[0m[1m[32m	Unescaped:[0m[1m https://zh.wikipedia.org/wiki/Wikipedia:首页
+[0m[1m[32m	Unescaped:[0m[1m gzip, deflate, br, zstd
+[0m[1m[32m	Unescaped:[0m[1m zh-CN,zh;q=0.9
+[0m[1m[32m	Unescaped:[0m[1m WMF-Uniq=D6ZGWZsA71gRm7cEETLJzAIkAAEBAFvdjeIjIcf5-RLRlHs2nUsgS73YE2I9Vd7T
+[0m[1m[32m	Unescaped:[0m[1m zhwikimwclientpreferences=vector-feature-custom-font-size-clientpref-0
+[0m[1m[32m	Unescaped:[0m[1m zhwikiBlockID=564933!78eee08a0ecc0e4e95c3b9be7a1aeb42cf6b17f86ba66d336b5d71cc600d823f860fe73d64596c72bf9f29fca5fa5fdc44e436ea0c3736b01e7822c74d7eb707
+[0m[1m[32m	Unescaped:[0m[1m WMF-Last-Access=03-Jul-2025
+[0m[1m[32m	Unescaped:[0m[1m WMF-Last-Access-Global=03-Jul-2025
+[0m[1m[32m	Unescaped:[0m[1m GeoIP=JP:::35.69:139.69:v4
+[0m[1m[32m	Unescaped:[0m[1m zhwikimwuser-sessionId=9dfdeb9c2aee3bc73400
+[0m[1m[32m	Unescaped:[0m[1m zhwikidismissASN=86056623
+[0m[1m[32m	Unescaped:[0m[1m NetworkProbeLimit=0.001
+[0m[1m[32m	Unescaped:[0m[1m u=0, i
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Index:[0m[1m 105
+[0m[1m[32m	Index:[0m[1m 7
+[0m[1m[32m	Index:[0m[1m 4
+[0m[1m[32m	Index:[0m[1m 101
+[0m[1m[32m	Index:[0m[1m 100
+[0m[1m[32m	Index:[0m[1m 99
+[0m[1m[32m	Index:[0m[1m 81
+[0m[1m[32m	Index:[0m[1m 97
+[0m[1m[32m	Index:[0m[1m 96
+[0m[1m[32m	Index:[0m[1m 95
+[0m[1m[32m	Index:[0m[1m 104
+[0m[1m[32m	Index:[0m[1m 103
+[0m[1m[32m	Index:[0m[1m 102
+[0m[1m[32m	Index:[0m[1m 78
+[0m[1m[32m	Index:[0m[1m 93
+[0m[1m[32m	Index:[0m[1m 92
+[0m[1m[32m	Index:[0m[1m 91
+[0m[1m[32m	Index:[0m[1m 90
+[0m[1m[32m	Index:[0m[1m 89
+[0m[1m[32m	Index:[0m[1m 88
+[0m[1m[32m	Index:[0m[1m 87
+[0m[1m[32m	Index:[0m[1m 86
+[0m[1m[32m	Index:[0m[1m 85
+[0m[1m[32m	Index:[0m[1m 84
+[0m[1m[32m	Index:[0m[1m 77
+[0m[1m[32m	Index:[0m[1m 83
+[0m[1m[32m	cookie:[0m[1m zhwikimwclientpreferences=vector-feature-custom-font-size-clientpref-0
+[0m[1m[32m	cookie:[0m[1m zhwikiBlockID=564933%2178eee08a0ecc0e4e95c3b9be7a1aeb42cf6b17f86ba66d336b5d71cc600d823f860fe73d64596c72bf9f29fca5fa5fdc44e436ea0c3736b01e7822c74d7eb707
+[0m[1m[32m	cookie:[0m[1m WMF-Last-Access=03-Jul-2025
+[0m[1m[32m	cookie:[0m[1m WMF-Last-Access-Global=03-Jul-2025
+[0m[1m[32m	cookie:[0m[1m GeoIP=JP:::35.69:139.69:v4
+[0m[1m[32m	cookie:[0m[1m zhwikimwuser-sessionId=9dfdeb9c2aee3bc73400
+[0m[1m[32m	cookie:[0m[1m zhwikidismissASN=86056623
+[0m[1m[32m	cookie:[0m[1m NetworkProbeLimit=0.001
+[0m
+
+  提取的帧数据长度: 74 字节
+  提取的帧数据(十六进制): ac1c6b239fb598990655100112bb7c420d07595b06bbc837705ed16a2f424951ad065449ada2526932dc4e39a6c80cb90d4b...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 148 字符
+  十六进制数据: ac1c6b239fb598990655100112bb7c420d07595b06bbc837705ed16a2f424951ad065449ada2526932dc4e39a6c80cb90d4b79f2edc9277d2dd7024a82dcb38cc9f240e61c2c2abcc19e
+
+================================================================================
+
+数据包 #667 (第2个)
+时间戳: 2025-07-03 10:03:00.891101
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 65628
+  Payload: 17:03:03:03:87:e2:47:82:91:a0:13:09:0c:94:46:d7:5d:f4:1f:48:a0:30:06:50:6f:17:e6:51:46:57:5a:03:c0:27:c9:6f:62:15:0e:6f:c8:c3:11:fe:37:5d:c0:c6:f1:30:f2:9b:65:5e:ed:67:f8:a6:b5:9f:35:82:8d:a3:30:33:90:eb:6f:4e:89:f4:e1:1b:ec:78:dd:8e:68:08:6b:2d:21:75:ce:65:14:eb:1c:46:2d:77:18:43:ef:70:42:52:30:45:38:bc:b8:4f:53:4b:48:68:50:d9:c3:70:38:f1:03:d5:fc:fa:b2:f3:bc:14:20:27:c3:c8:46:eb:c6:d4:43:d1:b9:3b:b0:7e:33:8b:ad:86:76:1d:79:d7:66:4d:32:77:00:26:f9:48:0b:34:69:1d:2f:fb:b8:56:0a:18:b8:8a:9b:37:73:06:59:14:2f:df:65:e0:f9:b9:7d:d6:c5:3f:e7:d3:e7:98:54:03:9e:a8:76:42:a6:e5:cf:bb:23:74:bb:72:5f:9c:f7:b2:75:b7:ff:b5:d1:18:23:2a:18:b3:96:d4:a3:08:35:9a:c3:73:70:2a:93:16:bb:a0:84:99:d5:88:ba:65:7d:2f:28:e0:77:b2:cb:c0:b1:11:48:31:39:50:11:c3:e9:06:70:0a:97:56:63:23:c8:22:e6:e0:8b:34:a5:8b:ed:9f:36:37:e1:05:f0:80:62:fa:42:51:68:dc:8b:77:4d:69:2e:db:9f:f3:36:5a:40:b0:23:d8:27:9f:2a:a8:16:0b:b7:51:b4:ec:09:10:af:9a:1e:05:4a:06:33:79:29:5c:33:6c:d6:cf:19:ab:0d:0a:7f:f1:71:a5:5d:46:36:3d:f6:c7:74:79:cb:41:ad:a2:1e:10:16:47:68:77:a9:c1:b6:84:29:54:e5:38:1b:bf:4d:15:63:72:44:65:9a:43:1e:01:fc:76:22:57:bf:3a:b4:d2:dd:58:e8:0e:e4:f9:b0:0b:06:6d:c2:11:e7:74:dc:c6:76:2a:e1:92:a1:5b:e3:f4:d9:d9:94:96:9f:69:fd:2c:72:ae:d5:5e:3b:88:7c:25:55:e9:cb:70:69:77:1e:2a:d6:35:49:59:ef:98:0b:18:5a:33:f3:f1:5f:dc:32:b6:18:98:52:0a:fc:13:e7:96:e5:4a:22:50:a7:86:e3:3b:80:f2:5d:7b:bb:ff:38:8b:49:b3:77:cf:a3:ff:8b:c9:c5:9b:bb:a4:a8:dc:f0:9a:06:65:7c:8a:f1:0d:e2:aa:ea:0f:9a:17:43:9a:06:2b:20:65:39:26:13:fd:05:72:21:87:82:2f:93:b4:e6:dc:ff:b7:aa:86:ee:07:88:e6:3e:eb:37:c7:1b:a3:03:30:3a:3a:fe:26:ad:e6:f7:dc:dd:98:e0:39:da:b1:4b:83:7b:24:1b:25:ab:33:53:9c:71:6e:61:82:b6:36:44:fc:55:e9:8c:3e:6a:cb:f3:9c:96:25:8c:41:4c:9e:ce:d2:27:cb:87:68:26:ce:24:9d:8c:96:f4:62:91:3b:b9:0c:7e:18:de:00:fe:64:74:58:51:7c:65:5c:d4:80:c8:c4:63:52:85:6b:27:fa:d4:36:6f:3f:cb:72:94:76:5b:f2:03:25:88:1f:78:7c:1f:d3:00:d3:1a:1a:b7:c7:65:26:bd:45:c1:bd:12:39:d2:75:15:52:42:17:bf:24:29:7a:b2:64:5b:ea:ce:70:85:47:b9:99:ba:1f:bd:3d:b8:4a:e6:a4:3e:91:77:ba:6b:11:74:7a:97:cf:d7:83:1d:9d:f6:7b:26:9c:f0:e6:6c:b2:39:1f:89:ac:c2:a1:c5:a6:52:04:8e:d2:ef:9b:30:3c:e8:b2:19:3f:04:7c:19:ea:b9:d0:ff:ca:1c:75:94:4d:a0:62:2c:32:7b:cc:55:6b:58:dc:1e:f8:97:98:2e:20:00:db:2c:9b:52:99:22:d2:6f:a2:4b:6e:87:ea:44:9c:86:71:b4:a3:e3:78:56:ad:29:22:e1:85:bf:3f:1a:6f:b5:8a:84:97:aa:4b:0f:16:fb:03:ae:c1:8a:73:1f:db:09:94:f4:c7:d4:31:56:29:2b:c4:70:53:90:8d:28:81:14:dc:96:91:57:ac:3c:ca:5f:7b:5d:7f:07:46:d4:41:c3:8d:1e:32:ad:14:a4:b2:a9:64:a7:2d:88:be:15:8c:30:68:21:65:db:c7:63:c6:d0:85:57:5b:f2:9b:da:96:55:7f:72:47:39:02:15:c4:72:b7:fc:03:48:9b:ac:07:38:85:d7:b3:48:8d:f2:41:d5:08:42:db:b2:9b:8f:ca:4f:62:0f:73:d4:8f:31:a0:d0:31:b1:2f:69:f7:05:c9:cb:d3:4e:75:aa:96:5d:f8
+
+HTTP/2信息:
+  Type: 1
+  Stream ID: 21
+  Length: 877
+  Flags: 0x04
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m HEADERS, Stream ID: 21, Length 877, 200 OK
+[0m[1m[32m	Length:[0m[1m 877
+[0m[1m[32m	Type:[0m[1m HEADERS (1)
+[0m[1m[32m	Flags:[0m[1m 0x04, End Headers
+[0m[1m[32m	00.0 ..0. = Unused:[0m[1m 0x00
+[0m[1m[32m	..0. .... = Priority:[0m[1m False
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... .1.. = End Headers:[0m[1m True
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Header Block Fragment […]:[0m[1m 88611d5468752c203033204a756c20323032352030323a30333a303020474d5476226d772d7765622e636f6466772e6d61696e2d353936376639633862392d783972386e0016782d636f6e74656e742d747970652d6f7074696f6e73076e6f736e6966665b027a6800
+[0m[1m[32m	Header Length:[0m[1m 1140
+[0m[1m[32m	Header Count:[0m[1m 21
+[0m[1m[32m	Header:[0m[1m :status: 200 OK
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name:[0m[1m :status
+[0m[1m[32m	Value Length:[0m[1m 3
+[0m[1m[32m	Value:[0m[1m 200
+[0m[1m[32m	:[0m[1mstatus: 200
+[0m[1m[32m	Unescaped:[0m[1m 200
+[0m[1m[32m	Representation:[0m[1m Indexed Header Field
+[0m[1m[32m	Index:[0m[1m 8
+[0m[1m[32m	date:[0m[1m Thu, 03 Jul 2025 02:03:00 GMT
+[0m[1m[32m	server:[0m[1m mw-web.codfw.main-5967f9c8b9-x9r8n
+[0m[1m[32m	content-language:[0m[1m zh
+[0m[1m[32m	last-modified:[0m[1m Wed, 02 Jul 2025 12:13:51 GMT
+[0m[1m[32m	content-type:[0m[1m text/html; charset=UTF-8
+[0m[1m[32m	content-encoding:[0m[1m gzip
+[0m[1m[32m	age:[0m[1m 0
+[0m[1m[32m	accept-ranges:[0m[1m bytes
+[0m[1m[32m	vary:[0m[1m Accept-Encoding,Cookie,Accept-Language,Authorization
+[0m[1m[32m	strict-transport-security:[0m[1m max-age=106384710; includeSubDomains; preload
+[0m[1m[32m	set-cookie:[0m[1m WMF-DP=c97;Path=/;HttpOnly;secure;Expires=Thu, 03 Jul 2025 00:00:00 GMT
+[0m[1m[32m	cache-control:[0m[1m private, s-maxage=0, max-age=0, must-revalidate, no-transform
+[0m[1m[32m	Time since request:[0m[1m 0.730177000 seconds
+[0m[1m[32m	Request in frame:[0m[1m 645
+[0m[1m[32m	Header:[0m[1m date: Thu, 03 Jul 2025 02:03:00 GMT
+[0m[1m[32m	Header:[0m[1m server: mw-web.codfw.main-5967f9c8b9-x9r8n
+[0m[1m[32m	Header:[0m[1m x-content-type-options: nosniff
+[0m[1m[32m	Header:[0m[1m content-language: zh
+[0m[1m[32m	Header:[0m[1m accept-ch: 
+[0m[1m[32m	Header:[0m[1m last-modified: Wed, 02 Jul 2025 12:13:51 GMT
+[0m[1m[32m	Header:[0m[1m content-type: text/html; charset=UTF-8
+[0m[1m[32m	Header:[0m[1m content-encoding: gzip
+[0m[1m[32m	Header:[0m[1m age: 0
+[0m[1m[32m	Header:[0m[1m accept-ranges: bytes
+[0m[1m[32m	Header:[0m[1m vary: Accept-Encoding,Cookie,Accept-Language,Authorization
+[0m[1m[32m	Header:[0m[1m x-cache: cp5021 miss, cp5021 miss
+[0m[1m[32m	Header:[0m[1m x-cache-status: miss
+[0m[1m[32m	Header:[0m[1m server-timing: cache;desc="miss", host;desc="cp5021"
+[0m[1m[32m	Header:[0m[1m strict-transport-security: max-age=106384710; includeSubDomains; preload
+[0m[1m[32m	Header:[0m[1m report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+[0m[1m[32m	Header:[0m[1m nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+[0m[1m[32m	Header:[0m[1m set-cookie: WMF-DP=c97;Path=/;HttpOnly;secure;Expires=Thu, 03 Jul 2025 00:00:00 GMT
+[0m[1m[32m	Header:[0m[1m x-client-ip: 154.64.226.11
+[0m[1m[32m	Header:[0m[1m cache-control: private, s-maxage=0, max-age=0, must-revalidate, no-transform
+[0m[1m[32m	Name Length:[0m[1m 4
+[0m[1m[32m	Name Length:[0m[1m 6
+[0m[1m[32m	Name Length:[0m[1m 22
+[0m[1m[32m	Name Length:[0m[1m 16
+[0m[1m[32m	Name Length:[0m[1m 9
+[0m[1m[32m	Name Length:[0m[1m 13
+[0m[1m[32m	Name Length:[0m[1m 12
+[0m[1m[32m	Name Length:[0m[1m 16
+[0m[1m[32m	Name Length:[0m[1m 3
+[0m[1m[32m	Name Length:[0m[1m 13
+[0m[1m[32m	Name Length:[0m[1m 4
+[0m[1m[32m	Name Length:[0m[1m 7
+[0m[1m[32m	Name Length:[0m[1m 14
+[0m[1m[32m	Name Length:[0m[1m 13
+[0m[1m[32m	Name Length:[0m[1m 25
+[0m[1m[32m	Name Length:[0m[1m 9
+[0m[1m[32m	Name Length:[0m[1m 3
+[0m[1m[32m	Name Length:[0m[1m 10
+[0m[1m[32m	Name Length:[0m[1m 11
+[0m[1m[32m	Name Length:[0m[1m 13
+[0m[1m[32m	Name:[0m[1m date
+[0m[1m[32m	Name:[0m[1m server
+[0m[1m[32m	Name:[0m[1m x-content-type-options
+[0m[1m[32m	Name:[0m[1m content-language
+[0m[1m[32m	Name:[0m[1m accept-ch
+[0m[1m[32m	Name:[0m[1m last-modified
+[0m[1m[32m	Name:[0m[1m content-type
+[0m[1m[32m	Name:[0m[1m content-encoding
+[0m[1m[32m	Name:[0m[1m age
+[0m[1m[32m	Name:[0m[1m accept-ranges
+[0m[1m[32m	Name:[0m[1m vary
+[0m[1m[32m	Name:[0m[1m x-cache
+[0m[1m[32m	Name:[0m[1m x-cache-status
+[0m[1m[32m	Name:[0m[1m server-timing
+[0m[1m[32m	Name:[0m[1m strict-transport-security
+[0m[1m[32m	Name:[0m[1m report-to
+[0m[1m[32m	Name:[0m[1m nel
+[0m[1m[32m	Name:[0m[1m set-cookie
+[0m[1m[32m	Name:[0m[1m x-client-ip
+[0m[1m[32m	Name:[0m[1m cache-control
+[0m[1m[32m	Value Length:[0m[1m 29
+[0m[1m[32m	Value Length:[0m[1m 34
+[0m[1m[32m	Value Length:[0m[1m 7
+[0m[1m[32m	Value Length:[0m[1m 2
+[0m[1m[32m	Value Length:[0m[1m 0
+[0m[1m[32m	Value Length:[0m[1m 29
+[0m[1m[32m	Value Length:[0m[1m 24
+[0m[1m[32m	Value Length:[0m[1m 4
+[0m[1m[32m	Value Length:[0m[1m 1
+[0m[1m[32m	Value Length:[0m[1m 5
+[0m[1m[32m	Value Length:[0m[1m 52
+[0m[1m[32m	Value Length:[0m[1m 24
+[0m[1m[32m	Value Length:[0m[1m 4
+[0m[1m[32m	Value Length:[0m[1m 37
+[0m[1m[32m	Value Length:[0m[1m 45
+[0m[1m[32m	Value Length:[0m[1m 203
+[0m[1m[32m	Value Length:[0m[1m 94
+[0m[1m[32m	Value Length:[0m[1m 71
+[0m[1m[32m	Value Length:[0m[1m 13
+[0m[1m[32m	Value Length:[0m[1m 61
+[0m[1m[32m	Value:[0m[1m Thu, 03 Jul 2025 02:03:00 GMT
+[0m[1m[32m	Value:[0m[1m mw-web.codfw.main-5967f9c8b9-x9r8n
+[0m[1m[32m	Value:[0m[1m nosniff
+[0m[1m[32m	Value:[0m[1m zh
+[0m[1m[32m	Value:[0m[1m 
+[0m[1m[32m	Value:[0m[1m Wed, 02 Jul 2025 12:13:51 GMT
+[0m[1m[32m	Value:[0m[1m text/html; charset=UTF-8
+[0m[1m[32m	Value:[0m[1m gzip
+[0m[1m[32m	Value:[0m[1m 0
+[0m[1m[32m	Value:[0m[1m bytes
+[0m[1m[32m	Value:[0m[1m Accept-Encoding,Cookie,Accept-Language,Authorization
+[0m[1m[32m	Value:[0m[1m cp5021 miss, cp5021 miss
+[0m[1m[32m	Value:[0m[1m miss
+[0m[1m[32m	Value:[0m[1m cache;desc="miss", host;desc="cp5021"
+[0m[1m[32m	Value:[0m[1m max-age=106384710; includeSubDomains; preload
+[0m[1m[32m	Value:[0m[1m { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+[0m[1m[32m	Value:[0m[1m { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+[0m[1m[32m	Value:[0m[1m WMF-DP=c97;Path=/;HttpOnly;secure;Expires=Thu, 03 Jul 2025 00:00:00 GMT
+[0m[1m[32m	Value:[0m[1m 154.64.226.11
+[0m[1m[32m	Value:[0m[1m private, s-maxage=0, max-age=0, must-revalidate, no-transform
+[0m[1m[32m	Unescaped:[0m[1m Thu, 03 Jul 2025 02:03:00 GMT
+[0m[1m[32m	Unescaped:[0m[1m mw-web.codfw.main-5967f9c8b9-x9r8n
+[0m[1m[32m	Unescaped:[0m[1m nosniff
+[0m[1m[32m	Unescaped:[0m[1m zh
+[0m[1m[32m	Unescaped:[0m[1m 
+[0m[1m[32m	Unescaped:[0m[1m Wed, 02 Jul 2025 12:13:51 GMT
+[0m[1m[32m	Unescaped:[0m[1m text/html; charset=UTF-8
+[0m[1m[32m	Unescaped:[0m[1m gzip
+[0m[1m[32m	Unescaped:[0m[1m 0
+[0m[1m[32m	Unescaped:[0m[1m bytes
+[0m[1m[32m	Unescaped:[0m[1m Accept-Encoding,Cookie,Accept-Language,Authorization
+[0m[1m[32m	Unescaped:[0m[1m cp5021 miss, cp5021 miss
+[0m[1m[32m	Unescaped:[0m[1m miss
+[0m[1m[32m	Unescaped:[0m[1m cache;desc="miss", host;desc="cp5021"
+[0m[1m[32m	Unescaped:[0m[1m max-age=106384710; includeSubDomains; preload
+[0m[1m[32m	Unescaped:[0m[1m { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+[0m[1m[32m	Unescaped:[0m[1m { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+[0m[1m[32m	Unescaped:[0m[1m WMF-DP=c97;Path=/;HttpOnly;secure;Expires=Thu, 03 Jul 2025 00:00:00 GMT
+[0m[1m[32m	Unescaped:[0m[1m 154.64.226.11
+[0m[1m[32m	Unescaped:[0m[1m private, s-maxage=0, max-age=0, must-revalidate, no-transform
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field without Indexing - New Name
+[0m[1m[32m	Representation:[0m[1m Literal Header Field with Incremental Indexing - Indexed Name
+[0m[1m[32m	Index:[0m[1m 33
+[0m[1m[32m	Index:[0m[1m 54
+[0m[1m[32m	Index:[0m[1m 27
+[0m[1m[32m	Index:[0m[1m 44
+[0m[1m[32m	Index:[0m[1m 31
+[0m[1m[32m	Index:[0m[1m 26
+[0m[1m[32m	Index:[0m[1m 21
+[0m[1m[32m	Index:[0m[1m 18
+[0m[1m[32m	Index:[0m[1m 59
+[0m[1m[32m	Index:[0m[1m 56
+[0m[1m[32m	Index:[0m[1m 55
+[0m[1m[32m	Index:[0m[1m 24
+[0m
+
+  提取的帧数据长度: 899 字节
+  提取的帧数据(十六进制): a013090c9446d75df41f48a03006506f17e65146575a03c027c96f62150e6fc8c311fe375dc0c6f130f29b655eed67f8a6b5...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 1798 字符
+  十六进制数据: a013090c9446d75df41f48a03006506f17e65146575a03c027c96f62150e6fc8c311fe375dc0c6f130f29b655eed67f8a6b59f35828da3303390eb6f4e89f4e11bec78dd8e68086b2d2175ce6514eb1c462d771843ef704252304538bcb84f534b486850d9c37038f103d5fcfab2f3bc142027c3c846ebc6d443d1b93bb07e338bad86761d79d7664d32770026f9480b34691d2ffbb8560a18b88a9b37730659142fdf65e0f9b97dd6c53fe7d3e79854039ea87642a6e5cfbb2374bb725f9cf7b275b7ffb5d118232a18b396d4a308359ac373702a9316bba08499d588ba657d2f28e077b2cbc0b1114831395011c3e906700a97566323c822e6e08b34a58bed9f3637e105f08062fa425168dc8b774d692edb9ff3365a40b023d8279f2aa8160bb751b4ec0910af9a1e054a063379295c336cd6cf19ab0d0a7ff171a55d46363df6c77479cb41ada21e1016476877a9c1b6842954e5381bbf4d15637244659a431e01fc762257bf3ab4d2dd58e80ee4f9b00b066dc211e774dcc6762ae192a15be3f4d9d994969f69fd2c72aed55e3b887c2555e9cb7069771e2ad6354959ef980b185a33f3f15fdc32b61898520afc13e796e54a2250a786e33b80f25d7bbbff388b49b377cfa3ff8bc9c59bbba4a8dcf09a06657c8af10de2aaea0f9a17439a062b2065392613fd05722187822f93b4e6dcffb7aa86ee0788e63eeb37c71ba303303a3afe26ade6f7dcdd98e039dab14b837b241b25ab33539c716e6182b63644fc55e98c3e6acbf39c96258c414c9eced227cb876826ce249d8c96f462913bb90c7e18de00fe647458517c655cd480c8c46352856b27fad4366f3fcb7294765bf20325881f787c1fd300d31a1ab7c76526bd45c1bd1239d27515524217bf24297ab2645beace708547b999ba1fbd3db84ae6a43e9177ba6b11747a97cfd7831d9df67b269cf0e66cb2391f89acc2a1c5a652048ed2ef9b303ce8b2193f047c19eab9d0ffca1c75944da0622c327bcc556b58dc1ef897982e2000db2c9b529922d26fa24b6e87ea449c8671b4a3e37856ad2922e185bf3f1a6fb58a8497aa4b0f16fb03aec18a731fdb0994f4c7d43156292bc47053908d288114dc969157ac3cca5f7b5d7f0746d441c38d1e32ad14a4b2a964a72d88be158c30682165dbc763c6d085575bf29bda96557f7247390215c472b7fc03489bac073885d7b3488df241d50842dbb29b8fca4f620f73d48f31a0d031b12f69f705c9cbd34e75aa965df8
+
+================================================================================
+
+数据包 #676 (第3个)
+时间戳: 2025-07-03 10:03:01.065217
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 66536
+  Payload: 17:03:03:00:24:8f:49:f4:51:55:4d:04:ba:65:13:08:b6:48:c1:d7:1d:7d:ac:7a:b7:78:0f:90:48:f5:02:05:a8:54:5f:ef:c4:bc:87:ee:71
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 10
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 10 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 10
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data:[0m[1m 1f8b0800000000000003
+[0m[1m[32m	Connection window size (before):[0m[1m 15671791
+[0m[1m[32m	Connection window size (after):[0m[1m 15671781
+[0m[1m[32m	Stream window size (before):[0m[1m 6291456
+[0m[1m[32m	Stream window size (after):[0m[1m 6291446
+[0m
+
+  提取的帧数据长度: 32 字节
+  提取的帧数据(十六进制): 554d04ba651308b648c1d71d7dac7ab7780f9048f50205a8545fefc4bc87ee71...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 64 字符
+  十六进制数据: 554d04ba651308b648c1d71d7dac7ab7780f9048f50205a8545fefc4bc87ee71
+
+================================================================================
+
+数据包 #698 (第4个)
+时间戳: 2025-07-03 10:03:01.536237
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 81177
+  Payload: 37:c8:2c:30:d4:d3:84:34:79:08:95:2c:39:2a:df:9c:70:0b:74:9a:bb:e8:5c:1e:b9:30:59:1a:ec:1c:8f:bb:d3:84:98:db:7f:25:08:04:e5:ca:8c:af:26:82:a3:e1:74:b7:76:94:ba:02:d8:72:d1:47:66:6f:83:81:aa:b8:c9:4d:18:7e:33:28:c0:55:a2:59:e0:74:70:dd:c7:85:64:60:69:31:52:e3:40:27:4c:56:46:75:0d:b1:78:55:26:75:37:21:91:b4:72:91:82:f6:01:dc:37:31:4d:d0:72:dc:f7:5b:e5:57:cf:27:14:fa:53:f1:64:c5:8d:01:c1:54:1d:35:b7:59:0d:b3:9d:3c:38:93:46:a0:b1:3c:5e:bf:d7:90:ed:40:96:2a:82:37:d9:28:e0:f2:1c:03:7f:b2:68:dd:df:c6:b3:40:df:01:09:d7:36:19:83:ad:a4:fd:fe:23:55:be:49:93:73:b7:a0:47:84:89:92:1b:b2:3c:4f:fd:a8:00:5a:d0:13:fc:7e:ea:80:1f:bc:0c:17:b8:f1:91:c7:a4:0f:1e:65:e2:99:99:25:f5:33:1d:01:80:51:be:2c:6c:20:e2:be:e5:ce:e0:28:9d:32:51:34:57:74:c5:40:22:7e:94:e3:40:e5:c7:0e:3e:d1:ae:57:c3:32:13:3d:79:d6:4f:ad:7a:64:de:40:ca:20:ae:53:f2:87:23:f1:63:fd:99:58:ee:59:3b:be:5f:bf:90:96:95:ef:e0:a1:56:92:4b:4a:b1:a9:cb:2c:c1:ed:fb:83:32:91:b0:10:c9:2e:1e:4a:7b:7e:41:be:9d:a6:00:54:ff:ce:8b:3f:9a:e8:dc:cc:b6:ee:b9:2f:3a:cf:3f:b8:43:b3:16:68:61:43:3c:76:3c:f8:86:b0:1a:b1:5e:0e:24:6f:96:b8:ec:32:73:ac:e5:b9:84:83:14:63:af:82:2c:7c:5f:cd:56:56:c0:87:b5:21:e5:cb:6f:92:03:31:67:33:6b:ff:b3:2f:09:5b:fa:7a:e3:22:d2:69:a4:93:82:e8:6f:91:f3:73:21:b4:1a:29:39:55:7b:3b:f7:48:13:89:97:b1:8b:75:cf:09:e3:e7:0d:74:1e:6e:89:b0:d4:00:9b:6f:60:c6:98:00:ee:d3:33:6b:32:11:6e:32:cd:35:b4:9b:4c:56:16:d4:73:53:c1:09:b1:da:d1:e1:22:73:5e:c7:0f:c4:f4:20:a1:10:68:f1:82:21:e6:6a:94:f6:75:b5:e2:93:f7:b6:ab:cc:56:49:de:9c:48:0d:c5:b0:e8:ad:ed:21:db:d6:7c:d2:b1:75:3a:11:f7:7e:1b:f2:d4:8c:2d:fd:f9:2b:08:61:e3:9a:d5:75:9a:29:9a:cc:4b:98:c8:40:fb:54:e2:2f:9d:f0:39:3e:98:94:77:17:b0:e3:b9:61:ae:53:a9:3b:ff:85:96:83:92:46:66:0c:b6:36:eb:b2:75:c4:fa:ea:e3:08:a3:4f:ff:3c:ae:33:61:dd:06:2a:0c:66:61:a7:c8:53:15:63:12:75:43:1d:3f:b6:38:84:1d:b9:42:59:2a:a7:80:a9:0d:6a:d3:ca:08:66:6d:aa:2b:03:ec:bc:eb:7a:d5:a3:48:a5:6d:e2:22:a3:6b:51:69:c0:c0:17:79:43:c0:ce:99:23:d9:af:6c:50:a5:68:36:43:b9:9f:36:2f:47:15:89:4b:eb:49:8b:17:57:a6:11:31:b2:37:7c:1e:0a:a2:57:01:ce:18:ab:0d:69:39:20:46:2d:49:69:d8:91:26:92:b8:77:66:6c:8b:4a:af:24:e4:ae:16:d2:3f:36:d1:83:92:d9:15:7e:f7:ec:51:d0:4e:ac:78:e4:d1:c7:67:6c:71:f4:af:e5:48:b3:35:30:62:ae:54:e1:0e:62:dc:70:19:47:e9:1e:b6:22:c3:38:dd:57:fc:8c:86:d8:85:2d:ec:3d:72:00:94:96:24:d8:9d:78:3d:23:2f:89:fc:2a:2f:4e:96:2c:63:44:12:33:c4:89:a4:86:ee:8e:e4:27:c6:8d:a8:9d:70:3b:a3:bb:86:fa:36:b7:ef:4e:b6:95:11:6a:ff:7f:38:02:d0:e5:3d:0b:6e:1f:77:21:f4:e3:73:98:2f:51:8a:f8:76:17:bd:07:1e:e3:0d:37:3e:87:be:62:39:83:4d:31:7a:de:0b:ea:86:af:a9:fe:60:83:07:ad:28:a6:2b:23:62:95:45:02:0a:c4:e9:46:41:e6:c8:4e:cd:ac:18:ec:15:90:3e:8b:61:ed:43:ed:b2:53:60:c8:ac:75:07:80:89:5b:82:d2:17:b5:24:75:24:70:7f:aa:af:46:70:05:5b:54:c2:f6:49:67:2d:79:c0:6e:e7:c8:2a:d4:4e:2a:76:da:14:a0:ed:0d:e9:2a:a9:a6:71:7a:c0:a9:bf:63:63:d6:1f:b1:ff:93:03:60:51:11:06:b8:35:d9:9d:18:e4:3e:66:d4:12:23:05:f0:37:86:67:45:92:d3:12:f0:c7:04:1e:c2:e9:07:d6:b7:ba:98:4e:43:cc:fc:f1:d2:32:5d:9c:a4:98:c2:d3:f9:1c:32:77:03:50:f2:d5:d3:bf:ce:c8:58:ac:cb:a4:f5:4c:24:bc:4b:34:0f:ee:d4:e7:b0:14:be:b4:92:cc:ee:19:e0:26:44:ec:a1:e3:a1:aa:69:2b:7c:47:60:45:d8:91:32:c3:7d:2a:ba:2c:8e:58:87:61:88:3e:ac:61:cf:e0:64:11:f4:79:2d:5f:6a:1f:ef:79:8d:f4:57:57:31:64:65:11:38:be:30:c1:fb:d6:b1:5b:a5:89:64:af:81:c4:59:89:e5:f5:7d:86:77:28:92:b3:21:40:16:ad:63:7d:0c:55:8f:bd:6f:63:28:53:e1:14:19:21:08:de:cb:42:94:7d:82:d5:bc:e0:38:fd:9a:41:03:e4:43:dc:4d:d2:64:14:21:74:e7:b4:2c:86:c9:f5:f5:bc:54:9f:34:bc:d4:b6:03:61:2e:06:05:b7:75:28:03:6a:56:ab:63:09:b9:a9:c3:5b:9a:13:65:a7:1b:f3:18:a1:2f:07:66:e0:a5:ff:93:e7:8d:aa:54:ea:fb:9d:1a:0e:6c:e7:04:ab:4f:8a:22:4c:d7:41:f5:25:c7:32:34:ab:ef:00:96:87:b8:72:e7:0f:c2:0e:e6:98:b2:e5:7f:70:80:ef:f9:01:8e:71:4c:a7:ac:b5:4a:cd:b7:92:1b:cd:8c:d5:dc:92:4f:ea:39:05:85:f8:69:e2:f7:30:e8:77:13:bc:0a:8f:7f:66:30:45:9a:3c:95:4e:9f:f5:c6:8e:dc:e5:91:2a:44:2e:32:70:b1:22:80:dd:6f:0c:a9:8f:76:b3:ef:c7:cb:b6:c0:95:2b:42:65:d7:1c:c3:15:ae:53:26:6c:23:62:bc:24:26:d2:55:b3:e9:68:78:5d:2d:3a:82:b5:75:38:c1:a0:da:0e:d1:0a:a5:18:7b:93:2e:8d:19:e0:e0:5e:0a:14:2b:8f:19:f6:ec:7b:db:3c:a4:44:b7:b3:94:d1:fc:35:c2:32:c3:7a:df:91:14:bd:c2:65:46:3a:ce:d4:07:3b:60:1a:8d:bf:2d:47:55:19:10:8c:e5:0d:4e:7c:da:69:a3:f5:fc:4a:8a:65:b9:4f:48:f9:28:fe:38:10:e3:56:ad:ba:08:18:15:5c:b2:ed:97:67:d7:ac:f7:b8:e4:02:ae:24:5b:4c:ee:99:7c:93:95:ea:3f:83:37:48:2c:ff:49:87:54:8d:c6:46:72:6e:e4:ed:56:76:25:19:c1:db:51:bc:c8:7d:50:b5:ea:4c:95:0d:21:a9:77:2b:f6:37:d1:e4:03:1a:4f:29:7f:d7:f5:40:f9:b0:79:d4:69:0f:10:cb:11:6a:85:2f:e9:71:99:f6:04:a3:bb:1a:34:e4:aa:4e:ff:67:fc:81:96:bf:83:e8:fc:78:22:31:49:69:01:29:33:1b:56:99:3b:64:a6:40:ab:21:b4:6e:eb:3a:17:5a:5d:85:dc:9d:e3:db:f1:dd:31:98:21:bc:ca:9b:0a:30:3d:22:f3:53:8b:fd:fe:c6:a1:95:63:e1:4a:1a:ba:51:c0:8a:45:24:da:80:f8:46:5c:88:a4:46:98:1b:40:fc:3d:67:38:5f:d8:15:9a:19:0c:1d:3a:9a:0a:3d:b3:b6:fa:39:50:b9:4f:dd:c8:3a:50:42:f6:58:73:b0:56:5d:03:b6:57:72:9c:41:9a:26:13:fd:d9:2a:db:11:5b:a1:a1:0a:f7:7e:94:cd:3d:e2:30:5d:65:0d:2e:ba:89:f5:34:b1:f2:03:bf:c0:e7:31:5d:64:cd:9c:db:c2:43:27:d8:31:ec:16:7d:f6:69:3d:c5:49:12:56:a7:c9:07:62:bb:c8:b2:3a:9b:18:6a:37:a6:5e:54:a4:e9:7e:70:15:f2:30:40:07:26:cc:64:02:1b:ca:c9:bc:ec:dd:1c:ce:26:49:91:0a:c8:d0:d9:6f:5f:31:73:ef:4c:3c:c5:c4:71:66:4d:0d:c9:eb:89:fc:b4:1b:00:17:03:03:3f:da:15:84:9d:cd:6a:49:43:68:7e:aa:4a:b0:be:99:20:47:f5:2d:0d:1c:dc:44:ac:56:7a:c9:b6:32:72:67:cd:6f:c9:1a:31:16:7b:0b:f2:d6:c1:f0:b8:4c:dc:cb:0f:41:d0:3d:02:fe:b0:fb:7b:bf:af:7b:22:e9:24:91:a4:a4:5f:ec:f3:74:4c:5b:73:62:74:7f:73:c8:cc:eb:a1:37:cd:55:b3:01:a9:1a:e9:91:1d:12:0c:19:a0:24:d7:3f:82:2c:46:61:c0:d7:42:9d:0c:52:09:72:23:10:00:78:f4:b2:a1:f2:65:db:a3:21:5f:97:dc:c3:af:a0:98:e1:25:7e:a4:37:dc:3a:dc:19:af:f5:5c:03:19:cc:a9:62:ce:d4:05:b4:49:4c:14:98:7d:63:b2:59:68:41:65:3e:4c:8f:3c:d8:93:1c:55:34:c3:df:ad:e7:77:6c:9f:86:22:c2:1a:86:53:c2:cf:c6:63:00:85:99:e8:d8:29:14:35:25:5f:23:36:5c:23:cf:75:78:d4:13:8b:f5:fc:bd:38:c4:7c:81:7e:8d:d5:22:8f:f2:ff:79:68:b3:1a:60:40:77:87:4e:e5:e9:47:a7:a6:87:5e:74:93:e1:50:10:12:83:a1:cf:f9:5b:e3:df:46:14:14:23:52:34:dc:fa:a3:90:5f:d9:12:fb:b1:1d:d2:1f:5d:0d:12:23:32:0d:36:1f:09:99:4f:91:7e:b9:fc:72:64:ff:b7:f2:8c:c3:d5:b9:10:0a:a9:7f:62:b0:fe:97:f1:76:4e:85:c5:c5:eb:87:1b:58:3a:f8:2b:e1:ad:4f:03:d6:8b:7b:b5:1e:99:42:1e:98:fd:fb:f8:13:3d:bb:f3:63:7c:60:7a:54:91:67:85:d2:b1:97:97:d9:98:b2:79:8b:31:8f:d7:1f:eb:2b:40:6b:9f:d5:29:30:2d:b0:a2:e9:94:b0:5f:ba:e6:6b:46:15:a3:ac:7f:c0:86:4a:70:83:1c:fe:60:fb:50:bc:4d:55:68:0e:3d:55:4c:ab:20:8a:af:79:37:ba:92:0b:6c:af:46:81:1c:3d:48:f4:c4:2f:c8:3b:e3:6e:41:bf:7f:c5:5f:86:0e:dc:b4:16:c6:a0:1f:31:27:a9:d1:ea:8b:9e:0e:b9:4e:62:98:72:59:ab:1b:fd:95:01:b1:d5:aa:c0:80:ef:a5:a5:94:b4:11:d7:25:b3:3b:61:3d:94:0c:a8:c2:3e:f3:1f:4c:28:6f:67:f5:0e:f8:71:8b:92:6e:43:69:e8:b5:01:92:30:a2:7b:7e:fd:1a:c5:56:45:7b:04:7f:87:68:f0:d9:7e:00:b2:af:68:ab:b8:d6:5a:77:ad:77:89:f4:3b:c3:62:af:99:23:e8:29:b7:1e:04:b0:d7:82:4a:cc:29:ea:b9:c0:1d:d8:30:23:a3:7a:75:94:6c:52:3e:21:90:f2:4c:47:75:21:96:e3:dc:50:74:5e:bd:57:e0:79:c8:63:f1:c6:f7:c4:ff:8c:5b:27:e4:66:9a:b1:42:ba:0b:bb:73:44:12:78:66:1f:f4:be:5f:b4:c6:8b:62:82:4d:8d:73:08:0e:3a:a6:85:3f:cc:8d:1a:23:4c:41:13:03:f5:a7:cc:76:d8:56:d9:1e:8d:83:68:2d:8d:59:22:28:e8:45:e0:8a:15:d6:6f:5b:70:51:3c:29:63:dc:ca:0e:ad:21:40:11:8e:7a:21:c7:a3:c5:86:c0:dd:93:28:25:ee:88:c8:67:31:20:b3:a1:0b:3a:be:2b:83:95:66:93:5b:75:6e:4d:d6:d4:c2:9e:53:4a:77:09:7a:eb:17:16:7c:7f:51:b1:17:f1:96:1a:7e:c1:fd:f8:2c:31:71:3b:1e:53:86:f7:ee:d3:d1:eb:f4:ed:a4:4c:b6:f8:ba:cb:a7:78:fe:dd:90:81:72:ed:03:1c:ba:88:f5:5a:8d:98:c4:08:f6:63:82:48:f9:9c:06:8f:06:da:1a:c5:05:80:05:53:48:37:8c:ab:2b:af:14:97:f6:88:5f:3b:50:57:0e:7b:ad:69:39:0e:fe:6b:ba:a5:c1:8e:80:10:c3:e9:1f:ee:02:ca:ed:3a:41:1c:29:c6:3e:58:a5:0d:19:03:55:51:d2:7a:41:be:04:e7:d1:72:d9:96:3b:56:f8:04:b9:d8:a3:08:03:9a:c0:b4:41:97:57:17:d5:3d:29:aa:10:46:dc:7d:0a:bf:ce:7c:96:aa:11:9b:50:dc:c0:36:5c:32:5d:2d:24:bd:93:32:9b:20:9f:a1:a0:aa:02:ef:fa:26:08:c9:62:18:dc:ed:47:18:a7:5c:ca:45:ff:b9:a9:3d:ac:34:e8:14:e8:84:45:61:f9:12:93:6d:30:a8:df:46:48:bc:7c:da:8e:16:7a:36:c8:41:86:2a:18:6a:e9:9e:ea:05:88:16:67:1f:b2:45:80:6a:cc:67:0d:9a:54:1d:43:cb:e5:68:ef:f2:99:63:ab:bf:53:8d:06:08:78:49:f7:05:60:b2:05:4e:fe:6a:3d:ca:83:ce:9a:9c:c3:51:41:92:bb:72:ce:10:bb:3d:0b:5a:4b:ec:e0:45:c9:69:9e:49:df:f5:5d:8f:a8:49:da:ce:47:0e:8b:fd:37:0e:33:24:eb:0a:d0:fb:01:60:d0:c0:07:ed:1d:14:66:1f:cf:5e:ce:ad:e6:23:8a:c5:1a:55:6b:4e:b7:96:58:63:8e:a8:75:17:44:fe:33:96:e2:59:4b:9b:84:24:ce:76:eb:5b:df:b5:c3:72:02:07:06:59:4a:a4:f0:0b:ac:04:22:8c:33:f1:fc:52:7e:84:1e:b3:54:cc:0a:18:6c:f4:a3:40:bc:cb:4c:05:c0:2a:11:df:f4:da:a3:83:5b:63:18:48:2b:e4:29:35:42:58:80:3d:a2:b7:fc:65:86:0e:33:4f:3a:ae:7e:04:87:a1:93:5e:7c:e2:67:d0:f3:24:db:77:78:94:07:04:2f:bf:16:39:30:55:f4:0a:65:61:aa:36:ce:e8:c1:c5:5b:6c:7f:f1:73:f9:ca:1a:f9:0b:e9:8a:98:af:53:d7:54:10:9d:ec
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 16312
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 16312 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 16312
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m ecfd695763697a208a7eaefc1574b8e33af3ba20989172ea0331d8754f955d76a6dbab97db5d8b08141154124003919159e55a4b020412420882198960143342cc1a90b4d6f11fb0bf75dff3c5c7d61e7457df55f727dc6778f7d696d89a18b2b2dbc78ecabdd9dafb1d9ef77d9f79f8fcd
+[0m[1m[32m	Connection window size (before):[0m[1m 15728640
+[0m[1m[32m	Connection window size (after):[0m[1m 15712328
+[0m[1m[32m	Stream window size (before):[0m[1m 6291446
+[0m[1m[32m	Stream window size (after):[0m[1m 6275134
+[0m
+
+  提取的帧数据长度: 2911 字节
+  提取的帧数据(十六进制): 08952c392adf9c700b749abbe85c1eb930591aec1c8fbbd38498db7f250804e5ca8caf2682a3e174b77694ba02d872d14766...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 5822 字符
+  十六进制数据: 08952c392adf9c700b749abbe85c1eb930591aec1c8fbbd38498db7f250804e5ca8caf2682a3e174b77694ba02d872d147666f8381aab8c94d187e3328c055a259e07470ddc7856460693152e340274c5646750db178552675372191b4729182f601dc37314dd072dcf75be557cf2714fa53f164c58d01c1541d35b7590db39d3c389346a0b13c5ebfd790ed40962a8237d928e0f21c037fb268dddfc6b340df0109d7361983ada4fdfe2355be499373b7a0478489921bb23c4ffda8005ad013fc7eea801fbc0c17b8f191c7a40f1e65e2999925f5331d018051be2c6c20e2bee5cee0289d3251345774c540227e94e340e5c70e3ed1ae57c332133d79d64fad7a64de40ca20ae53f28723f163fd9958ee593bbe5fbf909695efe0a156924b4ab1a9cb2cc1edfb833291b010c92e1e4a7b7e41be9da60054ffce8b3f9ae8dcccb6eeb92f3acf3fb843b3166861433c763cf886b01ab15e0e246f96b8ec3273ace5b984831463af822c7c5fcd5656c087b521e5cb6f92033167336bffb32f095bfa7ae322d269a49382e86f91f37321b41a2939557b3bf748138997b18b75cf09e3e70d741e6e89b0d4009b6f60c69800eed3336b32116e32cd35b49b4c5616d47353c109b1dad1e122735ec70fc4f420a11068f18221e66a94f675b5e293f7b6abcc5649de9c480dc5b0e8aded21dbd67cd2b1753a11f77e1bf2d48c2dfdf92b0861e39ad5759a299acc4b98c840fb54e22f9df0393e98947717b0e3b961ae53a93bff8596839246660cb636ebb275c4faeae308a34fff3cae3361dd062a0c6661a7c85315631275431d3fb638841db942592aa780a90d6ad3ca08666daa2b03ecbceb7ad5a348a56de222a36b5169c0c0177943c0ce9923d9af6c50a5683643b99f362f4715894beb498b1757a61131b2377c1e0aa25701ce18ab0d693920462d4969d8912692b877666c8b4aaf24e4ae16d23f36d18392d9157ef7ec51d04eac78e4d1c7676c71f4afe548b3353062ae54e10e62dc701947e91eb622c338dd57fc8c86d8852dec3d7200949624d89d783d232f89fc2a2f4e962c63441233c489a486ee8ee427c68da89d703ba3bb86fa36b7ef4eb695116aff7f3802d0e53d0b6e1f7721f4e373982f518af87617bd071ee30d373e87be6239834d317ade0bea86afa9fe608307ad28a62b23629545020ac4e94641e6c84ecdac18ec15903e8b61ed43edb25360c8ac750780895b82d217b5247524707faaaf4670055b54c2f649672d79c06ee7c82ad44e2a76da14a0ed0de92aa9a6717ac0a9bf6363d61fb1ff930360511106b835d99d18e43e66d4122305f03786674592d312f0c7041ec2e907d6b7ba984e43ccfcf1d2325d9ca498c2d3f91c32770350f2d5d3bfcec858accba4f54c24bc4b340feed4e7b014beb492ccee19e02644eca1e3a1aa692b7c476045d89132c37d2aba2c8e588761883eac61cfe06411f4792d5f6a1fef798df457573164651138be30c1fbd6b15ba58964af81c45989e5f57d86772892b3214016ad637d0c558fbd6f632853e114192108decb42947d82d5bce038fd9a4103e443dc4dd264142174e7b42c86c9f5f5bc549f34bcd4b603612e0605b77528036a56ab6309b9a9c35b9a1365a71bf318a12f0766e0a5ff93e78daa54eafb9d1a0e6ce704ab4f8a224cd741f525c73234abef009687b872e70fc20ee698b2e57f7080eff9018e714ca7acb54acdb7921bcd8cd5dc924fea390585f869e2f730e87713bc0a8f7f6630459a3c954e9ff5c68edce5912a442e3270b12280dd6f0ca98f76b3efc7cbb6c0952b4265d71cc315ae53266c2362bc2426d255b3e968785d2d3a82b57538c1a0da0ed10aa5187b932e8d19e0e05e0a142b8f19f6ec7bdb3ca444b7b394d1fc35c232c37adf9114bdc265463aced4073b601a8dbf2d475519108ce50d4e7cda69a3f5fc4a8a65b94f48f928fe3810e356adba0818155cb2ed9767d7acf7b8e402ae245b4cee997c9395ea3f8337482cff4987548dc646726ee4ed56762519c1db51bcc87d50b5ea4c950d21a9772bf637d1e4031a4f297fd7f540f9b079d4690f10cb116a852fe97199f604a3bb1a34e4aa4eff67fc8196bf83e8fc78223149690129331b56993b64a640ab21b46eeb3a175a5d85dc9de3dbf1dd319821bcca9b0a303d22f3538bfdfec6a19563e14a1aba51c08a4524da80f8465c88a446981b40fc3d67385fd8159a190c1d3a9a0a3db3b6fa3950b94fddc83a5042f65873b0565d03b657729c419a2613fdd92adb115ba1a10af77e94cd3de2305d650d2eba89f534b1f203bfc0e7315d64cd9cdbc24327d831ec167df6693dc5491256a7c90762bbc8b23a9b186a37a65e54a4e97e7015f230400726cc64021bcac9bcecdd1cce2649910ac8d0d96f5f3173ef4c3cc5c471664d0dc9eb89fcb41b001703033fda15849dcd6a4943687eaa4ab0be992047f52d0d1cdc44ac567ac9b6327267cd6fc91a31167b0bf2d6c1f0b84cdccb0f41d03d02feb0fb7bbfaf7b22e92491a4a45fecf3744c5b7362747f73c8cceba137cd55b301a91ae9911d120c19a024d73f822c4661c0d7429d0c52097223100078f4b2a1f265dba3215f97dcc3afa098e1257ea437dc3adc19aff55c0319cca962ced405b4494c14987d63b2596841653e4c8f3cd8931c5534c3dfade7776c9f8622c21a8653c2cfc663008599e8d8291435255f23365c23cf7578d4138bf5fcbd38c47c817e8dd5228ff2ff7968b31a604077874ee5e947a7a6875e7493e150101283a1cff95be3df461414235234dcfaa3905fd912fbb11dd21f5d0d1223320d361f09994f917eb9fc7264ffb7f28cc3d5b9100aa97f62b0fe97f1764e85c5c5eb871b583af82be1ad4f03d68b7bb51e99421e98fdfbf8133dbbf3637c607a54916785d2b19797d998b2798b318fd71feb2b406b9fd529302db0a2e994b05fbae66b4615a3ac7fc0864a70831cfe60fb50bc4d55680e3d554cab208aaf7937ba920b6caf46811c3d48f4c42fc83be36e41bf7fc55f860edcb416c6a01f3127a9d1ea8b9e0eb94e62987259ab1bfd9501b1d5aac080efa5a594b411d725b33b613d940ca8c23ef31f4c286f67f50ef8718b926e4369e8b5019230a27b7efd1ac556457b047f8768f0d97e00b2af68abb8d65a77ad7789f43bc362af9923e829b71e04b0d7824acc29eab9c01dd83023a37a75946c523e2190f24c47752196e3dc50745ebd57e079c863f1c6f7c4ff8c5b27e4669ab142ba0bbb73441278661ff4be5fb4c68b62824d8d73080e3aa6853fcc8d1a234c411303f5a7cc76d856d91e8d83682d8d592228e845e08a15d66f5b70513c2963dcca0ead2140118e7a21c7a3c586c0dd932825ee88c8673120b3a10b3abe2b839566935b756e4dd6d4c29e534a77097aeb17167c7f51b117f1961a7ec1fdf82c31713b1e5386f7eed3d1ebf4eda44cb6f8bacba778fedd908172ed031cba88f55a8d98c408f6638248f99c068f06da1ac50580055348378cab2baf1497f6885f3b50570e7bad69390efe6bbaa5c18e8010c3e91fee02caed3a411c29c63e58a50d19035551d27a41be04e7d172d9963b56f804b9d8a308039ac0b441975717d53d29aa1046dc7d0abfce7c96aa119b50dcc0365c325d2d24bd93329b209fa1a0aa02effa2608c96218dced4718a75cca45ffb9a93dac34e814e8844561f912936d30a8df4648bc7cda8e167a36c841862a186ae99eea058816671fb245806acc670d9a541d43cbe568eff29963abbf538d06087849f70560b2054efe6a3dca83ce9a9cc3514192bb72ce10bb3d0b5a4bece045c9699e49dff55d8fa849dace470e8bfd370e3324eb0ad0fb0160d0c007ed1d14661fcf5eceade6238ac51a556b4eb79658638ea8751744fe3396e2594b9b8424ce76eb5bdfb5c372020706594aa4f00bac04228c33f1fc527e841eb354cc0a186cf4a340bccb4c05c02a11dff4daa3835b6318482be429354258803da2b7fc65860e334f3aae7e0487a1935e7ce267d0f324db77789407042fbf16393055f40a6561aa36cee8c1c55b6c7ff173f9ca1af90be98a98af53d754109dec
+
+================================================================================
+
+数据包 #741 (第5个)
+时间戳: 2025-07-03 10:03:01.536585
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 98737
+  Payload: e9:b2:ca:87:ef:56:fc:8b:14:e2:7e:ea:3e:63:ca:6c:b3:ba:9b:d1:8d:48:a8:9e:d1:48:4b:b0:55:03:c5:f5:5f:10:22:5a:0e:64:38:b0:8b:b9:71:5f:b1:4d:a6:09:da:65:56:78:4a:ef:ce:15:9f:c4:59:4c:09:d5:a3:e9:7c:05:5c:44:3d:df:ac:07:ab:05:78:ad:e6:0b:c3:c7:c5:d5:4a:a4:a2:3d:39:4e:c9:e7:ba:b5:0e:5c:e8:66:99:61:59:65:30:68:49:d6:b6:bc:34:96:be:96:76:4c:c6:c8:fd:72:a5:46:f2:a0:37:7f:04:c6:4b:ca:9f:23:7f:2f:48:81:35:0f:c0:80:9a:81:37:ef:08:d9:fc:5c:33:e6:ff:ec:bb:3e:fc:bd:49:08:48:50:8b:03:71:49:61:00:ff:b4:4d:ed:20:6b:a0:0a:28:cf:c0:f2:15:2f:df:0a:8a:c5:e7:25:00:53:1e:9d:5d:02:ac:eb:93:18:81:3c:72:a3:d3:67:55:83:07:db:ad:01:50:07:8e:35:85:d7:74:ad:01:31:e6:8f:dd:c8:5e:2a:6e:c1:4a:8f:47:be:ca:a8:36:cf:aa:be:47:85:80:0a:c7:18:b1:00:c6:53:5f:f1:66:a1:06:c5:66:8c:b3:a7:b2:97:bc:50:ab:e6:b5:5f:36:89:3c:2e:15:d5:2c:bb:67:55:36:8f:42:e6:78:c8:2a:45:34:a3:33:35:e9:69:10:ca:f5:7d:90:f1:22:07:75:8f:b9:59:0b:df:c9:a3:37:86:30:86:ab:69:0d:4d:f1:8a:e2:df:43:1a:29:ab:aa:d0:69:7c:4e:a5:37:b9:d1:5d:83:c1:ff:b2:3f:ca:9d:f6:63:5f:7a:d8:72:ee:26:97:5d:3c:5c:28:eb:ad:47:2c:61:c1:46:0b:97:d7:09:7c:00:12:a4:eb:ba:d8:3b:86:ea:55:7c:17:9e:e8:ff:f7:2b:25:7c:85:28:c7:c7:34:17:fe:57:ad:d5:2c:44:53:e8:23:bd:78:3e:8c:22:63:a2:d9:bd:b2:f6:42:7d:b2:ed:29:11:37:22:55:17:5d:51:53:e1:d4:6b:0c:1c:a0:84:87:b3:82:fe:e5:f2:60:b3:05:d7:15:ec:bf:33:31:b8:fd:e5:93:88:4f:e8:a1:12:ac:f5:34:ad:99:77:83:df:0b:d2:d1:23:21:cc:73:46:07:41:49:72:b2:98:5b:4f:7f:09:34:33:37:91:1c:4c:a4:0e:97:63:d6:fd:d2:df:35:b8:5c:d6:9b:e4:9f:be:29:ad:07:14:c9:e9:4a:c2:b5:6a:40:04:23:68:56:f4:7d:55:61:dd:a7:ba:b0:c8:07:15:ea:60:06:0d:1e:bd:be:ea:d3:6a:90:e4:5c:17:03:03:3f:d0:54:90:8a:eb:49:33:b8:6a:34:bb:be:91:93:9e:77:4e:61:60:0c:a1:40:76:a6:14:7e:5d:06:31:08:fd:4f:b3:bc:af:78:8b:b4:83:c4:43:6b:f3:91:af:f4:1a:6f:66:5f:9a:a4:e5:3b:bf:c6:40:a7:75:2a:66:de:3a:65:f2:68:7e:d6:e4:95:3b:22:38:2c:da:a9:95:97:33:dd:db:80:b4:d0:c6:ba:e4:a8:77:b2:74:0f:dc:c0:06:29:b2:48:d2:9c:04:b0:ab:b4:d8:ec:4f:9b:4e:a0:d4:2a:30:5d:d2:86:20:9b:29:f6:5b:05:96:59:f0:17:59:4d:1d:dc:13:9c:c0:c5:f2:b3:7b:e6:2b:e8:06:b1:56:81:8c:d7:8f:43:e0:6d:fb:83:7f:9c:38:f0:09:14:b7:c7:e4:ac:da:d4:54:f8:e1:05:ff:99:11:40:19:78:85:0d:7f:58:dd:3b:6d:f1:dc:a6:46:96:10:03:3f:ea:76:99:f3:61:25:2c:76:3e:ae:74:f1:72:a0:01:8b:b6:88:23:c1:06:8a:62:23:d8:47:c9:11:af:28:d8:5b:dc:65:c6:20:ef:5e:42:a1:ca:f6:96:02:89:5c:e3:97:19:52:c1:50:10:e1:5b:d9:11:f8:8a:51:ba:1b:df:eb:b1:50:5d:6d:bf:ca:b6:13:c3:71:f6:61:d7:af:66:66:9c:60:ec:67:ae:76:7a:ae:35:a1:5a:c3:79:05:24:36:7c:8f:be:6e:3f:db:3b:12:6c:8d:4e:55:bc:74:fa:aa:b4:c5:13:2a:a7:80:eb:f6:46:e7:62:7d:d2:e9:a0:56:bd:a5:5b:b1:15:3a:d2:3b:f5:8d:3b:0e:ce:a6:28:40:51:0c:7d:b8:b6:f7:db:86:4a:2d:56:06:e6:cf:bc:82:2d:ab:e1:ce:f3:bf:34:b3:4a:1a:1c:7d:93:c5:ac:d5:6e:d6:84:16:79:24:1c:54:28:af:f3:8d:09:d3:41:78:cf:a5:fd:90:94:b2:14:fe:ed:50:49:91:15:c1:44:da:ad:fb:02:c9:6a:05:37:b2:14:86:bb:fd:15:4c:d2:b2:40:88:da:10:65:ab:5a:9b:54:4d:0b:ae:c4:c1:c0:c9:d8:ed:7f:fc:88:3e:dd:e8:89:7d:64:cd:da:ff:98:f6:5e:7b:60:7f:6b:40:2a:2a:db:a8:31:e9:c3:8c:06:cd:8b:00:b3:d7:5b:b1:24:89:9d:de:fc:92:72:8b:49:2c:2a:87:59:fd:83:76:ee:f2:9c:04:2a:44:d0:ff:ed:6c:77:ec:05:d8:cd:80:84:21:25:e9:a8:51:74:f7:4e:d1:70:51:4d:49:ee:b5:8d:ba:1e:b9:b8:f0:20:09:ad:83:92:45:bc:c2:4f:38:45:49:12:40:24:db:79:3e:c8:5c:36:9a:72:a5:97:7e:a1:87:f2:6f:27:71:c8:13:d6:94:35:dd:6d:c5:e5:ce:8c:7d:b7:4f:cc:02:b5:4a:f1:c2:57:cb:ec:33:0e:68:21:9d:d9:02:6a:16:aa:4f:92:2d:35:fb:12:96:30:59:42:e1:ad:cc:07:51:ec:bf:96:fd:03:06:ab:67:47:a1:db:57:92:0f:ea:85:97:28:cb:89:1b:84:08:67:a6:36:81:93:83:53:7b:5d:f7:d4:e2:ff:5f:07:91:51:05:95:a3:dc:d6:aa:71:7e:57:9f:72:79:04:4e:74:2a:c9:55:0a:c9:57:ae:c0:b6:0c:62:42:c1:10:12:18:55:87:ee:0d:8f:c7:15:c8:5c:89:4a:7f:0d:f2:bb:9f:9e:ed:8c:11:fe:c6:f4:9b:81:e2:af:e6:27:92:39:dd:a6:7e:84:bb:6b:8a:6e:d8:ba:b1:1e:e1:ef:a8:17:fe:22:83:87:86:8d:30:05:cf:43:59:a8:d3:09:52:18:e6:f7:34:06:f1:db:43:4c:f1:63:3f:f5:c4:df:27:43:ca:c8:36:b0:2b:92:72:e8:36:7e:c4:44:44:dd:f5:2e:1f:bc:ee:b5:16:42:14:b4:06:d8:56:f0:81:bb:45:21:8d:58:4c:92:a7:44:46:75:db:14:ee:7c:0f:c8:98:17:fb:6b:69:22:6b:bc:67:28:31:2a:04:1f:d5:34:bf:4c:49:a0:2f:9b:47:5d:f0:a1:d6:0f:c2:d2:a1:97:cf:73:50:cd:93:5f:f8:4b:36:c8:09:37:a7:71:e1:40:db:37:6e:60:db:11:6d:5f:4b:37:ba:e8:6b:4c:9b:b2:0e:1a:b1:40:e4:25:a9:0e:02:84:df:6b:35:6c:d3:b2:38:8e:b1:d0:eb:a6:c7:da:a2:78:9d:2a:3c:d8:ce:4e:42:51:b7:a0:86:9d:94:a5:41:69:b6:2d:e9:df:36:2d:81:be:27:6b:c3:1f:f8:61:bb:bf:4d:08:9b:f6:fc:49:68:e0:a4:f7:d9:b8:46:b5:14:07:7d:06:d0:e6:bf:e8:11:d2:a7:f0:e8:1e:9f:9d:8b:3d:e2:50:86:3a:c4:b9:0e:55:2d:93:55:57:96:33:e8:0f:ce:6d:ad:5c:f1:40:d0:9c:41:7c:8e:a5:bb:62:09:19:73:a0:ef:af:01:2e:7d:d1:9a:7d:12:0e:18:fa:a6:e8:8f:7f:95:ce:3e:2b:3d:30:44:2c:d9:9a:c2:a2:39:ee:07:16:7f:7d:51:26:2f:47:2b:51:ec:e9:cb:0d:b2:eb:d8:f4:d5:05:5c:7d:02:2b:0f:bf:f1:16:89:7a:d9:4b:21:a0:40:29:36:46:70:6b:5e:98:42:3f:fa:4b:ac:84:d5:b2:53:90:fe:67:9c:7f:74:5c:7c:1a:f4:8c:e6:8d:bc:68:c5:e6:14:de:99:ef:32:0c:54:68:44:2c:28:c7:a7:44:5d:95:57:fd:e0:0a:8b:a8:b0:da:c5:c4:cc:b2:15:ab:4b:92:5b:0c:9c:e1:56:73:1c:20:de:de:79:d6:f8:dc:0d:98:e5:77:91:8e:d8:5f:74:39:a4:a1:de:09:7a:1d:51:e6:7a:2f:06:e6:a3:39:02:2d:ee:5a:0c:9a:7d:83:39:01:86:b6:a3:dc:5e:52:b7:ba:b0:76:86:95:91:8d:45:c5:95:51:d4:89:06:7f:e2:ab:e6:00:cb:af:d6:33:f2:3b:df:59:e2:46:07:5b:fe:91:17:9e:65:8b:4e:7f:40:0a:d4:fa:1d:0b:a9:c1:48:83:19:3a:23:03:03:9c:7b:02:49:10:78:63:9d:bd:07:4b:9a:fe:e2:6f:5c:44:e8:0e:6e:6a:b9:0d:0c:ed:bf:95:4d:9b:f7:c3:0b:6d:0d:f8:d6:60:82:95:05:ff:cf:57:c7:93:f6:e1:7c:70:17:80:23:f3:e7:df:c8:78:49:fb:d6:3c:83:b6:5a:a9:20:26:99:27:06:c7:8c:76:04:3e:9d:3e:a5:b3:4e:8e:1f:44:f5:3d:0e:a9:3b:cc:e9:1e:f4:4d:48:53:92:51:10:86:58:7f:ca:7e:c4:db:f4:09:62:2f:87:2a:8b:3c:35:16:ce:55:93:ec:46:04:91:80:50:39:c7:e2:2e:a1:0f:85:46:7e:06:0f:22:85:ec:e7:31:44:d1:7c:1e:dd:22:b0:1b:4d:a3:10:25:eb:8c:2d:78:61:6d:40:e1:5f:3d:5a:86:f9:36:b7:4b:78:97:b8:0b:b8:f2:62:00:4a:7d:39:c2:34:d0:0e:8d:96:b7:c2:06:76:13:2f:18:b3:ed:f8:65:f2:b9:71:cf:fa:97:3b:2f:47:c5:a7:5b:70:30:6a:50:8d:f4:57:c2:35:83:86:fd:5d:98:e4:80:51:47:df:13:c1:3c:a5:9e:71:cf:e3:94:65:f3:70:fb:5c:4e:41:9c:6b:8a:be:e3:c1:15:c2:25:9a:82:32:a8:b2:a5:78:35:4d:df:2b:87:69:5a:6d:b9:83:f1:38:c6:21:ce:46:6d:10:a2:e0:c8:cf:ba:a3:31:25:d8:fd:f1:df:dd:c5:75:d2:54:b9:00:94:07:a7:23:97:4f:e9:93:c5:15:15:86:27:78:94:46:18:8c:36:cb:e9:73:6b:ac:ef:f3:90:16:1d:01:fd:b9:fd:d9:25:f0:c6:42:b6:27:85:d3:6c:e6:45:c8:01:e7:a9:a0:80:8a:18:23:b5:a2:93:51:bf:f0:ad:97:fd:e2:d0:f4:12:c5:50:47:92:71:8f:11:aa:45:54:e3:8d:f4:46:00:11:9c:34:b6:da:31:05:01:b6:d5:cb:c7:1a:0e:86:05:68:78:ba:b5:ef:97:28:02:ff:59:cf:49:cf:8a:8c:a6:14:15:a3:03:37:3c:16:a3:0f:61:23:ba:a0:a4:03:59:70:69:90:b9:a8:75:95:6a:54:bf:7c:bc:03:fb:11:56:bd:9d:85:6d:ff:bb:6e:e0:4d:ed:39:08:1a:97:0c:16:4c:06:a6:fe:1e:90:e0:b5:03:f2:ae:2b:5b:5b:8e:af:2e:27:06:30:59:aa:43:de:c1:a6:ae:14:2a:b2:4b:c0:5f:3b:78:2a:92:33:25:0d:cd:cf:7e:a8:76:93:1e:fe:f1:b9:54:6e:4c:2a:bb:f7:4a:97:ef:c4:e5:82:f3:4d:5f:b1:0f:a5:ff:d0:d3:27:20:22:16:c2:da:0f:10:9a:1a:b1:32:69:5e:9c:bc:69:80:73:66:dc:40:df:90:dc:82:7d:02:9e:e4:2d:dc:c2:70:52:92:c8:6a:a8:00:93:0a:f4:7b:f0:21:23:28:7a:7d:d6:8f:da:81:a6:2e:f3:81:8c:31:35:d5:4b:32:d4:b4:e8:8e:68:e3:85:4c:be:b8:8b:30:ed:c9:15:8b:c9:68:d1:4a:fa:1d:5b:2c:ea:3b:c3:b9:51:fa:7c:5c:12:fa:b0:a5:65:90:a3:83:a4:a7:98:4a:77:08:79:ff:d6:14:87:7b:45:15:8f:15:a6:6f:b0:90:88:ee:0b:9e:91:98:ce:fa:11:59:a5:f4:25:c1:bb:84:c9:3e:a1:c7:47:26:77:2b:2f:f6:f5:1c:e1:85:e0:eb:df:57:8b:96:68:7c:05:06:98:c4:2a:71:42:1b:7e:87:0e:0f:06:79:5c:29:f5:d5:58:55:43:59:10:07:47:35:44:3f:38:15:3a:85:a2:5b:a0:14:ab:56:98:bb:c9:e6:32:79:a7:3d:60:18:2f:2f:68:88:b5:a6:bc:42:1e:eb:8e:34:69:01:b9:10:0d:b7:a0:e4:5b:e7:cd:f7:1e:89:81:64:87:91:17:27:d2:df:9d:ef:88:48:aa:ed:69:e9:aa:83:18:17:f2:d7:a7:0a:19:60:ae:13:5e:44:e8:1a:62:82:69:09:d8:1e:55:b5:c2:e2:e4:40:ad:55:97:c8:04:07:e0:8a:16:cb:3a:b0:e6:20:e7:48:00:26:5f:66:1d:0e:d9:c6:94:83:55:33:4d:c6:c7:b8:cc:a0:24:5f:a0:6b:b4:e8:85:11:8c:63:b6:e8:3b:44:49:d4:19:4a:17:33:db:28:40:27:6c:0c:7a:67:39:5b:95:26:42:44:0d:f7:99:ed:b3:14:ba:f3:d3:a6:dd:c8:19:8b:77:26:1c:a6:19:c2:d3:3a:73:97:5b:01:74:95:25:5a:0d:f5:0e:55:b1:4a:8f:60:29:d0:5b:aa:d8:f4:34:45:9e:6c:30:52:42:2e:31:a4:ed:34:d5:64:96:ec:d0:08:18:46:72:ba:b3:cd:4e:7c:11:f9:41:ef:84:95:38:d9:fa:dd:fc:45:44:b3:3c:dc:87:c3:82:f7:88:68:90:ed:40:ee:6a:4a:d4:cf:ab:66:ec:4e:ca:3c:64:32:d4:94:92:21:3a:8e:d1:08:5a:ad:39:d9:d7:84:66:6e:41:1f:3b:2f:f1:f9:f8:5d:f7:c3:4a:8b:a1:34:50:c3:3c:62:c2:bd:27:87:81:77:03:60:e9:99:34:fd:41:51:db:00:26:69:01:ec:59:ae:40:79:72:c0:c1:88:88:84:13:88:40:eb:06:38:af:8f:a6:21:87:fc:24:aa:60:bf:d4:37:34:ba:c4:1a:15:cd:5a:06:2e:1f:bf:05:7d:79:e7:ae:e5:db:75:34:1c:5a:97:91:c1:77:f1:37:d1:fc:6f:a6:53:56:1b:4e:c6:a5:84:41:6a:08:05:d4:99:58:b7:e0:7f:01:7a
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 16320
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 16320 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 16320
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m 333dd39ca4bdb3f2f85431310f4d55e43f0bfc5c9ebce73b919d42e4a3db2247aa8d44d3664cc829b44a4f094a8d44286be9493d9e57e1a8fbacc8ec647f549ef6aaa19df4d5a4baee900347da048dcfb409261df054f2aec3b4e1cff4d56a3ae1d56473c306d4165a8b9044f5ec83fc7d8
+[0m[1m[32m	Connection window size (before):[0m[1m 15712328
+[0m[1m[32m	Connection window size (after):[0m[1m 15696008
+[0m[1m[32m	Stream window size (before):[0m[1m 6275134
+[0m[1m[32m	Stream window size (after):[0m[1m 6258814
+[0m
+
+  提取的帧数据长度: 2871 字节
+  提取的帧数据(十六进制): e27eea3e63ca6cb3ba9bd18d48a89ed1484bb05503c5f55f10225a0e6438b08bb9715fb14da609da6556784aefce159fc459...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 5742 字符
+  十六进制数据: e27eea3e63ca6cb3ba9bd18d48a89ed1484bb05503c5f55f10225a0e6438b08bb9715fb14da609da6556784aefce159fc4594c09d5a3e97c055c443ddfac07ab0578ade60bc3c7c5d54aa4a23d394ec9e7bab50e5ce86699615965306849d6b6bc3496be96764cc6c8fd72a546f2a0377f04c64bca9f237f2f4881350fc0809a8137ef08d9fc5c33e6ffecbb3efcbd490848508b0371496100ffb44ded206ba00a28cfc0f2152fdf0a8ac5e72500531e9d5d02aceb9318813c72a3d367558307dbad0150078e3585d774ad0131e68fddc85e2a6ec14a8f47becaa836cfaabe4785800ac718b100c6535ff166a106c5668cb3a7b297bc50abe6b55f36893c2e15d52cbb6755368f42e678c82a4534a33335e96910caf57d90f12207758fb9590bdfc9a337863086ab690d4df18ae2df431a29abaad0697c4ea537b9d15d83c1ffb23fca9df6635f7ad872ee26975d3c5c28ebad472c61c1460b97d7097c0012a4ebbad83b86ea557c179ee8fff72b257c8528c7c73417fe57add52c4453e823bd783e8c2263a2d9bdb2f6427db2ed2911372255175d5153e1d46b0c1ca08487b382fee5f260b305d715ecbf3331b8fde593884fe8a112acf534ad997783df0bd2d12321cc734607414972b2985b4f7f09343337911c4ca40e9763d6fdd2df35b85cd69be49fbe29ad0714c9e94ac2b56a4004236856f47d5561dda7bab0c80715ea60060d1ebdbeead36a90e45c1703033fd054908aeb4933b86a34bbbe91939e774e61600ca14076a6147e5d063108fd4fb3bcaf788bb483c4436bf391aff41a6f665f9aa4e53bbfc640a7752a66de3a65f2687ed6e4953b22382cdaa9959733dddb80b4d0c6bae4a877b2740fdcc00629b248d29c04b0abb4d8ec4f9b4ea0d42a305dd286209b29f65b059659f017594d1ddc139cc0c5f2b37be62be806b156818cd78f43e06dfb837f9c38f00914b7c7e4acdad454f8e105ff9911401978850d7f58dd3b6df1dca6469610033fea7699f361252c763eae74f172a0018bb68823c1068a6223d847c911af28d85bdc65c620ef5e42a1caf69602895ce3971952c15010e15bd911f88a51ba1bdfebb1505d6dbfcab613c371f661d7af66669c60ec67ae767aae35a15ac3790524367c8fbe6e3fdb3b126c8d4e55bc74faaab4c5132aa780ebf646e7627dd2e9a056bda55bb1153ad23bf58d3b0ecea62840510c7db8b6f7db864a2d5606e6cfbc822dabe1cef3bf34b34a1a1c7d93c5acd56ed6841679241c5428aff38d09d34178cfa5fd9094b214feed50499115c144daadfb02c96a0537b21486bbfd154cd2b24088da1065ab5a9b544d0baec4c1c0c9d8ed7ffc883edde8897d64cddaff98f65e7b607f6b402a2adba831e9c38c06cd8b00b3d75bb124899ddefc92728b492c2a8759fd8376eef29c042a44d0ffed6c77ec05d8cd80842125e9a85174f74ed170514d49eeb58dba1eb9b8f02009ad839245bcc24f384549124024db793ec85c369a72a5977ea187f26f2771c813d69435dd6dc5e5ce8c7db74fcc02b54af1c257cbec330e68219dd9026a16aa4f922d35fb1296305942e1adcc0751ecbf96fd0306ab6747a1db57920fea859728cb891b840867a636819383537b5df7d4e2ff5f0791510595a3dcd6aa717e579f7279044e742ac9550ac957aec0b60c6242c11012185587ee0d8fc715c85c894a7f0df2bb9f9eed8c11fec6f49b81e2afe6279239dda67e84bb6b8a6ed8bab11ee1efa817fe228387868d3005cf4359a8d3095218e6f73406f1db434cf1633ff5c4df2743cac836b02b9272e8367ec44444ddf52e1fbceeb5164214b406d856f081bb45218d584c92a7444675db14ee7c0fc89817fb6b69226bbc6728312a041fd534bf4c49a02f9b475df0a1d60fc2d2a197cf7350cd935ff84b36c80937a771e140db376e60db116d5f4b37bae86b4c9bb20e1ab140e425a90e0284df6b356cd3b2388eb1d0eba6c7daa2789d2a3cd8ce4e4251b7a0869d94a54169b62de9df362d81be276bc31ff861bbbf4d089bf6fc4968e0a4f7d9b846b514077d06d0e6bfe811d2a7f0e81e9f9d8b3de250863ac4b90e552d9355579633e80fce6dad5cf140d09c417c8ea5bb62091973a0efaf012e7dd19a7d120e18faa6e88f7f95ce3e2b3d30442cd99ac2a239ee07167f7d51262f472b51ece9cb0db2ebd8f4d5055c7d022b0fbff116897ad94b21a040293646706b5e98423ffa4bac84d5b25390fe679c7f745c7c1af48ce68dbc68c5e614de99ef320c5468442c28c7a7445d9557fde00a8ba8b0dac5c4ccb215ab4b925b0c9ce156731c20dede79d6f8dc0d98e577918ed85f7439a4a1de097a1d51e67a2f06e6a339022dee5a0c9a7d83390186b6a3dc5e52b7bab0768695918d45c59551d489067fe2abe600cbafd633f23bdf59e246075bfe91179e658b4e7f400ad4fa1d0ba9c14883193a2303039c7b02491078639dbd074b9afee26f5c44e80e6e6ab90d0cedbf954d9bf7c30b6d0df8d660829505ffcf57c793f6e17c70178023f3e7dfc87849fbd63c83b65aa92026992706c78c76043e9d3ea5b34e8e1f44f53d0ea93bcce91ef44d485392511086587fca7ec4dbf409622f872a8b3c3516ce5593ec460491805039c7e22ea10f85467e060f2285ece73144d17c1edd22b01b4da31025eb8c2d78616d40e15f3d5a86f936b74b7897b80bb8f262004a7d39c234d00e8d96b7c20676132f18b3edf865f2b971cffa973b2f47c5a75b70306a508df457c2358386fd5d98e4805147df13c13ca59e71cfe39465f370fb5c4e419c6b8abee3c115c2259a8232a8b2a578354ddf2b87695a6db983f138c621ce466d10a2e0c8cfbaa33125d8fdf1dfddc575d254b9009407a723974fe993c515158627789446188c36cbe9736baceff390161d01fdb9fdd925f0c642b62785d36ce645c801e7a9a0808a1823b5a29351bff0ad97fde2d0f412c5504792718f11aa4554e38df44600119c34b6da310501b6d5cbc71a0e86056878bab5ef972802ff59cf49cf8a8ca61415a303373c16a30f6123baa0a40359706990b9a875956a54bf7cbc03fb1156bd9d856dffbb6ee04ded39081a970c164c06a6fe1e90e0b503f2ae2b5b5b8eaf2e27063059aa43dec1a6ae142ab24bc05f3b782a9233250dcdcf7ea876931efef1b9546e4c2abbf74a97efc4e582f34d5fb10fa5ffd0d327202216c2da0f109a1ab132695e9cbc69807366dc40df90dc827d029ee42ddcc2705292c86aa800930af47bf02123287a7dd68fda81a62ef3818c3135d54b32d4b4e88e68e3854cbeb88b30edc9158bc968d14afa1d5b2cea3bc3b951fa7c5c12fab0a56590a383a4a7984a770879ffd614877b45158f15a66fb09088ee0b9e9198cefa1159a5f425c1bb84c93ea1c74726772b2ff6f51ce185e0ebdf578b96687c050698c42a71421b7e870e0f06795c29f5d55855435910074735443f38153a85a25ba014ab5698bbc9e63279a73d60182f2f6888b5a6bc421eeb8e346901b9100db7a0e45be7cdf71e89816487911727d2df9def8848aaed69e9aa831817f2d7a70a1960ae135e44e81a62826909d81e55b5c2e2e440ad5597c80407e08a16cb3ab0e620e74800265f661d0ed9c6948355334dc6c7b8cca0245fa06bb4e885118c63b6e83b4449d4194a1733db2840276c0c7a67395b952642440df799edb314baf3d3a6ddc8198b77261ca619c2d33a73975b017495255a0df50e55b14a8f6029d05baad8f434459e6c3052422e31a4ed34d56496ecd008184672bab3cd4e7c11f941ef849538d9faddfc4544b33cdc87c382f7886890ed40ee6a4ad4cfab66ec4eca3c6432d49492213a8ed1085aad39d9d784666e411f3b2ff1f9f85df7c34a8ba13450c33c62c2bd278781770360e99934fd4151db00266901ec59ae407972c0c1888884138840eb0638af8fa62187fc24aa60bfd43734bac41a15cd5a062e1fbf057d79e7aee5db75341c5a9791c177f137d1fc6fa653561b4ec6a584416a0805d49958b7e07f017a
+
+================================================================================
+
+数据包 #770 (第6个)
+时间戳: 2025-07-03 10:03:01.603635
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 113297
+  Payload: 5e:77:1b:9e:49:16:ef:b7:8b:4d:bf:e2:ee:11:b7:3f:a0:f3:db:be:8c:28:29:f7:0a:63:ed:59:99:c6:cb:9a:1c:04:0e:59:8e:f0:a2:90:22:5b:56:47:42:0a:13:f9:62:54:7d:3b:ff:b7:f0:71:ee:fd:e8:2e:99:85:65:e2:de:11:ba:eb:73:d2:ba:cf:60:1f:f0:28:d1:71:b2:d4:80:9c:93:b6:78:01:c1:15:66:fd:47:66:52:49:b0:e6:54:bc:7c:18:86:e0:82:c6:08:06:74:bd:8e:b7:88:78:0f:35:19:1e:5f:b0:59:19:11:90:dd:d7:cf:0f:3f:70:51:56:e6:9b:65:44:8f:bb:77:bd:96:60:97:1d:ca:a5:a4:05:53:0e:98:00:e2:ac:be:17:f2:59:7c:32:46:8c:f2:c6:c4:74:7a:7d:43:e2:9e:d2:3e:44:55:6f:01:47:84:e7:b0:3c:9b:32:30:8b:fb:61:3e:51:81:b4:cd:ea:93:1b:31:d5:d9:98:f3:0b:6e:0c:61:a8:2c:17:12:d7:00:b1:fa:0c:b1:de:0b:4e:cd:b6:52:91:91:7a:2d:0c:57:12:40:08:02:0a:62:cc:50:e1:6b:46:8d:8f:b4:14:c9:79:62:89:3c:42:f2:6d:71:5e:c1:5d:fe:ff:42:4d:04:2d:e0:10:b9:3c:e7:ca:e9:f2:24:b0:0e:35:c1:9e:98:6f:e9:64:e7:3a:d6:69:f3:fa:fa:42:f0:57:64:3c:59:52:2d:bb:6e:46:24:89:1b:0b:cd:a6:73:5a:04:7d:39:e8:7b:af:f1:5f:06:a3:ce:f8:cb:90:8e:0a:1a:83:cd:86:73:7c:7f:4e:33:84:34:ba:ef:1c:01:9a:57:f1:36:94:a4:2e:f8:6b:fd:42:68:5f:fd:a0:b6:ef:e8:53:a1:e0:15:6f:a1:b4:6a:e7:0c:30:83:19:75:53:7b:95:fd:18:a0:8c:a7:70:5f:c0:a5:5b:61:f7:5b:ad:c1:08:ce:91:77:10:7f:0d:d5:02:33:52:82:56:49:43:fc:45:70:6c:d1:cc:b3:72:e6:12:01:80:f3:01:a4:c3:4c:3b:fa:02:d0:c3:fa:bb:ed:d5:cf:0d:14:b2:12:d4:19:a7:ed:1e:fa:02:1e:81:ac:96:50:35:e9:3d:50:e2:53:26:28:4b:e4:7d:49:e8:71:2d:10:60:3b:bf:5a:18:04:4b:bd:d0:1e:42:1c:43:6d:de:fe:1e:56:61:c9:9c:ac:c2:e6:65:83:92:14:78:2b:d8:8a:4e:5e:90:eb:2b:6b:82:6e:ab:2c:6d:01:90:35:13:7d:5f:23:59:af:f1:17:17:e5:03:74:47:ac:01:31:0d:d1:05:bf:79:cd:34:90:bf:5f:bf:f8:72:2f:70:54:c2:3a:26:1a:e3:55:5b:47:30:2d:cc:87:fd:ff:9a:01:05:a0:e2:ca:70:5b:1a:a1:87:73:9e:f4:b4:ce:c1:c9:7e:65:38:36:f2:72:e1:82:52:57:39:d3:10:9c:49:91:a7:d9:7c:c9:9a:80:7a:2c:be:88:0f:c6:ec:9b:96:c8:5c:1c:1a:a9:14:86:0f:73:e5:46:21:6d:b2:5e:e7:21:d3:34:4f:6d:c1:5a:64:e7:3d:74:04:5e:3a:29:24:1f:a0:17:44:bc:b7:93:ef:c0:a4:11:b6:79:2d:f7:e6:98:bd:cf:c9:6d:dd:61:f4:a3:2d:ad:f0:f4:5c:92:72:73:ce:5b:cb:8d:e2:d3:67:12:64:b3:3e:6f:02:a9:76:bd:ed:26:da:86:6f:63:b1:c2:37:97:06:54:c9:b3:41:2f:f4:a7:5d:5a:fc:ba:c4:17:b0:61:fd:1c:4a:ca:5b:4f:8a:30:2b:a0:17:b7:00:22:b6:a7:4b:c6:22:41:0a:dc:d4:03:ab:78:d7:74:19:81:57:db:90:1c:41:11:c7:8a:b5:27:2b:39:fb:74:4e:4d:27:11:4f:f6:ee:81:d8:f3:9c:64:e5:be:1b:d1:a2:28:44:73:83:a2:49:12:a2:9a:80:bd:53:d9:36:8e:0d:26:a0:21:40:c7:39:2f:85:f2:df:04:f4:e3:4c:f9:5f:91:79:60:0b:96:bf:a9:ce:ac:9c:7d:29:08:03:de:36:17:49:30:91:6d:da:81:dc:9c:14:4a:ae:f0:82:6d:2c:e2:af:5b:4a:85:d1:18:2c:ed:32:6d:ba:44:37:14:6d:fa:52:71:75:57:8e:44:cc:cc:0b:b7:35:c7:c5:10:15:c0:ba:f9:f1:43:c6:9d:c1:ae:d2:22:da:41:fe:94:4c:41:ae:1d:bc:49:e2:1c:79:77:38:23:df:81:fa:da:9c:a1:31:c1:04:9a:c9:5f:4a:ed:08:64:73:c7:9f:43:58:25:69:48:f8:8f:32:05:6e:3d:04:cd:61:c0:2c:13:5d:a2:eb:2b:a6:e9:03:57:c9:33:07:1d:7e:b8:37:ee:55:f1:24:aa:22:d5:2c:4b:04:0b:17:53:22:3d:f6:54:b5:7b:45:63:5f:4d:23:35:5e:b7:92:8f:70:00:85:f2:8d:23:df:ee:3b:c8:12:3b:9a:64:21:66:a2:79:2d:9f:90:b3:a5:37:49:6c:11:2f:45:55:bd:da:74:a2:e9:4c:51:95:a1:af:38:9c:c5:42:e3:9a:4b:10:3b:91:5d:d5:41:1d:5c:21:bb:16:9f:99:85:9c:64:fa:37:51:11:40:30:dc:b6:f3:fb:f0:a5:d5:72:6b:7b:a0:ca:04:ca:14:85:7a:26:c3:09:6e:80:41:07:87:af:4e:13:6d:ab:f5:b7:44:fa:38:07:03:84:10:40:f2:f8:83:c0:31:06:bf:a9:8d:1e:ad:12:65:e0:5d:99:95:a9:f5:1d:e7:ce:2c:3e:cf:6e:9a:a1:90:d1:90:3c:15:5d:28:9c:6e:84:7c:d0:67:8c:be:35:43:5f:7e:50:db:62:63:18:74:0b:56:95:25:5f:d7:c9:e9:d3:a5:e3:1e:e8:6e:1c:80:1b:17:35:0a:f9:25:1f:c5:11:0a:e4:6d:f7:7a:ad:0b:00:05:f1:db:4f:ba:f0:6d:18:cc:26:7a:5d:f3:0d:89:cb:f3:e4:7f:a0:7d:3d:f7:02:30:87:8d:4b:85:5d:55:ee:92:17:99:bf:4a:ff:d9:b2:1b:b3:d8:69:8c:75:58:d7:3a:10:f0:49:0f:e0:3e:2b:43:e3:16:d0:57:76:0c:7a:72:b4:1d:9f:d7:9c:81:c5:af:4c:99:64:43:2c:1b:f9:ed:75:4f:5a:3d:07:7f:46:9c:5d:5c:1d:78:b8:2a:8b:43:22:dc:20:fc:e7:bb:7f:a5:3d:f9:00:fe:8d:ca:30:c9:5f:cf:b0:a5:87:74:6a:e5:19:bc:a2:27:c7:7b:46:c0:8e:52:9d:c7:85:5a:39:57:13:f5:90:80:e9:e3:a7:19:74:61:99:44:4e:48:c1:d8:63:75:eb:de:57:2f:5c:63:1a:39:27:50:0d:a6:56:82:ea:58:de:f0:9e:c4:c7:a8:7d:e2:be:18:6b:b4:21:18:09:cf:c9:6d:f4:26:b3:ff:24:9c:c0:e8:93:0d:06:db:09:1a:10:64:be:86:ae:ca:3f:df:ec:77:9a:01:ad:18:dd:75:bc:78:7a:59:4c:b9:a0:79:6b:b2:3e:82:46:87:26:e4:88:58:c7:73:34:c5:75:9e:fa:70:d6:bd:a2:b4:bd:9a:fb:86:c7:5a:47:9b:3f:c5:d1:4f:ac:1d:5f:7b:49:c5:c3:cd:10:64:cf:3b:52:76:69:b1:24:d8:8e:11:e7:78:e0:1a:8a:87:b1:40:b5:e8:66:be:e0:ae:dc:1f:6a:64:7d:85:15:89:13:c8:44:55:2f:8d:f7:cf:c4:cd:87:81:98:b1:3d:fc:f3:7a:de:ae:f9:65:8e:2c:de:d0:b4:cb:e9:ca:e0:a2:f6:40:79:0b:46:f8:35:b4:84:91:3c:18:7a:cd:88:3e:f3:bf:ba:d4:a1:c2:ef:c5:00:9f:90:15:92:3f:f1:c0:5e:a7:67:fd:07:2e:48:bb:b3:d6:17:fc:22:ab:39:df:3d:67:6b:a9:47:96:bd:ab:ca:9b:c2:e1:2c:ee:b0:3d:c3:3d:a6:06:58:e1:88:6a:61:bd:c9:72:8f:32:a3:19:e7:bd:ac:a9:f1:12:41:1c:52:eb:77:a9:08:80:83:e4:d1:e6:97:fa:de:66:59:3b:64:4c:be:f6:ed:e7:6a:03:64:63:75:0c:50:ca:a7:5e:cb:73:56:0e:eb:3d:05:19:b6:72:67:33:3c:77:de:bb:ac:4e:dc:2e:c4:37:60:a9:81:46:6c:db:d9:1c:f4:3b:e4:12:d2:6a:7e:7c:5b:52:17:a6:30:a5:6f:72:05:69:9e:6c:ec:42:75:44:ef:87:fb:9c:52:63:e3:45:37:52:59:ca:5f:6f:bf:c7:32:d7:1d:e9:91:d0:06:05:3b:b9:e7:d5:27:8e:07:48:62:ef:c2:53:98:58:61:ea:b4:5f:ee:69:04:74:33:b0:91:5d:80:7a:bb:07:9c:37:32:a5:c9:a8:33:de:df:e4:a8:0d:b3:b5:68:4f:85:99:16:59:88:f5:6b:de:8c:a3:80:33:9f:f5:b9:e2:8d:9e:40:57:c0:71:29:c8:ba:47:0a:2a:48:79:84:c1:34:71:12:6d:da:b9:f9:02:14:b0:ab:dd:b5:5d:f9:ef:c9:64:2e:b5:a2:05:99:f9:67:99:63:36:9f:53:f8:ee:2f:c1:da:da:b7:5b:68:99:58:ba:34:7a:4a:c7:a1:25:92:dd:72:ef:4a:4c:9f:72:0b:93:9c:64:54:99:78:68:39:22:0a:de:2d:6d:a7:fe:db:f0:ae:b8:12:74:d4:38:0f:8b:79:87:a2:93:9d:50:72:34:55:76:d2:61:24:5b:77:3e:34:c9:04:89:6f:bc:48:d2:86:d7:89:75:3b:bb:22:e3:e5:3a:b5:7f:20:7a:b9:8c:9a:ce:2c:17:92:08:b4:f0:fb:b3:82:24:1e:79:c3:05:8f:2a:b5:a2:4b:eb:4b:09:ec:df:d7:d2:bb:79:10:3b:99:9f:92:26:3a:2e:92:7b:64:01:30:6a:10:2b:c3:48:2f:c0:99:c8:6c:64:99:88:b7:8f:61:61:3e:10:2c:eb:4f:00:7d:d6:68:c2:11:c2:07:fe:9e:10:a5:c2:24:ba:44:36:3c:f0:2f:eb:ce:a5:ca:dd:9c:7f:75:3a:ce:08:88:e5:92:8b:f3:7b:99:3b:87:c2:44:0c:3a:bb:c1:d6:8f:67:b8:72:a2:9d:c7:8c:21:ef:20:4b:79:df:71:69:5c:d0:3c:12:35:7d:80:c6:50:b9:0e:53:ca:55:95:12:1f:33:93:b6:b1:4f:c1:d3:42:f9:79:e9:e1:1b:1e:f6:35:91:e3:06:85:d5:35:0d:30:6e:f4:f1:d9:75:f6:c9:19:2a:99:cd:72:a8:69:af:f5:9e:d4:86:e7:9b:2d:a7:76:52:35:bd:99:3f:7b:d5:a3:f1:77:0b:76:e0:8e:e9:33:04:bc:39:84:ae:25:76:36:a4:cb:e2:96:e6:6c:25:42:f2:6a:50:68:3f:33:bf:a8:69:5e:53:ad:2a:91:f9:d4:4f:1a:36:ed:e0:ac:7b:17:8a:72:fe:9a:ed:2f:e7:88:aa:e0:ef:33:7c:a6:67:87:89:6d:fc:c7:d9:b2:21:68:f6:0d:05:a7:57:b9:f2:08:58:83:89:7d:e7:85:e0:96:33:c4:b9:ec:03:e4:96:e7:07:a2:a5:20:51:d8:76:93:a3:90:13:03:73:5b:c8:13:ad:7e:be:ac:82:1c:85:f7:27:b4:61:09:37:98:05:38:f3:3d:9b:f5:48:16:b1:6f:ef:32:13:74:f4:fc:08:81:c7:04:2a:b1:a0:10:63:a1:13:52:58:fc:93:64:20:e1:8a:3c:8b:81:46:71:d9:8b:59:91:59:a4:b9:89:16:c2:e2:d6:f3:3f:ba:81:5a:03:47:30:e5:04:46:02:3b:26:b7:c7:6d:63:c7:67:02:2c:85:00:68:15:06:e6:ad:c5:94:c9:6a:0a:0e:9a:9f:6a:83:17:03:03:00:e2:ac:cc:a1:82:d6:30:85:2e:32:c2:08:38:0a:1d:7d:c5:a1:87:c9:79:5a:b7:40:cf:ef:02:bd:b6:d8:3b:b0:e5:95:39:68:12:f4:db:f2:b9:23:b9:5d:96:c8:28:4a:0b:67:3d:dc:69:c3:8c:c6:fd:62:18:1b:d8:df:a6:97:9a:18:2e:79:49:2e:31:1a:5a:bc:d4:e9:b0:a9:a0:01:1c:07:18:12:35:b7:d3:c6:65:d0:c9:e5:19:eb:c1:77:9c:da:5e:3b:31:ca:ae:84:72:08:06:fa:39:da:20:a9:73:f3:30:cf:8e:d1:4f:e0:b3:06:83:5f:be:1f:a2:31:03:f3:80:88:0c:06:78:56:d8:1b:21:d3:8e:8f:65:77:59:a5:8c:07:ce:5e:4e:ca:67:98:74:66:d1:e3:8a:9f:d6:d2:1b:3d:a1:1a:f7:78:4a:59:47:6e:28:09:d0:09:b2:7a:b9:9b:7c:c1:e3:6f:e2:0d:11:95:1d:60:4a:b3:25:11:a3:e5:59:a0:dc:5b:ca:e0:c3:6c:50:6b:24:a6:3b:b5:71:ad:b7:9a:97:ff:3f:7c:b0:a8:8c:38:44:ab:da:e3:89:17:03:03:0c:90:df:d8:cd:38:1a:b8:4b:12:6f:41:b8:fa:b4:96:79:1a:78:9e:6e:f4:19:3a:00:85:c0:1f:50:00:9f:41:a0:e0:96:5c:da:71:59:8f:e3:64:6a:fc:5d:33:ab:d9:26:93:1c:aa:18:49:88:1d:c1:a4:50:aa:f6:68:af:7b:c3:5f:8b:b1:02:c3:e0:3c:cf:8d:f6:db:a5:4a:71:e9:87:16:c3:82:97:fd:b0:1f:af:80:ac:97:62:f0:00:83:b5:07:7d:4a:e9:e8:4f:20:1d:9c:ab:98:d3:05:b9:78:2a:e6:8d:04:95:76:89:3b:0e:2c:d4:4a:b0:5b:bc:c3:9a:eb:93:05:ea:8e:7c:e8:2b:3c:b5:a9:3f:b0:ac:2a:8d:0e:85:a1:fe:10:7e:67:39:88:eb:8b:86:7b:5e:1d:6b:23:1b:39:04:f6:4c:24:3c:e0:61:a0:83:a4:95:fe:8b:25:ad:cd:50:e5:a8:3d:c9:fe:fa:ba:43:92:a1:35:12:5e:bb:fd:39:55:18:89:44:2d:fe:18:b9:63:c3:19:1d:ba:53:43:40:79:1d:af:81:f9:d0:d9:6a:de:bf:b0:0e:56:7f:32:67:24:13:f1:8c:47:6e:c4:c3:c7:70:ea:85:e7:f2:55:88:d3:65:58:61:8d:8d:a4:f4:fa:eb:61:f8:a7:7c:95:5a:78:b0:b5:11:9d:a8:4e:96:3f:d7:51:85:3b:28:92:6f:e2:d6:e7:37:2d:e4:f7:ed:5b:71:9f:17:cb:ae:c2:6e:b0:f8:af:06:5b:eb:09:5b:12:63:58:4e:26:fc:87:31:35:4b:ed:ed:7d:84:32:1f:ee:e6:14:80:e4:12:e9:26:95:4a:d3:d9:85:4e:32:43:7a:d2:c6:7d:c7:4c:72:33:f5:6b:bb:90:f6:a8:67:00:d6:38:c4:3d:14:a9:a0:3d:aa:d6:de:73:3b:2c:9f:03:8b:51:e7:37:29:2e
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 16310
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 16310 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 16310
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m a943e3ca96c8fa80bcf5682c1d9fd52bb0618d5ef7829afc80868c63f4053597b42c4da2c8646bfdf5a06be9d8295dae53d035df0a4f100ccb9b48c191f8580eac64e6cf94f8b47a34923971a883439fe0fca898045a26934e391043a386ff03ba1ae4662f155572260fd2a935a363270f5
+[0m[1m[32m	Connection window size (before):[0m[1m 15696008
+[0m[1m[32m	Connection window size (after):[0m[1m 15679698
+[0m[1m[32m	Stream window size (before):[0m[1m 6258814
+[0m[1m[32m	Stream window size (after):[0m[1m 6242504
+[0m
+
+  提取的帧数据长度: 2911 字节
+  提取的帧数据(十六进制): 4dbfe2ee11b73fa0f3dbbe8c2829f70a63ed5999c6cb9a1c040e598ef0a290225b5647420a13f962547d3bffb7f071eefde8...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 5822 字符
+  十六进制数据: 4dbfe2ee11b73fa0f3dbbe8c2829f70a63ed5999c6cb9a1c040e598ef0a290225b5647420a13f962547d3bffb7f071eefde82e998565e2de11baeb73d2bacf601ff028d171b2d4809c93b67801c11566fd47665249b0e654bc7c1886e082c6080674bd8eb788780f35191e5fb059191190ddd7cf0f3f705156e69b65448fbb77bd9660971dcaa5a405530e9800e2acbe17f2597c32468cf2c6c4747a7d43e29ed23e44556f014784e7b03c9b32308bfb613e5181b4cdea931b31d5d998f30b6e0c61a82c1712d700b1fa0cb1de0b4ecdb65291917a2d0c57124008020a62cc50e16b468d8fb414c97962893c42f26d715ec15dfeff424d042de010b93ce7cae9f224b00e35c19e986fe964e73ad669f3fafa42f057643c59522dbb6e4624891b0bcda6735a047d39e87baff15f06a3cef8cb908e0a1a83cd86737c7f4e338434baef1c019a57f13694a42ef86bfd42685ffda0b6efe853a1e0156fa1b46ae70c30831975537b95fd18a08ca7705fc0a55b61f75badc108ce9177107f0dd502335282564943fc45706cd1ccb372e6120180f301a4c34c3bfa02d0c3fabbedd5cf0d14b212d419a7ed1efa021e81ac965035e93d50e25326284be47d49e8712d10603bbf5a18044bbdd01e421c436ddefe1e5661c99cacc2e665839214782bd88a4e5e90eb2b6b826eab2c6d019035137d5f2359aff11717e5037447ac01310dd105bf79cd3490bf5fbff8722f7054c23a261ae3555b47302dcc87fdff9a0105a0e2ca705b1aa187739ef4b4cec1c97e653836f272e182525739d3109c4991a7d97cc99a807a2cbe880fc6ec9b96c85c1c1aa914860f73e546216db25ee721d3344f6dc15a64e73d74045e3a29241fa01744bcb793efc0a411b6792df7e698bdcfc96ddd61f4a32dadf0f45c927273ce5bcb8de2d3671264b33e6f02a976bded26da866f63b1c237970654c9b3412ff4a75d5afcbac417b061fd1c4aca5b4f8a302ba017b70022b6a74bc622410adcd403ab78d774198157db901c4111c78ab5272b39fb744e4d27114ff6ee81d8f39c64e5be1bd1a228447383a24912a29a80bd53d9368e0d26a02140c7392f85f2df04f4e34cf95f9179600b96bfa9ceac9c7d290803de36174930916dda81dc9c144aaef0826d2ce2af5b4a85d1182ced326dba4437146dfa527175578e44cccc0bb735c7c51015c0baf9f143c69dc1aed222da41fe944c41ae1dbc49e21c79773823df81fada9ca131c1049ac95f4aed086473c79f4358256948f88f32056e3d04cd61c02c135da2eb2ba6e90357c933071d7eb837ee55f124aa22d52c4b040b1753223df654b57b45635f4d23355eb7928f700085f28d23dfee3bc8123b9a642166a2792d9f90b3a537496c112f4555bdda74a2e94c5195a1af389cc542e39a4b103b915dd5411d5c21bb169f99859c64fa3751114030dcb6f3fbf0a5d5726b7ba0ca04ca14857a26c3096e80410787af4e136dabf5b744fa380703841040f2f883c03106bfa98d1ead1265e05d9995a9f51de7ce2c3ecf6e9aa190d1903c155d289c6e847cd0678cbe35435f7e50db626318740b5695255fd7c9e9d3a5e31ee86e1c801b17350af9251fc5110ae46df77aad0b0005f1db4fbaf06d18cc267a5df30d89cbf3e47fa07d3df70230878d4b855d55ee921799bf4affd9b21bb3d8698c7558d73a10f0490fe03e2b43e316d057760c7a72b41d9fd79c81c5af4c9964432c1bf9ed754f5a3d077f469c5d5c1d78b82a8b4322dc20fce7bb7fa53df900fe8dca30c95fcfb0a587746ae519bca227c77b46c08e529dc7855a395713f59080e9e3a719746199444e48c1d86375ebde572f5c631a3927500da65682ea58def09ec4c7a87de2be186bb4211809cfc96df426b3ff249cc0e8930d06db091a1064be86aeca3fdfec779a01ad18dd75bc787a594cb9a0796bb23e82468726e48858c77334c5759efa70d6bda2b4bd9afb86c75a479b3fc5d14fac1d5f7b49c5c3cd1064cf3b527669b124d88e11e778e01a8a87b140b5e866bee0aedc1f6a647d85158913c844552f8df7cfc4cd878198b13dfcf37adeaef9658e2cded0b4cbe9cae0a2f640790b46f835b484913c187acd883ef3bfbad4a1c2efc5009f9015923ff1c05ea767fd072e48bbb3d617fc22ab39df3d676ba94796bdabca9bc2e12ceeb03dc33da60658e1886a61bdc9728f32a319e7bdaca9f112411c52eb77a9088083e4d1e697fade66593b644cbef6ede76a036463750c50caa75ecb73560eeb3d0519b67267333c77debbac4edc2ec43760a981466cdbd91cf43be412d26a7e7c5b5217a630a56f7205699e6cec427544ef87fb9c5263e345375259ca5f6fbfc732d71de991d006053bb9e7d5278e074862efc253985861eab45fee69047433b0915d807abb079c3732a5c9a833dedfe4a80db3b5684f8599165988f56bde8ca380339ff5b9e28d9e4057c07129c8ba470a2a487984c13471126ddab9f90214b0abddb55df9efc9642eb5a20599f9679963369f53f8ee2fc1dadab75b689958ba347a4ac7a12592dd72ef4a4c9f720b939c645499786839220ade2d6da7fedbf0aeb81274d4380f8b7987a2939d5072345576d261245b773e34c904896fbc48d286d789753bbb22e3e53ab57f207ab98c9ace2c179208b4f0fbb382241e79c3058f2ab5a24beb4b09ecdfd7d2bb79103b999f92263a2e927b6401306a102bc3482fc099c86c649988b78f61613e102ceb4f007dd668c211c207fe9e10a5c224ba44363cf02febcea5cadd9c7f753ace0888e5928bf37b993b87c2440c3abbc1d68f67b872a29dc78c21ef204b79df71695cd03c12357d80c650b90e53ca5595121f3393b6b14fc1d342f979e9e11b1ef63591e30685d5350d306ef4f1d975f6c9192a99cd72a869aff59ed486e79b2da7765235bd993f7bd5a3f1770b76e08ee93304bc3984ae257636a4cbe296e66c2542f26a50683f33bfa8695e53ad2a91f9d44f1a36ede0ac7b178a72fe9aed2fe788aae0ef337ca66787896dfcc7d9b22168f60d05a757b9f2085883897de785e09633c4b9ec03e496e707a2a52051d87693a3901303735bc813ad7ebeac821c85f727b4610937980538f33d9bf54816b16fef321374f4fc0881c7042ab1a01063a1135258fc936420e18a3c8b814671d98b599159a4b98916c2e2d6f33fba815a034730e50446023b26b7c76d63c767022c8500681506e6adc594c96a0a0e9a9f6a8317030300e2accca182d630852e32c208380a1d7dc5a187c9795ab740cfef02bdb6d83bb0e595396812f4dbf2b923b95d96c8284a0b673ddc69c38cc6fd62181bd8dfa6979a182e79492e311a5abcd4e9b0a9a0011c07181235b7d3c665d0c9e519ebc1779cda5e3b31caae84720806fa39da20a973f330cf8ed14fe0b306835fbe1fa23103f380880c067856d81b21d38e8f657759a58c07ce5e4eca67987466d1e38a9fd6d21b3da11af7784a59476e2809d009b27ab99b7cc1e36fe20d11951d604ab32511a3e559a0dc5bcae0c36c506b24a63bb571adb79a97ff3f7cb0a88c3844abdae3891703030c90dfd8cd381ab84b126f41b8fab496791a789e6ef4193a0085c01f50009f41a0e0965cda71598fe3646afc5d33abd926931caa1849881dc1a450aaf668af7bc35f8bb102c3e03ccf8df6dba54a71e98716c38297fdb01faf80ac9762f00083b5077d4ae9e84f201d9cab98d305b9782ae68d049576893b0e2cd44ab05bbcc39aeb9305ea8e7ce82b3cb5a93fb0ac2a8d0e85a1fe107e673988eb8b867b5e1d6b231b3904f64c243ce061a083a495fe8b25adcd50e5a83dc9fefaba4392a135125ebbfd39551889442dfe18b963c3191dba534340791daf81f9d0d96adebfb00e567f32672413f18c476ec4c3c770ea85e7f25588d36558618d8da4f4faeb61f8a77c955a78b0b5119da84e963fd751853b28926fe2d6e7372de4f7ed5b719f17cbaec26eb0f8af065beb095b1263584e26fc8731354beded7d84321feee61480e412e926954ad3d9854e32437ad2c67dc74c7233f56bbb90f6a86700d638c43d14a9a03daad6de733b2c9f038b51e737292e
+
+================================================================================
+
+数据包 #772 (第7个)
+时间戳: 2025-07-03 10:03:01.603767
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 116217
+  Payload: ff:1c:82:3b:57:83:85:8a:d2:29:30:54:ea:8f:c1:73:e2:85:74:f8:23:52:9a:40:8a:48:82:28:5b:91:3f:85:34:df:ec:36:aa:25:c8:70:e4:79:95:45:2a:25:72:db:17:28:28:93:05:9e:03:a3:b2:87:f8:ba:48:da:0b:bd:14:36:8e:c7:db:cd:0c:b6:14:7a:6a:e4:61:b9:35:93:50:bc:7c:04:fa:3f:39:d6:39:27:02:a9:18:26:23:28:f3:96:13:c2:1d:5d:8f:83:07:6d:48:5d:87:8c:32:5e:bc:41:26:7f:61:85:14:00:98:5a:f9:56:71:d3:97:20:93:e4:d5:b5:bb:7a:91:39:a9:24:04:84:ea:a1:02:f4:0c:b1:fc:ca:19:cd:8c:e4:5d:57:c8:6a:b5:05:9c:b2:5f:40:3a:51:3b:49:22:b7:7c:2d:8e:cc:66:05:7a:81:70:f5:dd:76:43:ef:28:e7:c9:48:d2:cc:b8:14:97:21:fb:f1:2d:f1:aa:7d:00:75:87:c9:d1:e3:75:b2:c6:ad:59:f0:03:99:c6:82:5b:46:a0:3c:cc:af:35:d7:40:cd:e0:fb:9a:8e:76:bc:6e:b1:d2:cd:34:32:ae:87:86:67:2c:1c:d9:38:14:ea:01:41:af:92:8f:83:48:c7:8b:88:da:61:c3:4f:fc:d2:8e:2e:98:33:b9:16:f6:14:4f:2c:74:c0:f2:63:b7:79:35:01:4d:1f:4a:6e:ea:fe:ad:2c:f7:e0:44:94:3f:e2:bc:04:f1:e0:4b:ea:7f:ab:38:a7:02:60:21:9f:66:5a:59:48:af:c4:5a:67:35:f5:2c:11:7a:be:d9:bf:34:f6:79:7f:c5:26:8f:bb:7c:44:b7:aa:09:e9:b5:3d:9c:41:92:cc:96:c1:b1:45:b3:f7:b0:6a:f3:78:cf:5b:02:73:1d:d6:cd:7f:65:b2:bb:56:ca:c6:8f:7d:ef:51:45:11:a5:cd:3f:4a:4c:04:04:6f:e7:a1:af:94:d1:ed:bc:a0:1c:e2:e2:27:eb:91:7e:33:46:94:4b:00:e5:c1:ee:dc:ef:9d:9b:ac:6f:a5:c4:e1:ca:c0:a3:51:ef:ae:d0:b6:9a:c7:f9:12:0f:3e:d8:a6:2c:33:05:c2:76:bd:ce:28:e0:06:d3:c8:63:b1:1a:63:2d:f9:09:ac:3d:79:f1:f4:0d:82:58:ab:4a:e2:78:ef:1d:f1:20:be:60:55:ab:3d:86:c0:a0:f7:e9:f1:58:12:5d:81:91:b1:28:f9:87:76:c8:a8:30:ab:bb:4a:45:04:72:09:6b:17:cc:61:72:bd:2a:de:d0:b2:95:ff:e9:68:fd:16:d1:02:47:f5:fd:22:0d:f7:ef:dd:03:ed:6c:85:f4:df:34:36:2f:fb:83:f4:b7:dc:8f:a8:e6:21:c9:80:96:89:d5:f5:d3:2f:06:3f:05:ad:b6:d3:30:2a:88:90:d9:dd:60:74:3a:5a:ce:86:09:4f:11:68:9b:59:37:6e:5a:e6:4f:6a:7f:3f:ec:f1:9d:45:2f:6e:f6:3f:26:98:a6:a2:5a:e7:59:24:0a:63:a4:d1:33:6c:4b:3c:1d:45:6e:fc:9a:75:2c:39:c2:8d:2f:d9:c3:07:b5:4b:2d:34:12:2b:5d:86:59:35:a1:b3:70:b4:b0:a2:67:2e:e2:26:13:df:76:6d:ec:92:ec:95:c9:56:fe:69:ba:b4:3f:54:8f:61:e7:59:ff:02:11:72:a8:ad:3b:8a:d5:53:01:a8:bb:f3:19:f2:78:f9:79:14:0a:72:fa:9b:fd:38:24:a1:ea:ac:ad:47:46:12:47:04:8a:fa:4f:4c:36:1f:fa:74:d5:ab:0e:0b:71:ac:46:79:97:95:37:d7:74:af:7f:56:6e:db:e1:3f:d5:01:f7:e1:de:e0:27:79:13:65:8b:09:bb:44:91:a9:83:5e:b5:81:94:68:1a:d7:dd:85:52:1f:ff:5f:c3:99:f3:8a:98:34:16:90:ba:67:65:23:c2:d1:12:a6:46:87:c0:42:59:ec:b4:a3:29:9b:7e:62:ba:e0:52:18:5b:f8:0d:14:3a:aa:61:c4:1f:cb:cc:3c:45:36:15:04:ea:7d:cf:5c:28:72:cc:39:c2:4d:ba:17:55:39:5f:ba:5d:31:ab:f7:5a:df:85:56:cc:a2:2f:9b:d1:4e:ba:2c:4e:33:64:0c:70:16:60:e6:bf:f7:b3:7c:3f:46:d8:0c:1f:f8:4c:26:5d:b2:d1:92:61:43:40:53:86:8e:ee:47:57:ed:24:e3:2a:b5:26:10:ee:8f:2c:42:96:5a:f3:5d:35:cb:c7:30:00:a3:6b:8a:89:2c:08:57:43:27:c9:48:03:49:74:44:f4:f7:e4:e7:0d:fa:69:25:8c:2e:d4:7c:d4:c6:d1:08:cb:4e:45:60:a4:ea:ed:98:2c:4b:a7:fe:c6:90:77:2c:d6:a1:e2:10:a6:62:71:71:37:5a:c1:72:3c:0a:f4:67:49:6c:c6:2f:b7:98:57:b0:3a:73:26:36:77:c6:57:ee:ea:39:c7:fa:26:a2:c9:c6:72:38:70:d0:a4:c2:42:a9:fc:cb:a2:e7:0a:ad:3f:56:45:0b:8f:f7:93:ea:5a:81:d3:20:9c:bc:c4:bf:84:26:11:ca:40:aa:ee:0d:42:f8:ec:f9:44:81:52:03:f4:d8:9c:6c:e8:fb:38:a6:66:69:88:1c:60:92:6a:03:81:b4:5f:06:b9:86:95:63:ac:fa:13:b3:c8:d6:f2:df:b3:94:45:38:28:da:f6:e1:ef:86:6c:60:27:50:12:f7:25:9b:e3:f5:c9:e4:f5:36:81:42:31:ce:08:38:68:7d:92:d1:89:59:11:db:a7:96:50:18:26:15:2a:7c:86:82:77:05:33:3b:b7:d3:0c:b5:23:c5:0e:d6:3c:1f:94:b4:47:e8:aa:f4:4d:0d:39:e9:26:51:d0:15:de:5f:a6:4b:78:cc:b0:d3:8c:58:fe:c5:b0:c6:ef:eb:3a:ad:bb:a6:b0:1c:4c:e7:ac:2a:87:cd:67:4c:fc:4c:6f:08:5c:56:95:fe:17:08:80:5e:f7:05:93:e5:9b:8a:5c:30:a5:6c:17:c2:79:29:4c:50:db:0d:e1:d7:87:3f:f3:b9:9f:44:09:95:76:6c:ef:f3:a4:0a:ea:a8:a7:ad:17:ff:f1:ee:91:3e:d4:07:70:25:d4:3e:36:94:3b:35:1b:2a:da:c9:5f:a6:be:92:ff:96:8e:86:53:e6:fe:64:62:96:a4:72:ab:96:4b:66:54:dc:24:fc:b6:86:b2:e6:93:83:1c:a8:d2:eb:57:cd:55:a6:6f:b6:dd:db:74:f4:35:6b:06:1b:2d:ab:88:8e:f4:dd:69:3e:86:7e:d7:60:90:11:0e:dd:f7:19:68:9c:a0:32:2d:60:f6:2e:2c:34:2f:eb:79:ef:6b:58:95:c4:3f:77:19:cd:f7:25:f9:ca:85:07:e6:4a:61:e6:b2:41:63:86:9f:ee:15:36:c5:54:ab:bc:61:66:09:c0:ab:74:66:24:df:bb:ee:a6:f8:06:c9:52:e9:a5:5b:4f:41:3c:e6:29:f0:eb:44:15:6c:3d:47:4d:96:5d:e8:6e:7d:10:b7:4c:72:34:1f:4f:66:8c:36:93:e4:06:5d:1d:80:ef:5d:ac:02:36:df:52:f1:25:23:c2:dd:9d:31:c2:99:a9:26:6a:90:6b:6d:e1:7a:f1:16:b0:f8:a2:cb:5c:bb:51:a8:ac:3d:85:f0:12:ab:b8:aa:80:6c:cd:76:40:13:23:e7:ee:e6:2d:37:ad:4a:2e:a4:3c:df:58:6a:21:14:b5:00:e8:89:b3:d4:76:c4:aa:cf:5c:7c:74:e6:29:7c:6f:07:e8:9f:e8:53:89:1f:8b:4d:56:6f:13:75:12:87:5a:76:7f:34:9e:bb:c8:8d:ca:10:f5:be:b8:c9:d5:dc:f5:5e:25:09:25:b0:fa:5a:8f:a5:c2:19:f2:5e:61:49:c7:86:b7:28:06:15:8c:86:08:03:d3:94:c6:6d:18:9e:6f:e5:db:9f:24:28:bb:8f:6a:1c:1f:ea:6e:b8:d8:a0:9c:0e:6a:23:97:51:7e:64:d1:cc:c3:ac:80:14:ec:79:e4:c6:ef:3d:c1:5e:6b:12:4d:cc:d4:3a:f7:fd:fd:c7:f9:a3:46:32:c8:d6:d8:84:7f:b0:91:b7:50:5b:92:98:b7:ab:f5:7b:51:42:32:ec:8e:c6:a8:3c:ac:42:d5:5a:4f:ca:d6:78:02:3b:f0:2f:ff:6a:f7:19:89:cf:45:7d:21:48:0d:80:fd:ad:49:79:5f:25:8e:f3:5c:b9:5a:17:1d:30:c5:fa:cc:4e:66:41:76:ba:e8:e4:19:d3:89:b2:18:e5:80:be:3c:00:cf:1a:14:fe:43:e3:ee:e5:46:7d:af:cb:7d:1b:d0:7c:14:5b:2f:b6:f7:b7:c6:7f:f7:4a:17:29:d0:d4:6e:0b:c7:07:34:e8:88:98:0b:d8:41:fb:2f:09:d6:1d:74:d1:b0:06:4a:fe:db:ea:e6:45:a2:a9:c6:e3:34:ff:7b:5a:86:ec:26:70:83:05:45:7b:8a:5d:c6:8b:6a:f1:c3:47:63:d3:29:ce:ad:d0:eb:aa:4a:da:fd:08:cd:07:7c:da:97:47:b9:66:48:04:6d:0e:86:7a:4a:33:38:07:70:e4:a8:de:f8:b2:61:9f:a3:92:b0:1e:35:de:16:2a:ce:69:8c:97:31:d1:96:bf:24:98:1a:b7:65:d2:6b:93:4c:d3:c2:b0:7b:72:d5:6f:20:4e:c0:f9:3f:5a:c5:11:1e:6e:51:b3:4c:b6:24:63:1f:06:eb:16:0f:2b:e3:8e:e0:d4:bc:cd:97:53:a9:82:02:db:5f:06:7e:81:9f:ef:3a:c8:16:94:e0:e1:4c:a6:55:bf:27:3d:92:e7:cb:fc:52:9c:3f:e2:1b:15:dc:29:b4:dd:0b:56:88:a0:78:96:79:2e:2f:f1:10:51:95:ff:96:9b:df:e7:fd:9a:e7:b2:fb:7c:cf:9a:9f:54:0e:89:a9:6a:2b:0f:37:d8:d9:41:cb:cb:48:bc:62:8b:ad:8a:e3:01:7f:f3:6f:53:c1:c8:76:fb:65:b7:0f:f5:a0:02:b8:e1:d3:fc:af:e7:43:9a:7a:3d:f4:8f:48:4e:45:09:69:e7:46:e9:a1:23:ed:34:5f:b6:c3:ad:47:4b:33:d0:8a:45:af:1d:69:d3:1a:b0:30:aa:39:c7:79:42:fc:5a:ce:c4:d3:b0:9f:89:2b:d4:cd:1f:0b:e8:f9:67:cf:5f:ed:bf:ff:5e:0f:25:fd:8d:09:a9:25:8b:9f:f1:b3:b5:fb:f4:d8:43:98:85:a6:bd:04:3b:49:fd:c0:fd:47:f0:cd:88:4b:fd:03:1d:5e:21:a5:d3:10:22:b6:f5:da:69:54:83:ed:67:00:97:e6:87:3e:d1:7f:3b:11:62:b1:1c:f1:91:29:bc:75:61:1f:9b:17:a3:20:a6:f8:ee:89:b1:64:d1:e7:70:5f:9d:dd:ce:03:6e:6e:fd:b5:87:47:60:11:02:44:60:cc:61:31:e7:ac:4b:9b:ab:91:58:b0:14:1f:e5:63:9c:47:75:45:f8:bb:bc:b4:ce:3d:b7:80:92:81:13:4a:94:bd:af:71:c9:14:30:82:35:ac:6d:75:45:a2:b4:88:4c:0d:14:2c:da:e9:05:66:b8:59:97:f0:f8:c7:50:54:07:dc:ad:39:65:5e:9d:d6:a7:90:4c:b5:5d:a2:84:0f:9d:2c:0c:cf:19:84:72:b9:92:a5:79:fe:5d:9f:e5:5f:38:98:64:f1:c7:37:bf:69:fa:7f:67:23:d2:be:dc:71:c8:9e:42:d2:4d:72:5d:e9:e3:b3:10:67:a9:70:8d:fd:56:2c:10:37:e3:be:9c:c3:48:95:00:d2:f4:7a:82:3f:aa:06:a5:72:56:e0:72:91:c8:09:6a:39:a1:a3:f5:df:5f:5f:21:6a:6e:1a:a3:9d:b4:8b:70:07:f0:95:f6:83:7e:1e:e3:1a:41:58:79:2d:be:e4:61:2c:71:04:7a:c3:56:60:a7:14:8c:92:24:2e:cb:f5:a3:02:75:0a:eb:e2:86:1f:3e:55:26:6f:82:7f:38:ab:55:97:6c:8c:6d:f8:a5:0c:be:c7:9e:27:89:fc:43:e0:32:5b:3f:3f:30:73:e2:3d:e9:ce:a3:06:a8:c8:37:93:90:4a:3c:89:aa:13:74:10:74:e1:0a:30:13:5d:f0:48:4f:4e:b0:cf:cc:7c:8c:f2:aa:c8:9f:6d:0c:01:98:a9:99:f8:47:f6:06:e5:52:49:f7:27:d7:af:12:c6:84:bf:e1:6b:04:04:ac:91:59:97:91:47:26:01:af:f5:82:e9:15:7a:24:6d:82:c5:b8:d6:65:1b:54:8c:a9:21:24:84:9e:50:a7:15:65:b8:ea:2a:2e:b5:eb:1d:b8:3b:a1:ec:c0:12:f4:c7:f8:fb:0b:16:17:01:af:76:3e:22:d9:b7:24:ba:2b:38:76:62:47:4c:a2:29:67:87:d6:e5:a1:55:49:59:7f:bf:8a:20:69:52:85:6a:a3:9d:85:a4:b4:d2:d8:83:7c:15:0d:48:61:66:2e:7e:61:ea:36:0d:ca:0d:fb:b0:54:78:15:92:06:74:62:8e:a8:c5:bd:a4:a7:13:18:e7:5f:3a:88:c5:38:aa:45:8a:0e:4f:41:69:e1:b5:e4:49:32:c5:64:3c:ea:01:a3:6d:e9:65:16:78:91:8a:53:97:ce:26:6c:6b:6a:af:5e:63:36:e2:39:6c:1b:1d:92:c7:b3:3e:1b:6a:1b:3d:a2:bb:71:ce:bf:2e:8f:5f:ac:37:0e:5f:18:50:6e:62:5a:1b:9f:08:f1:d6:cf:69:4e:56:3e:ae:18:d3:d3:80:f6:e3:95:61:b2:b2:5a:b0:ff:58:56:ad:5a:5f:0f:18:97:e8:40:77:a8:c6:9d:32:65:84:f5:ce:b3:ee:56:1f:23:18:56:cf:aa:fd:86:ca:cf:82:b8:d9:31:5b:6f:af:b1:c4:3d:de:11:7c:6b:fe:8f:40:92:8a:16:b7:5d:c5:5f:f7:8e:9c:e1:d5:b5:5c:d3:ad:44:57:85:12:e8:d9:28:20:56:9f:01:81:d1:ee:b2:f8:47:36:ff:91:da:55:3c:29:8d:61:55:70:41:30:39:7f:a0:bb:79:04:0e:44:31:43:cf:c5:13:f8:65:f0:9c:c3:83:d6:da:f7:f8:ea:ce:8f:09:f7:0d:1f:55:d5:d6:9c:dd:0b:4d:14:76:71:61:83:0c:43:bc:ca:3b:17:ff:09:78:f8:e0:70:f5:66:57:14:73:86:60:87:ab:4a:bd:92:12:9f:ec:b1:ee:29:d0:d0:7b:68:84:4b:60:64:7a:c4:37:3a:21:ed:70:dd:36:d0:a1:bf:9d:ca:9b:2a:5a:ac:7b:c5:d3:28:e9:da:dd:44:af:2e:24:81:1d:75:b3:29:09:a7:85:42:64:97:cc
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 3190
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 3190 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 3190
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m 847e0e4ed4e81423393cd6fb0b6a0427a8465de4e7868c2f26b8274114642229b6051b19b008763716455b4d600f4bef16c5fe26ea1d4390345a159a6e1055afec7894496781607afed100bfc8324e31b685593f98d3269e3c5b4017261a8c70dd7275712a1d9d30aa56e4450fb1046a22a
+[0m[1m[32m	Connection window size (before):[0m[1m 15679698
+[0m[1m[32m	Connection window size (after):[0m[1m 15676508
+[0m[1m[32m	Stream window size (before):[0m[1m 6242504
+[0m[1m[32m	Stream window size (after):[0m[1m 6239314
+[0m
+
+  提取的帧数据长度: 2838 字节
+  提取的帧数据(十六进制): 293054ea8fc173e28574f823529a408a4882285b913f8534dfec36aa25c870e47995452a2572db17282893059e03a3b287f8...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 5676 字符
+  十六进制数据: 293054ea8fc173e28574f823529a408a4882285b913f8534dfec36aa25c870e47995452a2572db17282893059e03a3b287f8ba48da0bbd14368ec7dbcd0cb6147a6ae461b9359350bc7c04fa3f39d6392702a918262328f39613c21d5d8f83076d485d878c325ebc41267f61851400985af95671d3972093e4d5b5bb7a9139a9240484eaa102f40cb1fcca19cd8ce45d57c86ab5059cb25f403a513b4922b77c2d8ecc66057a8170f5dd7643ef28e7c948d2ccb8149721fbf12df1aa7d007587c9d1e375b2c6ad59f00399c6825b46a03cccaf35d740cde0fb9a8e76bc6eb1d2cd3432ae8786672c1cd93814ea0141af928f8348c78b88da61c34ffcd28e2e9833b916f6144f2c74c0f263b77935014d1f4a6eeafead2cf7e044943fe2bc04f1e04bea7fab38a70260219f665a5948afc45a6735f52c117abed9bf34f6797fc5268fbb7c44b7aa09e9b53d9c4192cc96c1b145b3f7b06af378cf5b02731dd6cd7f65b2bb56cac68f7def514511a5cd3f4a4c04046fe7a1af94d1edbca01ce2e227eb917e3346944b00e5c1eedcef9d9bac6fa5c4e1cac0a351efaed0b69ac7f9120f3ed8a62c3305c276bdce28e006d3c863b11a632df909ac3d79f1f40d8258ab4ae278ef1df120be6055ab3d86c0a0f7e9f158125d8191b128f98776c8a830abbb4a450472096b17cc6172bd2aded0b295ffe968fd16d10247f5fd220df7efdd03ed6c85f4df34362ffb83f4b7dc8fa8e621c9809689d5f5d32f063f05adb6d3302a8890d9dd60743a5ace86094f11689b59376e5ae64f6a7f3fecf19d452f6ef63f2698a6a25ae759240a63a4d1336c4b3c1d456efc9a752c39c28d2fd9c307b54b2d34122b5d865935a1b370b4b0a2672ee22613df766dec92ec95c956fe69bab43f548f61e759ff021172a8ad3b8ad55301a8bbf319f278f979140a72fa9bfd3824a1eaacad47461247048afa4f4c361ffa74d5ab0e0b71ac4679979537d774af7f566edbe13fd501f7e1dee0277913658b09bb4491a9835eb58194681ad7dd85521fff5fc399f38a98341690ba676523c2d112a64687c04259ecb4a3299b7e62bae052185bf80d143aaa61c41fcbcc3c45361504ea7dcf5c2872cc39c24dba1755395fba5d31abf75adf8556cca22f9bd14eba2c4e33640c701660e6bff7b37c3f46d80c1ff84c265db2d19261434053868eee4757ed24e32ab52610ee8f2c42965af35d35cbc73000a36b8a892c08574327c94803497444f4f7e4e70dfa69258c2ed47cd4c6d108cb4e4560a4eaed982c4ba7fec690772cd6a1e210a6627171375ac1723c0af467496cc62fb79857b03a73263677c657eeea39c7fa26a2c9c6723870d0a4c242a9fccba2e70aad3f56450b8ff793ea5a81d3209cbcc4bf842611ca40aaee0d42f8ecf944815203f4d89c6ce8fb38a66669881c60926a0381b45f06b9869563acfa13b3c8d6f2dfb394453828daf6e1ef866c60275012f7259be3f5c9e4f536814231ce0838687d92d1895911dba796501826152a7c86827705333bb7d30cb523c50ed63c1f94b447e8aaf44d0d39e92651d015de5fa64b78ccb0d38c58fec5b0c6efeb3aadbba6b01c4ce7ac2a87cd674cfc4c6f085c5695fe1708805ef70593e59b8a5c30a56c17c279294c50db0de1d7873ff3b99f440995766ceff3a40aeaa8a7ad17fff1ee913ed4077025d43e36943b351b2adac95fa6be92ff968e8653e6fe646296a472ab964b6654dc24fcb686b2e693831ca8d2eb57cd55a66fb6dddb74f4356b061b2dab888ef4dd693e867ed76090110eddf719689ca0322d60f62e2c342feb79ef6b5895c43f7719cdf725f9ca8507e64a61e6b24163869fee1536c554abbc616609c0ab746624dfbbeea6f806c952e9a55b4f413ce629f0eb44156c3d474d965de86e7d10b74c72341f4f668c3693e4065d1d80ef5dac0236df52f12523c2dd9d31c299a9266a906b6de17af116b0f8a2cb5cbb51a8ac3d85f012abb8aa806ccd76401323e7eee62d37ad4a2ea43cdf586a2114b500e889b3d476c4aacf5c7c74e6297c6f07e89fe853891f8b4d566f137512875a767f349ebbc88dca10f5beb8c9d5dcf55e250925b0fa5a8fa5c219f25e6149c786b72806158c860803d394c66d189e6fe5db9f2428bb8f6a1c1fea6eb8d8a09c0e6a2397517e64d1ccc3ac8014ec79e4c6ef3dc15e6b124dccd43af7fdfdc7f9a34632c8d6d8847fb091b7505b9298b7abf57b514232ec8ec6a83cac42d55a4fcad678023bf02fff6af71989cf457d21480d80fdad49795f258ef35cb95a171d30c5facc4e664176bae8e419d389b218e580be3c00cf1a14fe43e3eee5467dafcb7d1bd07c145b2fb6f7b7c67ff74a1729d0d46e0bc70734e888980bd841fb2f09d61d74d1b0064afedbeae645a2a9c6e334ff7b5a86ec26708305457b8a5dc68b6af1c34763d329ceadd0ebaa4adafd08cd077cda9747b96648046d0e867a4a33380770e4a8def8b2619fa392b01e35de162ace698c9731d196bf24981ab765d26b934cd3c2b07b72d56f204ec0f93f5ac5111e6e51b34cb624631f06eb160f2be38ee0d4bccd9753a98202db5f067e819fef3ac81694e0e14ca655bf273d92e7cbfc529c3fe21b15dc29b4dd0b5688a07896792e2ff1105195ff969bdfe7fd9ae7b2fb7ccf9a9f540e89a96a2b0f37d8d941cbcb48bc628bad8ae3017ff36f53c1c876fb65b70ff5a002b8e1d3fcafe7439a7a3df48f484e450969e746e9a123ed345fb6c3ad474b33d08a45af1d69d31ab030aa39c77942fc5acec4d3b09f892bd4cd1f0be8f967cf5fedbfff5e0f25fd8d09a9258b9ff1b3b5fbf4d8439885a6bd043b49fdc0fd47f0cd884bfd031d5e21a5d31022b6f5da695483ed670097e6873ed17f3b1162b11cf19129bc75611f9b17a320a6f8ee89b164d1e7705f9dddce036e6efdb587476011024460cc6131e7ac4b9bab9158b0141fe5639c477545f8bbbcb4ce3db7809281134a94bdaf71c914308235ac6d7545a2b4884c0d142cdae90566b85997f0f8c7505407dcad39655e9dd6a7904cb55da2840f9d2c0ccf198472b992a579fe5d9fe55f389864f1c737bf69fa7f6723d2bedc71c89e42d24d725de9e3b31067a9708dfd562c1037e3be9cc3489500d2f47a823faa06a57256e07291c8096a39a1a3f5df5f5f216a6e1aa39db48b7007f095f6837e1ee31a4158792dbee4612c71047ac35660a7148c92242ecbf5a302750aebe2861f3e55266f827f38ab55976c8c6df8a50cbec79e2789fc43e0325b3f3f3073e23de9cea306a8c83793904a3c89aa13741074e10a30135df0484f4eb0cfcc7c8cf2aac89f6d0c0198a999f847f606e55249f727d7af12c684bfe16b0404ac91599791472601aff582e9157a246d82c5b8d6651b548ca92124849e50a71565b8ea2a2eb5eb1db83ba1ecc012f4c7f8fb0b161701af763e22d9b724ba2b387662474ca2296787d6e5a15549597fbf8a206952856aa39d85a4b4d2d8837c150d4861662e7e61ea360dca0dfbb0547815920674628ea8c5bda4a71318e75f3a88c538aa458a0e4f4169e1b5e44932c5643cea01a36de9651678918a5397ce266c6b6aaf5e6336e2396c1b1d92c7b33e1b6a1b3da2bb71cebf2e8f5fac370e5f18506e625a1b9f08f1d6cf694e563eae18d3d380f6e39561b2b25ab0ff5856ad5a5f0f1897e84077a8c69d326584f5ceb3ee561f231856cfaafd86cacf82b8d9315b6fafb1c43dde117c6bfe8f40928a16b75dc55ff78e9ce1d5b55cd3ad44578512e8d92820569f0181d1eeb2f84736ff91da553c298d6155704130397fa0bb79040e443143cfc513f865f09cc383d6daf7f8eace8f09f70d1f55d5d69cdd0b4d14767161830c43bcca3b17ff0978f8e070f566571473866087ab4abd92129fecb1ee29d0d07b68844b60647ac4373a21ed70dd36d0a1bf9dca9b2a5aac7bc5d328e9dadd44af2e24811d75b32909a785426497cc
+
+================================================================================
+
+数据包 #782 (第8个)
+时间戳: 2025-07-03 10:03:01.663446
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 133664
+  Payload: 71:f1:a8:25:42:ba:69:99:2e:5f:66:24:4d:d3:94:25:c2:fe:59:20:26:3e:6e:ff:64:97:d9:b5:ee:5e:ff:25:a9:97:12:0c:fb:d0:8a:38:6d:bd:93:87:f3:5e:8e:53:a1:4c:96:de:77:85:bc:5a:7c:91:fe:da:96:dc:be:b1:8a:a2:8c:88:a9:35:20:21:34:cc:1f:9b:99:76:93:92:68:cb:8f:8d:c9:9f:46:03:04:30:d9:7a:99:2f:dc:8f:5b:f6:d1:d1:92:c4:f7:ef:bf:82:74:2d:28:96:ce:f3:95:ce:13:48:05:9c:5a:68:7e:56:1e:f2:dc:eb:cb:4f:f2:1a:be:4a:0b:a1:f5:65:a0:f2:6a:11:77:5e:64:94:53:a8:4d:54:ab:ac:57:f1:d8:79:0b:39:00:ba:18:14:19:c1:c2:e7:36:36:2d:8c:4c:13:ce:f6:c6:44:b0:3a:a8:23:fe:e9:b5:05:77:9a:75:fe:13:85:9b:fb:50:83:b7:12:45:85:6b:17:4f:8b:40:6c:7a:64:88:ab:dd:95:52:d9:2a:6d:d9:a6:28:1d:45:7b:04:48:7f:56:3b:de:ae:1a:83:96:80:66:ce:66:7c:32:b3:4c:3f:8d:3d:5f:69:90:b5:50:10:e4:b9:a1:f3:3b:48:46:f7:23:70:72:62:ea:0d:01:b6:51:6e:22:7f:cf:4e:8f:5f:71:5f:33:d5:69:bc:41:87:23:07:dc:6f:0f:7d:19:d9:e4:4e:ab:2d:2b:f9:98:0a:1c:00:76:4a:7a:23:5f:a3:d7:77:f7:27:4e:ba:79:f6:55:9c:a3:e5:8c:15:fd:f0:dd:4b:3c:82:64:50:3f:55:89:e6:05:b4:b6:98:f9:c6:25:08:8c:51:c6:d5:4e:ed:6c:a0:f4:5d:16:cd:2f:18:34:55:a0:2a:f5:6d:6a:f2:57:86:4e:98:2a:3f:9c:94:af:ca:73:15:ff:46:6e:17:db:13:58:98:4c:2d:56:12:f6:90:dc:23:08:52:fc:4f:7a:22:d1:67:bf:00:83:c0:29:47:38:a9:ce:74:1a:8b:80:36:96:0b:bc:86:32:31:91:1d:b6:f7:b0:eb:66:64:d5:22:c2:4e:82:ce:cb:f4:85:7c:ca:0e:b8:1e:2c:de:a1:dd:48:b3:3f:5e:6d:0f:b9:bb:ef:35:a8:9c:8c:8d:d4:8a:6e:19:24:6e:ee:47:bd:c3:7e:96:8a:44:b0:4c:78:0c:4b:be:75:cb:13:cc:a8:f7:29:bc:43:54:27:33:2b:8b:f3:23:af:2a:ed:fc:68:61:73:18:b2:ef:58:bd:44:7b:75:43:c7:1c:70:d7:9b:20:f8:75:90:c6:66:49:e8:0e:5b:64:2d:4a:c1:44:4d:44:3b:9e:a4:6e:b9:77:37:fd:f4:67:30:50:24:4a:55:43:6b:94:e8:53:17:eb:61:d7:0b:de:ed:64:7e:44:5f:8b:4c:5c:11:78:e0:8c:ce:aa:8d:bd:a6:38:e5:45:1d:3c:1d:18:ff:23:0a:1c:ef:e1:e0:9d:10:19:24:b9:60:81:be:5c:a7:f2:55:ef:7e:b2:a1:06:15:15:26:33:1b:ec:d8:d7:72:64:a7:ff:34:6c:56:ce:13:d0:32:57:94:12:9b:aa:00:dc:8b:ed:37:4b:0d:34:00:78:6d:7c:b3:20:4d:36:e0:c8:58:6a:8b:07:e7:ee:45:53:e9:32:9f:58:cc:83:f8:c0:0a:eb:c8:44:c4:ca:f4:ab:f2:39:08:a2:6c:7a:22:48:89:c4:17:19:8c:04:b3:dc:aa:3a:2f:a7:0f:b0:b6:38:fe:aa:16:07:a7:f5:2a:6c:7c:c4:7c:f6:aa:19:fa:95:8e:73:16:8e:50:cc:0c:bc:ee:2b:e3:52:14:2b:18:4e:94:ad:6c:01:db:00:e0:e9:16:d6:57:a4:b1:8e:a4:17:33:18:db:9f:a9:fb:20:aa:3b:52:6c:98:3b:3c:68:dc:5a:a0:b3:f0:8d:8f:9e:85:a7:e6:84:74:01:50:41:3a:d6:80:d5:b6:80:42:31:c4:b7:be:26:e7:df:c2:42:f4:cf:cd:15:81:e3:87:ae:0c:72:5c:03:6e:11:3e:1d:35:ef:64:7a:67:7c:85:cf:66:ce:27:e4:19:0f:17:24:8a:77:bb:b7:7c:d7:c9:8b:d0:5e:c3:ec:bb:2c:ab:94:71:02:37:42:95:61:2d:62:b4:35:aa:bc:13:7d:4a:6f:c5:33:49:f2:48:27:a3:94:3c:d9:cf:23:50:c9:08:31:d2:21:41:ba:46:41:1d:29:b6:f8:0a:58:15:71:f1:02:0f:b2:ad:f4:5f:c6:f2:91:4b:a0:89:7b:30:5e:07:8a:10:cc:4c:33:f6:89:4f:46:e0:1e:86:05:b3:37:2c:a9:96:07:cc:8e:e4:88:21:3d:e7:66:8e:a3:e7:ba:5b:eb:d6:c3:9f:80:30:f7:c6:07:31:8c:ef:64:c2:a3:98:ab:fa:0b:ae:e7:10:76:f2:43:5b:3c:7e:50:2a:b0:b5:ad:dc:a3:49:36:6a:44:c8:62:55:02:49:b9:be:c4:a9:68:eb:19:a3:43:aa:60:a0:8f:94:53:89:6d:17:92:a9:43:99:5a:00:58:5c:f7:fd:bb:2d:75:a7:ab:db:2f:5f:db:5f:74:c3:60:56:5b:99:5b:cf:7c:6f:a4:70:da:ba:df:d7:27:a1:7b:e9:5c:69:48:66:54:70:97:21:93:3e:e9:8d:5f:00:24:79:c5:d9:89:05:01:df:be:3c:c9:4b:3a:a7:79:04:ce:80:9b:b6:3f:c0:e7:5b:80:bf:f5:a0:e5:72:6d:6a:73:a9:18:61:bd:c6:4b:ba:7a:20:e3:30:8e:e4:65:ad:2f:36:4a:87:dd:d9:7e:7f:1f:10:7b:5a:c0:2f:ec:d5:ab:40:95:c8:33:47:9b:d3:d7:d9:1b:5c:48:00:3d:25:3e:c8:2c:98:b5:70:eb:85:dc:0d:5c:f1:06:86:86:fb:4d:29:d6:d1:2d:8d:75:bf:24:d7:dc:1b:36:77:43:93:1f:0c:48:69:c0:b8:44:d5:b2:d4:57:0f:5c:d1:5d:47:c3:6e:bf:3a:8b:95:70:38:e7:3a:20:e3:12:60:83:aa:af:9e:4a:29:db:b4:2a:55:1c:ed:58:f6:0e:da:0b:3a:75:d4:63:ca:22:3e:e8:4e:fb:2c:6c:6b:78:de:92:46:69:0d:c3:7d:f5:8b:92:b4:82:3e:a1:b6:e4:94:52:39:f1:04:04:8f:01:7e:a4:f2:2b:c7:46:65:27:45:86:87:ce:de:ce:3f:6b:64:29:44:07:a1:f2:db:5b:b9:5b:1a:78:97:c2:2f:54:e4:33:ab:e8:c0:0f:25:91:72:bb:6b:44:0e:c2:fe:9f:0c:59:db:94:b7:a8:dd:4c:63:c9:db:29:3b:9e:28:05:6f:e4:76:3d:76:aa:1d:28:b2:6a:be:5b:fd:14:ed:02:76:66:e9:3b:b4:ff:fd:2d:20:be:40:e4:ff:31:39:a9:1b:af:c0:66:e5:cc:54:52:04:44:f5:3d:5f:77:23:e8:db:5c:c6:60:c1:fd:c1:23:5c:9a:86:32:8e:2b:55:72:d3:64:63:e3:b8:41:cc:41:72:f4:0a:db:3e:97:3b:41:fc:6b:d3:18:b7:f4:3a:ce:e7:2f:d9:c9:a5:e3:5f:bd:13:f9:68:d7:b7:da:13:12:81:d3:4c:f8:9b:4c:ba:a8:11:a7:8e:eb:4d:0a:9b:38:05:fe:41:80:26:7f:b8:22:27:fe:28:52:6f:5a:7b:eb:b8:6d:45:7f:d5:28:7e:e7:14:eb:a2:aa:e6:36:69:68:b6:0b:56:87:68:b1:01:90:06:47:d8:b2:b4:8e:c0:40:27:47:03:08:4b:aa:63:b3:0b:79:c0:3d:0f:23:ea:d3:ce:91:6a:11:b0:2b:94:c5:4f:e0:c9:9d:f3:21:a2:49:b3:a1:0d:58:d6:92:f9:d0:b9:f6:cc:d7:68:8f:73:8e:2d:19:44:7a:78:7d:d1:21:2b:59:e9:8f:c0:df:be:f4:f9:18:11:74:e0:c7:29:87:39:64:40:83:d2:fa:f8:61:87:17:54:3f:e3:3a:0f:29:cc:52:b7:96:d3:f7:9d:02:1e:5a:ea:4d:2a:a5:69:69:ec:fe:b9:5e:81:5c:43:85:48:89:c1:38:11:d3:bc:a7:45:e7:68:8e:9c:a1:92:1d:80:0d:c3:71:27:49:a6:70:a8:94:87:73:60:33:58:a6:b4:a1:a3:c1:00:ce:db:1d:66:38:c0:86:6c:b8:b3:99:6c:c3:50:89:de:f4:aa:f6:4e:ba:66:96:39:c5:1c:df:0d:36:55:f0:29:c7:c7:4f:9d:e4:06:57:53:75:47:5d:aa:44:4b:ce:1b:ae:f6:0a:74:f2:09:c3:50:88:a4:4b:67:a1:da:14:11:1f:16:72:1e:87:22:88:10:40:cc:3b:37:57:d3:75:7a:24:18:4f:00:bb:cd:45:39:05:1b:e3:9e:9b:b3:a3:4f:2c:da:3a:1a:2a:75:15:4c:14:ac:ff:50:b3:e4:17:03:03:3f:da:03:e2:70:26:76:e1:ae:1c:ba:e6:d9:95:76:66:35:93:bc:07:0b:27:bd:d9:9c:e3:ec:e2:be:62:85:f9:cb:1c:b5:e8:47:59:d1:b3:f5:17:e4:6e:fb:17:39:df:c5:93:51:0a:99:63:78:8c:e8:ec:de:d4:7a:a7:b0:0f:27:cb:6d:ed:24:74:cd:90:ed:63:2b:51:29:64:a8:f3:3c:87:f9:69:02:90:89:d6:d2:bd:f7:92:6f:d2:63:9f:f7:ea:51:bb:a3:16:5f:14:c4:95:9e:16:8f:d5:6a:bc:ae:97:ec:47:1c:5a:79:30:ab:81:df:bb:62:02:59:41:ec:8e:e0:d1:84:24:0b:38:da:64:00:67:d7:89:95:26:95:29:bb:2d:b5:26:d9:4e:b1:e7:78:24:e2:40:1b:c5:dd:8e:36:d2:20:8a:43:6d:07:8a:49:d2:37:d6:81:81:64:f7:cd:87:40:88:35:6b:56:bd:99:f6:93:c9:7c:a4:e9:ed:a4:4d:2b:b6:56:f4:c1:e7:ec:17:47:8e:27:c3:7e:db:41:c8:00:54:71:26:28:01:8e:29:f2:de:f1:ba:87:86:5c:86:48:9d:f7:c6:dc:08:57:3f:e4:e8:f7:27:ee:76:f1:04:75:3b:df:c5:94:8c:ed:31:ef:f2:50:2c:66:a5:9c:1d:3e:70:96:8b:cb:99:b4:fa:a2:0a:a2:50:a4:1d:6c:48:16:a3:ec:a1:f2:13:e0:50:80:59:cf:fd:78:b1:74:ef:76:4b:73:7c:4c:f4:17:4f:7d:0d:cd:f1:bf:64:19:62:cb:b2:1f:d5:d9:6e:a1:3b:b6:93:7e:c5:88:3b:31:0b:95:c0:f9:e6:9e:d0:48:28:86:e1:01:f4:32:ae:df:d1:3d:97:9b:96:83:49:e2:f8:e0:1d:1e:20:8f:d2:34:5d:e7:80:6f:d2:34:45:5d:24:71:26:3d:17:59:2f:4d:92:3a:17:57:c4:6f:8a:4a:4a:5f:84:8e:d8:e8:4f:d2:af:b5:a7:31:92:00:eb:f7:76:f0:41:b5:3c:5a:59:f3:58:00:f0:e6:0a:b1:6e:13:8b:8d:0a:61:8a:4a:6d:b2:96:29:2e:a6:77:74:db:3d:a4:60:7f:80:9e:0e:62:f7:47:ac:3f:01:b3:01:7c:e2:c3:ea:cc:b3:ea:63:af:fe:17:12:6a:ee:73:a5:36:4f:b1:fd:fa:6f:e1:6f:0c:e6:18:01:02:6d:9e:e1:92:25:06:f3:56:4f:37:48:0e:00:77:54:ae:e2:27:33:3e:3b:5d:26:5e:d6:1b:d5:e5:46:2b:a9:b6:2e:61:18:a4:dd:48:7c:24:60:bd:55:33:26:fa:77:17:f7:f3:15:61:f8:82:e7:0d:b6:c9:30:63:0f:f9:6d:2e:07:b5:20:03:58:f0:a9:29:c2:bb:a6:91:84:75:14:e3:15:95:b6:b2:d5:57:b8:4b:ca:c1:82:f5:5e:6d:80:4f:d2:48:35:0b:17:5f:e3:5e:83:40:f4:1a:86:b5:93:f5:6f:8e:a4:2a:a1:81:9e:11:0d:ca:c9:cb:a7:1e:2d:c7:f8:ae:60:1e:27:2a:cf:89:d2:3d:36:09:b4:fc:34:fd:4f:3b:8a:f1:73:f8:a5:9b:bf:0a:5c:75:3d:70:71:59:c8:1d:67:24:fd:fb:50:93:70:ed:7d:57:91:68:8b:20:d6:e5:c8:7b:52:b7:9e:92:de:2c:61:96:89:ef:ab:54:ac:91:41:70:79:8b:b9:26:0e:5a:48:45:37:78:3d:38:3e:1a:b0:d5:cb:33:81:62:ac:33:6c:5d:ba:ec:7a:49:6e:0b:52:ed:c5:a6:79:b8:b4:1c:f5:bf:78:aa:12:82:f4:9f:57:a3:21:df:54:0a:3a:a1:2a:fe:ed:eb:21:65:3d:cf:88:03:75:1d:6b:d3:94:5c:c7:ce:d3:77:f2:cf:28:59:db:87:c5:a0:52:a8:d1:12:18:16:3c:72:78:f3:46:94:51:de:73:1e:00:ac:49:f9:43:72:24:82:1a:0c:33:da:61:e1:a0:d4:e5:1d:1e:c0:a4:22:bb:4f:e8:14:26:6e:68:c1:72:e9:a6:d9:0e:6f:b2:ce:d5:7c:26:4f:a3:83:92:1f:a8:d9:d9:6e:a6:fd:8b:95:2f:0c:9e:9f:d9:0d:88:9b:02:a1:3a:0b:04:8a:e9:3a:84:dd:85:6c:aa:2a:9f:5b:e6:14:1a:4c:96:44:41:ad:db:96:d7:d3:1a:9d:f9:57:c2:88:e1:b6:90:c1:e8:70:60:43:ca:e3:f1:43:1a:54:ad:ee:eb:a9:80:f5:8d:b6:34:0f:02:e8:ce:7e:58:bb:40:15:c0:ec:fc:e8:e2:36:55:b4:48:85:82:93:46:eb:20:cf:73:62:f7:66:30:98:ae:54:c0:0c:22:de:86:fb:44:47:ce:da:52:29:e6:d0:84:31:f9:02:b7:85:8d:82:71:ac:32:e3:dd:c9:1d:89:9b:5f:e2:51:69:f6:1a:0d:d6:c4:30:44:4a:9e:3a:9f:b1:20:d9:b0:b2:76:f1:5e:0e:a8:02:8f:ce:8c:92:c3:83:68:b3:e4:5c:20:90:2a:a6:a6:f2:5d:53:2a:06:c6:9a:ca:63:74:40:03:69:26:4c:86:4b:02:09:83:b3:8e:2f:92:95:85:f6:dd:94:7f:80:79:c5:d1:c7:db:14:65:bf:48:d4:2e:4f:fd:95:27:a6:63:dc:25:b6:5c:ef:ed:74:7e:b9:45:2f:73:73:2f:f5:49:43:c9:06:a7:d6:d5:12:8d:10:29:dc:a9:9e:c2:b5:c2:0a:0a:13:d5:8f:9d:00:6a:90:64:47:74:e8:7d:ad:29:0e:d0:22:bd:6c:ea:1c:13:ec:d1:5c:ce:93:bd:19:60:b2:d4:de:a6:3d:b6:fd:75:de:9f:20:a5:ee:46:3b:5d:98:d3:9e:2d:05:78:1b:ba:48:2b:95:10:64:5e:d8:df:10:b4:61:9a:2f:2a:e9:4d:0f:64:19:d7:59:a9:98:e3:33:a9:3d:ff:be:0d:1d:50:41:da:02:4e:70:7c:b7:77:2a:49:ff:aa:8b:6c:7c:08:d7:77:c7:0e:b3:df:3e:b0:14:6f:82:a3
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 16302
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 16302 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 16302
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m 7f7b7fded44896e509c37f4f7e0a86b29c27d3268960478aacca1988c5bacd7aa66bbabaaded79a7e64d2302228229027880c8acec9a364380406c4244b009891d01110192d8858424b3f9f7fd1635f2456663d6f311deb35c775d17c8dd2123ab23cc9e9e9abc0ac797bb9c7bee597fe7d
+[0m[1m[32m	Connection window size (before):[0m[1m 15676508
+[0m[1m[32m	Connection window size (after):[0m[1m 15660206
+[0m[1m[32m	Stream window size (before):[0m[1m 6239314
+[0m[1m[32m	Stream window size (after):[0m[1m 6223012
+[0m
+
+  提取的帧数据长度: 2911 字节
+  提取的帧数据(十六进制): 5f66244dd39425c2fe5920263e6eff6497d9b5ee5eff25a997120cfbd08a386dbd9387f35e8e53a14c96de7785bc5a7c91fe...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 5822 字符
+  十六进制数据: 5f66244dd39425c2fe5920263e6eff6497d9b5ee5eff25a997120cfbd08a386dbd9387f35e8e53a14c96de7785bc5a7c91feda96dcbeb18aa28c88a935202134cc1f9b9976939268cb8f8dc99f46030430d97a992fdc8f5bf6d1d192c4f7efbf82742d2896cef395ce1348059c5a687e561ef2dcebcb4ff21abe4a0ba1f565a0f26a11775e649453a84d54abac57f1d8790b3900ba181419c1c2e736362d8c4c13cef6c644b03aa823fee9b505779a75fe13859bfb5083b71245856b174f8b406c7a6488abdd9552d92a6dd9a6281d457b04487f563bdeae1a83968066ce667c32b34c3f8d3d5f6990b55010e4b9a1f33b4846f723707262ea0d01b6516e227fcf4e8f5f715f33d569bc41872307dc6f0f7d19d9e44eab2d2bf9980a1c00764a7a235fa3d777f7274eba79f6559ca3e58c15fdf0dd4b3c8264503f5589e605b4b698f9c625088c51c6d54eed6ca0f45d16cd2f183455a02af56d6af257864e982a3f9c94afca7315ff466e17db1358984c2d5612f690dc230852fc4f7a22d167bf0083c0294738a9ce741a8b8036960bbc863231911db6f7b0eb6664d522c24e82cecbf4857cca0eb81e2cdea1dd48b33f5e6d0fb9bbef35a89c8c8dd48a6e19246eee47bdc37e968a44b04c780c4bbe75cb13cca8f729bc435427332b8bf323af2aedfc68617318b2ef58bd447b7543c71c70d79b20f87590c66649e80e5b642d4ac1444d443b9ea46eb97737fdf4673050244a55436b94e85317eb61d70bdeed647e445f8b4c5c1178e08cceaa8dbda638e5451d3c1d18ff230a1cefe1e09d101924b96081be5ca7f255ef7eb2a106151526331becd8d77264a7ff346c56ce13d0325794129baa00dc8bed374b0d3400786d7cb3204d36e0c8586a8b07e7ee4553e9329f58cc83f8c00aebc844c4caf4abf23908a26c7a224889c417198c04b3dcaa3a2fa70fb0b638feaa1607a7f52a6c7cc47cf6aa19fa958e73168e50cc0cbcee2be352142b184e94ad6c01db00e0e916d657a4b18ea4173318db9fa9fb20aa3b526c983b3c68dc5aa0b3f08d8f9e85a7e684740150413ad680d5b6804231c4b7be26e7dfc242f4cfcd1581e387ae0c725c036e113e1d35ef647a677c85cf66ce27e4190f17248a77bbb77cd7c98bd05ec3ecbb2cab947102374295612d62b435aabc137d4a6fc53349f24827a3943cd9cf2350c90831d22141ba46411d29b6f80a581571f1020fb2adf45fc6f2914ba0897b305e078a10cc4c33f6894f46e01e8605b3372ca99607cc8ee488213de7668ea3e7ba5bebd6c39f8030f7c607318cef64c2a398abfa0baee71076f2435b3c7e502ab0b5addca349366a44c862550249b9bec4a968eb19a343aa60a08f9453896d1792a943995a00585cf7fdbb2d75a7abdb2f5fdb5f74c360565b995bcf7c6fa470dabadfd727a17be95c69486654709721933ee98d5f002479c5d9890501dfbe3cc94b3aa77904ce809bb63fc0e75b80bff5a0e5726d6a73a91861bdc64bba7a20e3308ee465ad2f364a87ddd97e7f1f107b5ac02fecd5ab4095c833479bd3d7d91b5c48003d253ec82c98b570eb85dc0d5cf1068686fb4d29d6d12d8d75bf24d7dc1b367743931f0c4869c0b844d5b2d4570f5cd15d47c36ebf3a8b957038e73a20e3126083aaaf9e4a29dbb42a551ced58f60eda0b3a75d463ca223ee84efb2c6c6b78de9246690dc37df58b92b4823ea1b6e4945239f104048f017ea4f22bc7466527458687cedece3f6b64294407a1f2db5bb95b1a7897c22f54e433abe8c00f259172bb6b440ec2fe9f0c59db94b7a8dd4c63c9db293b9e28056fe4763d76aa1d28b26abe5bfd14ed027666e93bb4fffd2d20be40e4ff3139a91bafc066e5cc54520444f53d5f7723e8db5cc660c1fdc1235c9a86328e2b5572d36463e3b841cc4172f40adb3e973b41fc6bd318b7f43acee72fd9c9a5e35fbd13f968d7b7da131281d34cf89b4cbaa811a78eeb4d0a9b3805fe4180267fb82227fe28526f5a7bebb86d457fd5287ee714eba2aae6366968b60b568768b101900647d8b2b48ec040274703084baa63b30b79c03d0f23ead3ce916a11b02b94c54fe0c99df321a249b3a10d58d692f9d0b9f6ccd7688f738e2d19447a787dd1212b59e98fc0dfbef4f9181174e0c7298739644083d2faf8618717543fe33a0f29cc52b796d3f79d021e5aea4d2aa56969ecfeb95e815c43854889c13811d3bca745e7688e9ca1921d800dc3712749a670a8948773603358a6b4a1a3c100cedb1d6638c0866cb8b3996cc35089def4aaf64eba669639c51cdf0d3655f029c7c74f9de406575375475daa444bce1baef60a74f209c35088a44b67a1da14111f16721e8722881040cc3b3757d3757a24184f00bbcd4539051be39e9bb3a34f2cda3a1a2a75154c14acff50b3e41703033fda03e2702676e1ae1cbae6d99576663593bc070b27bdd99ce3ece2be6285f9cb1cb5e84759d1b3f517e46efb1739dfc593510a9963788ce8ecded47aa7b00f27cb6ded2474cd90ed632b512964a8f33c87f969029089d6d2bdf7926fd2639ff7ea51bba3165f14c4959e168fd56abcae97ec471c5a7930ab81dfbb62025941ec8ee0d184240b38da640067d78995269529bb2db526d94eb1e77824e2401bc5dd8e36d2208a436d078a49d237d6818164f7cd874088356b56bd99f693c97ca4e9eda44d2bb656f4c1e7ec17478e27c37edb41c80054712628018e29f2def1ba87865c86489df7c6dc08573fe4e8f727ee76f104753bdfc5948ced31eff2502c66a59c1d3e70968bcb99b4faa20aa250a41d6c4816a3eca1f213e0508059cffd78b174ef764b737c4cf4174f7d0dcdf1bf641962cbb21fd5d96ea13bb6937ec5883b310b95c0f9e69ed0482886e101f432aedfd13d979b968349e2f8e01d1e208fd2345de7806fd234455d2471263d17592f4d923a1757c46f8a4a4a5f848ed8e84fd2afb5a7319200ebf776f041b53c5a59f35800f0e60ab16e138b8d0a618a4a6db296292ea67774db3da4607f809e0e62f747ac3f01b3017ce2c3eaccb3ea63affe17126aee73a5364fb1fdfa6fe16f0ce61801026d9ee1922506f3564f37480e007754aee227333e3b5d265ed61bd5e5462ba9b62e6118a4dd487c2460bd553326fa7717f7f31561f882e70db6c930630ff96d2e07b5200358f0a929c2bba691847514e31595b6b2d557b84bcac182f55e6d804fd248350b175fe35e8340f41a86b593f56f8ea42aa1819e110dcac9cba71e2dc7f8ae601e272acf89d23d3609b4fc34fd4f3b8af173f8a59bbf0a5c753d707159c81d6724fdfb509370ed7d5791688b20d6e5c87b52b79e92de2c619689efab54ac914170798bb9260e5a484537783d383e1ab0d5cb338162ac336c5dbaec7a496e0b52edc5a679b8b41cf5bf78aa1282f49f57a321df540a3aa12afeedeb21653dcf8803751d6bd3945cc7ced377f2cf2859db87c5a052a8d11218163c7278f3469451de731e00ac49f9437224821a0c33da61e1a0d4e51d1ec0a422bb4fe814266e68c172e9a6d90e6fb2ced57c264fa383921fa8d9d96ea6fd8b952f0c9e9fd90d889b02a13a0b048ae93a84dd856caa2a9f5be6141a4c964441addb96d7d31a9df957c288e1b690c1e8706043cae3f1431a54adeeeba980f58db6340f02e8ce7e58bb4015c0ecfce8e23655b44885829346eb20cf7362f7663098ae54c00c22de86fb4447ceda5229e6d08431f902b7858d8271ac32e3ddc91d899b5fe25169f61a0dd6c430444a9e3a9fb120d9b0b276f15e0ea8028fce8c92c38368b3e45c20902aa6a6f25d532a06c69aca6374400369264c864b020983b38e2f929585f6dd947f8079c5d1c7db1465bf48d42e4ffd9527a663dc25b65cefed747eb9452f73732ff54943c906a7d6d5128d1029dca99ec2b5c20a0a13d58f9d006a90644774e87dad290ed022bd6cea1c13ecd15cce93bd1960b2d4dea63db6fd75de9f20a5ee463b5d98d39e2d05781bba482b9510645ed8df10b4619a2f2ae94d0f6419d759a998e333a93dffbe0d1d5041da024e707cb7772a49ffaa8b6c7c08d777c70eb3df3eb0146f82a3
+
+================================================================================
+
+数据包 #795 (第9个)
+时间戳: 2025-07-03 10:03:01.673289
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 151184
+  Payload: 0d:a6:25:c9:a0:5c:d2:f3:10:d6:18:61:35:ae:1d:ca:0c:4b:49:d4:78:32:36:c5:d4:1e:0a:70:e8:3f:86:7d:5b:f1:32:85:93:50:b5:54:48:6f:12:76:4b:ba:3d:85:b9:af:c8:27:4f:d4:19:b3:5e:32:74:50:bd:d9:0e:97:27:7c:01:68:71:fb:aa:4c:f1:27:49:ee:89:20:6c:24:1a:00:24:da:5e:fc:e9:e5:20:62:b1:42:4a:00:e8:a4:20:68:cc:29:a2:45:ea:69:87:4f:f6:28:d9:57:cc:d4:ef:17:db:0e:94:aa:47:0e:b5:35:2b:44:bb:b9:ee:3d:2d:3d:0a:ab:3a:d5:c8:de:6f:e3:22:76:d3:58:57:5e:6b:d6:bb:56:11:22:75:2f:5a:ba:75:cf:63:62:b3:6d:8c:c8:b2:ce:cd:1b:04:5b:e4:01:c9:b7:cb:89:cb:a4:33:2c:df:ac:20:a2:c1:19:1a:66:c5:18:9c:bb:fd:44:9e:d5:c6:e6:70:d3:e5:f4:71:6a:a2:06:7a:48:67:fd:e5:24:25:f9:5d:07:a4:59:42:6d:21:c4:ee:5e:85:3a:4c:67:6b:55:b0:6a:10:47:ff:38:35:f8:3c:c5:90:4f:c6:5a:1a:3c:c5:79:1d:90:d3:97:4f:27:cd:e5:6f:11:9b:b7:db:46:d9:82:65:b3:21:ca:0d:53:98:52:01:1e:22:d0:cd:d6:af:61:28:93:85:8b:31:f0:f6:6e:fa:3b:c3:47:c9:d0:d8:bf:e8:24:e6:96:e2:ea:9f:a5:be:18:f2:cf:ce:6b:7b:1b:9b:1a:b1:21:2f:f5:6c:d6:5d:f5:73:59:a0:c1:63:06:bc:c6:c8:2f:e5:cd:6b:de:e2:27:9b:f4:f7:d7:ff:db:29:29:2b:7f:d7:bc:32:5b:85:2b:78:fd:0b:02:77:a1:2d:46:14:55:b4:8e:f5:d0:76:34:cd:ec:e2:27:38:a0:ae:6c:d6:4b:e4:c3:34:e6:24:95:43:88:b4:63:e9:0f:45:6b:56:c5:80:60:ba:57:7c:27:21:2b:7a:e8:e7:20:da:73:05:26:a4:c8:3c:11:ab:c0:6b:de:68:37:87:a7:c6:27:b3:07:d1:aa:15:05:7a:b0:8d:2d:08:02:98:27:bd:1b:16:68:fc:22:93:d9:fb:a0:44:4c:2e:00:d2:88:24:8d:a8:76:c8:80:54:77:69:13:9a:f2:ac:6a:aa:78:91:81:6b:73:d4:bc:d7:9e:cc:06:11:c9:ce:43:92:69:ef:c6:19:31:f3:a1:38:c1:84:51:4a:15:bf:c1:54:86:d7:9a:c3:d2:82:fc:da:56:ff:fc:a3:e2:85:49:75:4b:6a:d9:34:4c:60:86:e5:17:32:56:11:d3:5f:b6:5c:ec:f5:99:bd:a1:d1:6f:6a:ae:26:5b:40:88:0a:92:ca:64:b2:b0:ca:14:78:fd:16:3a:62:69:01:a1:61:9c:17:03:03:3f:d1:76:46:c8:f8:64:5a:a3:e9:da:20:4c:5d:40:66:2f:58:27:46:35:f0:19:ef:f6:bf:b1:fe:62:cd:2f:ca:48:3c:97:b9:bf:2d:08:b2:7d:8c:fd:45:65:97:a4:56:ba:43:c2:22:cc:4d:0a:40:8d:ca:3c:7d:eb:ec:b4:ca:87:cf:46:cf:81:a9:38:20:86:87:34:3a:2c:1b:e4:15:a2:e7:d0:4c:dc:50:b7:f7:e5:83:b0:41:f5:bf:cb:04:1b:ba:c9:bd:e6:5b:d4:b4:7c:3a:62:92:6e:c4:fb:3b:91:fe:b0:07:e0:d4:5c:49:23:d6:7a:64:11:ee:d1:fd:35:7c:fb:83:88:dd:76:39:1d:c8:9d:1d:d3:a2:77:6b:8e:d3:e5:6e:2e:f3:1d:d0:70:96:58:1d:c8:d5:ff:fa:1d:b4:38:f2:50:14:f1:04:19:04:90:76:99:a0:43:f3:75:18:7f:2c:1c:a4:a1:0f:25:5c:4c:68:4a:66:e0:af:15:e3:21:d8:c8:a1:5f:cd:0c:f0:06:f7:53:4f:fc:84:b6:19:ae:cf:d4:da:84:56:3b:56:aa:28:7d:0d:0d:98:13:ec:e2:42:8e:88:7e:9a:2e:9b:91:30:dc:5d:d1:ce:3e:d6:4f:d3:d7:d6:3c:9c:fb:39:13:35:f1:ea:a5:22:16:b4:6c:61:c5:6b:65:c6:71:df:fb:b4:d0:5c:f4:a9:2a:2f:46:04:45:8b:2b:5b:77:e1:bc:5b:bc:18:09:9c:0c:d5:f2:16:1c:d0:c9:f0:9a:91:d9:c5:8c:7d:83:27:a5:6e:c6:06:cd:32:4c:46:58:f1:b3:bf:0b:7c:e2:34:02:e0:ed:fe:4a:18:52:3d:66:87:01:6e:69:05:18:8f:40:21:8d:f7:46:5b:1e:92:29:80:ba:34:fc:c8:51:2d:6a:a3:3b:b6:01:e6:18:4d:cf:d6:3a:f6:f7:e4:7b:2c:e2:20:d6:c1:46:00:be:51:86:f0:f6:2b:bf:35:00:91:0b:45:e0:b1:90:e2:7e:d5:13:00:e8:cf:55:66:32:fb:91:d3:8c:05:fc:03:06:00:94:91:ca:c4:cb:45:1d:9a:cf:f4:8c:31:58:3e:64:79:4c:1c:74:8b:e6:8f:86:45:89:88:46:b3:43:a0:e8:dc:d7:e6:19:5c:b4:bd:99:6f:e3:d8:9c:ba:d9:71:f0:91:f1:a5:c4:d5:84:64:bb:5c:a0:17:d7:57:ff:3c:9f:1e:21:3f:f2:72:63:05:6c:13:06:6f:54:a1:4a:30:df:23:0b:65:af:ac:0d:65:93:47:a9:f9:39:61:4b:a2:07:17:cc:bd:72:b8:57:89:cd:b2:a4:35:5d:cb:b7:d4:ce:a9:d7:4f:0d:d5:08:2d:b1:f6:a9:97:9a:18:76:3c:54:8a:54:b5:19:b6:9e:3c:8e:3f:5c:92:f2:16:d1:17:c0:74:9f:69:8a:47:29:b4:82:5c:95:92:ac:75:4b:d6:a9:3f:95:de:a4:b6:7c:75:12:ac:d9:04:7d:44:e2:c2:01:e5:70:f8:fe:af:06:95:01:bb:9f:92:b4:fa:ce:9d:3d:4c:ac:a2:a6:08:79:9c:37:b8:93:74:83:ba:42:7a:59:d6:b1:cc:af:3a:01:08:02:a3:35:30:70:87:c4:16:56:f8:82:38:a0:1b:a3:9d:1c:2f:0e:8a:61:69:2c:96:4e:68:19:c2:62:16:91:0f:9a:2e:8c:85:5c:03:42:00:4d:17:46:c5:da:1d:d6:d5:d5:41:4d:27:60:35:f1:e7:37:de:2a:f9:59:06:13:8b:7b:1e:08:31:54:e9:29:4e:8f:be:6a:cb:6f:1c:db:41:74:4e:23:0c:ad:bc:c9:e1:1a:31:e0:75:2f:35:57:66:96:18:61:80:54:9d:f0:8d:9e:96:c6:43:c1:48:ff:e4:a1:f7:26:9d:95:4f:ff:b9:12:d4:25:cd:65:ca:a5:df:fb:5d:5e:92:ac:d2:c7:2e:6c:02:b0:49:90:fe:38:cf:46:b4:c9:d8:bf:9d:f6:9e:c1:8b:67:cc:43:52:7a:02:6d:78:e6:20:fa:b5:e4:9a:a2:bc:80:ca:2d:79:ab:15:d0:2d:4d:65:d2:83:e0:14:54:4a:70:f5:60:22:b2:b4:0c:db:d3:d5:0a:8f:34:16:36:9b:eb:e6:ae:68:cd:6a:98:c8:90:29:70:0b:aa:b6:5b:dd:39:51:a8:c9:86:f4:7a:e4:98:03:7e:f2:14:a3:6b:d3:5c:1a:de:62:be:e7:f2:21:2f:38:4f:0a:9c:0f:ea:54:42:3d:47:ae:d0:8e:c3:bf:81:29:05:f8:ad:97:a6:31:b7:aa:40:ab:08:a9:e6:03:c0:94:27:4e:cb:2c:7e:45:af:ae:e6:de:71:39:d4:42:33:a0:5a:54:d9:b1:ed:ab:e2:21:0b:39:46:01:6e:ed:6d:4d:b2:20:bc:91:9e:b2:d1:b7:c5:08:99:9f:a7:47:d3:f0:23:81:12:bc:2b:8c:92:a4:53:93:81:27:82:89:6a:89:4c:5a:31:3e:16:8d:3c:5f:9e:ac:92:e6:ae:cd:69:c6:16:6b:96:19:d0:4d:54:89:ef:8e:34:6e:2b:ab:b9:23:4c:47:bd:b1:23:1b:89:93:b4:0b:fc:47:76:9d:b3:ae:44:42:d2:65:2b:c2:77:68:70:3d:8a:a2:50:b5:86:51:8c:ec:3e:6d:f8:80:10:73:03:39:1b:c8:74:76:b5:22:95:b7:75:41:b0:bd:f8:de:5f:fa:65:40:fe:d5:d8:c9:60:fb:22:32:a5:3f:ec:04:af:84:79:ff:43:88:3d:d8:14:89:80:7e:66:8d:47:dd:a6:f0:83:ad:66:f4:e4:6e:01:67:9e:5a:09:5a:d2:02:1c:df:a8:0c:66:22:64:6d:3d:86:27:50:ef:fb:fb:e3:94:b0:82:16:e4:bc:b0:12:e0:fa:97:3f:2f:41:63:48:d6:75:7d:ef:29:13:8f:8d:14:71:7c:be:97:30:20:02:0f:e0:91:93:53:38:3b:d0:e3:fc:d0:a5:ba:b9:7c:8b:69:6b:09:9e:ec:7b:ff:ee:44:45:f9:dc:f8:93:00:24:be:54:f9:3c:9c:ac:2b:f8:51:81:2a:2c:79:68:6a:83:08:eb:f4:28:9a:90:d2:61:23:6a:4d:84:22:46:ea:75:8e:a4:3b:00:ed:6a:6f:1b:62:90:3a:5b:1e:1c:bf:a3:02:e3:09:5d:8a:ba:73:40:ef:5f:7c:15:c7:f7:e0:1d:3f:2c:97:90:20:9a:f4:78:5e:0f:16:36:c8:6b:21:40:a9:79:db:26:63:62:64:91:45:83:81:73:80:06:6e:fb:cf:51:0d:d8:09:9f:d5:ea:d3:19:52:72:2c:90:58:37:d4:95:5b:9c:cc:b7:4d:ad:14:a1:0f:c0:cb:82:7b:03:19:db:03:68:7e:a5:e5:2d:74:e3:09:5c:df:a7:2a:5e:c8:03:52:d3:74:f1:b9:14:d8:33:cb:c4:ae:93:c0:87:7c:64:e3:f3:16:c4:5c:9f:c1:5d:16:a0:6f:ae:22:61:66:2e:68:84:a1:0a:88:3b:6d:de:0d:51:57:9d:76:6b:b7:dd:ad:9b:e9:c3:dc:45:ac:7e:f6:3e:a0:e3:a4:5e:37:08:be:81:b9:af:0d:64:de:7a:8d:a1:bf:80:c6:79:4c:67:6c:09:93:c5:6d:38:11:53:b6:0e:e4:02:7b:3e:e1:dc:73:28:3f:ef:51:dd:8a:15:03:80:1c:76:bd:d2:c4:48:42:53:9f:17:61:8c:4b:3d:4b:9a:a4:19:f1:69:39:1e:94:05:d8:1a:e1:73:92:92:36:db:4a:b9:9f:a2:52:a1:43:98:1d:b9:5b:23:72:73:13:42:30:70:32:eb:ed:43:e8:ee:a0:db:71:7b:76:ba:e8:9a:e0:b6:86:80:38:85:c3:22:28:35:e0:be:89:07:e3:fa:97:91:38:83:08:62:5a:e0:01:0f:b6:8f:15:b7:ff:b7:c1:f0:26:41:f3:21:4a:a0:f3:38:43:56:0e:79:69:3e:e1:cc:01:cc:7b:52:8c:bd:fd:70:ab:48:f0:db:5a:30:cc:ab:ba:78:18:c7:16:62:7c:08:c0:ef:93:d5:88:b6:9a:e6:13:87:97:a9:a6:ce:13:ce:fe:b8:3c:76:9f:17:91:ed:00:d6:02:e6:86:a6:39:57:0d:98:b2:49:d0:7b:21:b3:01:4d:b5:0f:17:21:3f:5a:17:9c:22:70:93:ff:f0:a6:c8:95:62:70:51:3a:16:5a:e7:58:a2:84:bb:e4:00:7b:6d:dd:76:7a:54:ca:7f:ff:7f:a2:5e:a1:65:28:2e:b7:4d:d1:29:75:8a:d2:0c:cb:bc:36:e3:92:b7:97:d7:b1:5f:ca:ee:26:ed:ea:03:8e:e0:bb:36:27:55:13:2a:7a:6e:97:3a:9d:9b:57:af:df:a4:d7:fa:c0:47:8d:e8:72:e1:2c:65:bb:20:cb:23:8b:24:7b:22:b7:4e:ed:7c:20:f8:33:aa:ca:f8:b7:b1:e8:c3:1f:d9:9d:a2:07:c5:52:e7:1b:5a:7b:f7:01:03:d4:2e:5c:cf:ef:77:97:b4:8a:68:9f:55:e5:26:79:82:b8:1a:d4:63:60:85:3d:04:19:b3:11:a5:45:c2:f0:6f:39:20:34:be:00:3f:b9:44:e0:66:6e:bf:1e:11:4c:e1:27:4e:d8:3c:24:67:c4:1b:74:af:bb:b7:73:41:3f:69:1b:d8:a8:0d:90:71:6e:0d:57:90:8d:0a:d2:fa:b4:38:a4:aa:49:a7:28:32:97:03:34:e2:9b:a6:83:cf:6d:5c:31:d4:26:69:09:43:38:b5:02:8e:47:29:47:dd:f1:07:21:57:a9:f5:81:25:09:df:26:86:95:87:fe:ab:10:96:d1:b9:4d:0a:c5:5b:f6:7a:fe:06:df:b6:09:18:6a:86:ff:d2:ac:e7:8e:5d:18:01:1b:ec:bd:aa:8e:34:86:d6:1c:9d:2a:cd:f6:76:d4:48:99:59:bb:2a:66:74:1b:8a:b1:7d:30:80:57:23:8d:44:c5:69:9f:11:b8:d0:ab:e5:ba:6c:7e:a2:d9:8e:b0:eb:68:c8:2b:0e:82:ce:4c:66:d5:ba:fe:f3:9c:4a:d2:de:b0:ce:ee:3f:c6:fd:6b:c4:5d:68:53:fe:24:1f:55:64:3f:54:40:c3:0c:e5:8f:71:b1:b9:cf:5e:d1:da:a6:df:f2:b6:da:03:fd:d8:43:09:b7:1c:02:fa:f4:7a:53:60:8a:cb:c6:e6:8b:cb:35:e1:29:2f:7a:7b:74:79:1a:92:90:d5:0c:bf:fb:15:8b:38:c8:8a:ef:36:3e:c7:09:0b:16:8c:74:a3:10:f7:90:f9:af:1a:b9:d8:b4:0b:04:3d:0b:f3:7b:11:42:d2:f8:44:a7:b4:1f:2e:65:fe:0b:92:c6:b7:c3:92:f9:49:91:34:99:7b:cc:3a:d8:2c:55:31:df:d7:fc:0a:23:3b:7b:27:84:ff:8c:bd:6f:01:bb:b5:da:ce:fc:0c:f2:cd:88:b6:f0:a9:54:4c:c6:b3:8f:5d:c1:85:4b:cc:b3:26:7e:6c:97:a2:7e:cd:56:80:70:97:eb:25:54:cf:f2:fc:a4:ed:7e:cd:62:cc:ef:40:8a:e1:19:4c:ae:17:7f:ea:f6:16:f7:b0:d3:dc:db:81:55:c7:e0:3f:bd:8e:84:36:e8:25:a8:3b:6a:ba:87:ea:2c:c0:3c:40:06:2e:fa:03:6b:9a:0f:f6:13:fe:0c:fa:07:70:85:fc:b7:9f:3e:b7:79:22:ec:0c:03:67:ca:1d:0f:90:c1:e7:80:21:9d:c0:3a:a1:6d:4d:6f:34:9a:29:37:b4:4a:1e:36:cf:bd:db:a9:9b:5e:b4:bc:cc:60:19:89:ff:04:d3:d2:98:e9:16:58:b6:da:c7:8d:4a:3b:5d:19:58:bb:cb:08:87:2f:9f:cd:63:9d:a9:b1:31:a2:ce:96:ab:49:fa:d5:f2:28:d9:78:7b:70:97:42:d8:bc:b1:08:2b:83:9c:ab:bc:1f:c1:79:ed:b8:9d:2f:b1:94:1a:61:0a:23:d2:07:f1:a4:0d:3f:26:3c:28:8e:d0:70:61:ac:1e:e2:5e:3e:4c:e9:cd:ac:dc:6b:2c:da:2b:6d:16:8f:cc:92:02:96:0f:17:8f:8a:75:7b:75
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 16320
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 16320 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 16320
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m 83a9d484d1a4c7b3b0fb705ceff7d076379157e018f78d130610616ed053725285e8ea5142058d329617522f302ca0f9e34c21152be136a610000e6fa61c6f0eeca63c1c744973801579aa86d00d1dc9e1fe22d82e600e3c10c42aba9ac7309cc4186719723c21d0b33283610228c5100eb
+[0m[1m[32m	Connection window size (before):[0m[1m 15660206
+[0m[1m[32m	Connection window size (after):[0m[1m 15643886
+[0m[1m[32m	Stream window size (before):[0m[1m 6223012
+[0m[1m[32m	Stream window size (after):[0m[1m 6206692
+[0m
+
+  提取的帧数据长度: 2911 字节
+  提取的帧数据(十六进制): d6186135ae1dca0c4b49d4783236c5d41e0a70e83f867d5bf132859350b554486f12764bba3d85b9afc8274fd419b35e3274...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 5822 字符
+  十六进制数据: d6186135ae1dca0c4b49d4783236c5d41e0a70e83f867d5bf132859350b554486f12764bba3d85b9afc8274fd419b35e327450bdd90e97277c016871fbaa4cf12749ee89206c241a0024da5efce9e52062b1424a00e8a42068cc29a245ea69874ff628d957ccd4ef17db0e94aa470eb5352b44bbb9ee3d2d3d0aab3ad5c8de6fe32276d358575e6bd6bb561122752f5aba75cf6362b36d8cc8b2cecd1b045be401c9b7cb89cba4332cdfac20a2c1191a66c5189cbbfd449ed5c6e670d3e5f4716aa2067a4867fde52425f95d07a459426d21c4ee5e853a4c676b55b06a1047ff3835f83cc5904fc65a1a3cc5791d90d3974f27cde56f119bb7db46d98265b321ca0d539852011e22d0cdd6af612893858b31f0f66efa3bc347c9d0d8bfe824e696e2ea9fa5be18f2cfce6b7b1b9b1ab1212ff56cd65df57359a0c16306bcc6c82fe5cd6bdee2279bf4f7d7ffdb29292b7fd7bc325b852b78fd0b0277a12d461455b48ef5d07634cdece22738a0ae6cd64be4c334e624954388b463e90f456b56c58060ba577c27212b7ae8e720da730526a4c83c11abc06bde683787a7c627b307d1aa15057ab08d2d08029827bd1b1668fc2293d9fba0444c2e00d288248da876c880547769139af2ac6aaa7891816b73d4bcd79ecc0611c9ce439269efc61931f3a138c184514a15bfc15486d79ac3d282fcda56fffca3e28549754b6ad9344c6086e517325611d35fb65cecf599bda1d16f6aae265b40880a92ca64b2b0ca1478fd163a626901a1619c1703033fd17646c8f8645aa3e9da204c5d40662f58274635f019eff6bfb1fe62cd2fca483c97b9bf2d08b27d8cfd456597a456ba43c222cc4d0a408dca3c7debecb4ca87cf46cf81a938208687343a2c1be415a2e7d04cdc50b7f7e583b041f5bfcb041bbac9bde65bd4b47c3a62926ec4fb3b91feb007e0d45c4923d67a6411eed1fd357cfb8388dd76391dc89d1dd3a2776b8ed3e56e2ef31dd07096581dc8d5fffa1db438f25014f1041904907699a043f375187f2c1ca4a10f255c4c684a66e0af15e321d8c8a15fcd0cf006f7534ffc84b619aecfd4da84563b56aa287d0d0d9813ece2428e887e9a2e9b9130dc5dd1ce3ed64fd3d7d63c9cfb391335f1eaa52216b46c61c56b65c671dffbb4d05cf4a92a2f4604458b2b5b77e1bc5bbc18099c0cd5f2161cd0c9f09a91d9c58c7d8327a56ec606cd324c4658f1b3bf0b7ce23402e0edfe4a18523d6687016e6905188f40218df7465b1e922980ba34fcc8512d6aa33bb601e6184dcfd63af6f7e47b2ce220d6c14600be5186f0f62bbf3500910b45e0b190e27ed51300e8cf556632fb91d38c05fc0306009491cac4cb451d9acff48c31583e64794c1c748be68f8645898846b343a0e8dcd7e6195cb4bd996fe3d89cbad971f091f1a5c4d58464bb5ca017d757ff3c9f1e213ff27263056c13066f54a14a30df230b65afac0d659347a9f939614ba20717ccbd72b85789cdb2a4355dcbb7d4cea9d74f0dd5082db1f6a9979a18763c548a54b519b69e3c8e3f5c92f216d117c0749f698a4729b4825c9592ac754bd6a93f95dea4b67c7512acd9047d44e2c201e570f8feaf069501bb9f92b4face9d3d4caca2a608799c37b8937483ba427a59d6b1ccaf3a010802a335307087c41656f88238a01ba39d1c2f0e8a61692c964e6819c26216910f9a2e8c855c0342004d1746c5da1dd6d5d5414d276035f1e737de2af95906138b7b1e083154e9294e8fbe6acb6f1cdb41744e230cadbcc9e11a31e0752f35576696186180549df08d9e96c643c148ffe4a1f7269d954fffb912d425cd65caa5dffb5d5e92acd2c72e6c02b04990fe38cf46b4c9d8bf9df69ec18b67cc43527a026d78e620fab5e49aa2bc80ca2d79ab15d02d4d65d283e014544a70f56022b2b40cdbd3d50a8f3416369bebe6ae68cd6a98c89029700baab65bdd3951a8c986f47ae498037ef214a36bd35c1ade62bee7f2212f384f0a9c0fea54423d47aed08ec3bf812905f8ad97a631b7aa40ab08a9e603c094274ecb2c7e45afaee6de7139d44233a05a54d9b1edabe2210b3946016eed6d4db220bc919eb2d1b7c508999fa747d3f0238112bc2b8c92a45393812782896a894c5a313e168d3c5f9eac92e6aecd69c6166b9619d04d5489ef8e346e2babb9234c47bdb1231b8993b40bfc47769db3ae4442d2652bc27768703d8aa250b586518cec3e6df880107303391bc87476b52295b77541b0bdf8de5ffa6540fed5d8c960fb2232a53fec04af8479ff43883dd81489807e668d47dda6f083ad66f4e46e01679e5a095ad2021cdfa80c6622646d3d862750effbfbe394b08216e4bcb012e0fa973f2f416348d6757def29138f8d14717cbe973020020fe0919353383bd0e3fcd0a5bab97c8b696b099eec7bffee4445f9dcf8930024be54f93c9cac2bf851812a2c79686a8308ebf4289a90d261236a4d842246ea758ea43b00ed6a6f1b62903a5b1e1cbfa302e3095d8aba7340ef5f7c15c7f7e01d3f2c9790209af4785e0f1636c86b2140a979db26636264914583817380066efbcf510dd8099fd5ead31952722c905837d4955b9cccb74dad14a10fc0cb827b0319db03687ea5e52d74e3095cdfa72a5ec80352d374f1b914d833cbc4ae93c0877c64e3f316c45c9fc15d16a06fae2261662e6884a10a883b6dde0d51579d766bb7ddad9be9c3dc45ac7ef63ea0e3a45e3708be81b9af0d64de7a8da1bf80c6794c676c0993c56d381153b60ee4027b3ee1dc73283fef51dd8a1503801c76bdd2c44842539f17618c4b3d4b9aa419f169391e9405d81ae173929236db4ab99fa252a143981db95b2372731342307032ebed43e8eea0db717b76bae89ae0b686803885c3222835e0be8907e3fa9791388308625ae0010fb68f15b7ffb7c1f02641f3214aa0f33843560e79693ee1cc01cc7b528cbdfd70ab48f0db5a30ccabba7818c716627c08c0ef93d588b69ae6138797a9a6ce13cefeb83c769f1791ed00d602e686a639570d98b249d07b21b3014db50f17213f5a179c227093fff0a6c8956270513a165ae758a284bbe4007b6ddd767a54ca7fff7fa25ea165282eb74dd129758ad20ccbbc36e392b797d7b15fcaee26edea038ee0bb362755132a7a6e973a9d9b57afdfa4d7fac0478de872e12c65bb20cb238b247b22b74eed7c20f833aacaf8b7b1e8c31fd99da207c552e71b5a7bf70103d42e5ccfef7797b48a689f55e5267982b81ad46360853d0419b311a545c2f06f392034be003fb944e0666ebf1e114ce1274ed83c2467c41b74afbbb773413f691bd8a80d90716e0d57908d0ad2fab438a4aa49a72832970334e29ba683cf6d5c31d42669094338b5028e472947ddf1072157a9f5812509df26869587feab1096d1b94d0ac55bf67afe06dfb609186a86ffd2ace78e5d18011becbdaa8e3486d61c9d2acdf676d4489959bb2a66741b8ab17d308057238d44c5699f11b8d0abe5ba6c7ea2d98eb0eb68c82b0e82ce4c66d5bafef39c4ad2deb0ceee3fc6fd6bc45d6853fe241f55643f5440c30ce58f71b1b9cf5ed1daa6dff2b6da03fdd84309b71c02faf47a53608acbc6e68bcb35e1292f7a7b74791a9290d50cbffb158b38c88aef363ec7090b168c74a310f790f9af1ab9d8b40b043d0bf37b1142d2f844a7b41f2e65fe0b92c6b7c392f9499134997bcc3ad82c5531dfd7fc0a233b7b2784ff8cbd6f01bbb5dacefc0cf2cd88b6f0a9544cc6b38f5dc1854bccb3267e6c97a27ecd56807097eb2554cff2fca4ed7ecd62ccef408ae1194cae177feaf616f7b0d3dcdb8155c7e03fbd8e8436e825a83b6aba87ea2cc03c40062efa036b9a0ff613fe0cfa077085fcb79f3eb77922ec0c0367ca1d0f90c1e780219dc03aa16d4d6f349a2937b44a1e36cfbddba99b5eb4bccc601989ff04d3d298e91658b6dac78d4a3b5d1958bbcb08872f9fcd639da9b131a2ce96ab49fad5f228d9787b709742d8bcb1082b839cabbc1fc179edb89d2fb1941a610a23d207f1a40d3f263c288ed07061ac1ee25e3e4ce9cdacdc6b2cda2b6d168fcc9202960f178f8a757b75
+
+================================================================================
+
+数据包 #803 (第10个)
+时间戳: 2025-07-03 10:03:01.691880
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 165784
+  Payload: 85:77:71:61:fd:8d:cd:b8:5b:cf:30:14:bb:3f:ee:8f:0e:8d:62:3d:16:ec:e7:d8:35:2a:fb:16:e1:81:27:39:6e:00:d3:d4:11:3f:4e:85:9a:17:09:bb:13:a8:cd:16:88:f3:83:5c:e5:db:03:7c:c1:3a:93:56:e7:9b:f0:83:f8:7c:ed:6d:c0:45:99:86:92:ab:62:42:e0:b4:29:bf:b4:08:15:20:64:e2:bb:2c:7f:9d:1e:55:28:7e:11:32:29:c0:49:1d:e1:47:26:6c:cc:0b:d6:99:87:27:67:05:91:de:d5:b2:81:5a:e2:77:56:28:8f:79:12:9f:67:eb:48:65:d8:16:a5:af:62:01:d7:0e:27:63:af:fb:ee:37:94:ad:4c:69:02:3f:28:d6:85:d6:7c:2d:26:27:6a:34:98:82:28:46:bc:35:e2:ad:cf:77:a8:6b:c7:8c:66:44:db:d9:1f:4b:69:e5:01:ed:7f:83:36:11:49:3a:ed:40:7c:bb:53:f6:d5:2a:a7:a1:9a:d4:77:56:b8:42:af:7a:54:ee:96:f0:a6:64:0e:81:3a:fd:97:f0:7a:93:86:07:15:4d:24:7f:4d:42:85:26:b3:44:45:61:24:a1:df:b1:b9:5f:6e:80:cc:c7:1b:8a:55:fd:d3:64:3d:db:df:52:22:d3:31:15:13:9e:82:28:67:62:a5:cf:21:4a:1a:f9:55:bb:bb:10:e6:08:71:a4:40:27:9e:f9:55:c5:91:08:51:1b:39:87:4e:92:cf:cb:d8:e5:11:c2:a9:5b:c4:39:e3:fd:f4:92:af:da:30:82:66:b7:24:2b:4f:93:68:32:b8:2e:ba:d2:70:df:b6:89:c1:5c:10:cc:42:f4:27:48:53:87:4b:c9:6c:ae:53:dd:61:23:85:a4:6e:0f:e0:c5:de:76:32:8c:fd:54:af:1f:e1:38:0a:38:74:8f:91:0b:a8:fb:b4:88:b9:20:bf:41:93:c5:42:01:58:8b:2d:f0:9e:71:0f:8c:81:d6:42:51:dc:b1:f2:32:14:f9:af:cb:f2:8b:a4:52:85:43:ce:33:c8:ff:e7:b5:ee:4e:66:eb:c3:ba:b2:28:b1:1d:83:9b:30:e8:cf:01:88:fe:93:76:ef:9c:27:db:2a:da:91:0d:30:a9:25:1e:f4:34:31:62:18:16:ee:a8:c0:a5:a0:5c:60:69:29:8a:b4:8b:db:73:87:a5:d5:b5:40:61:58:1a:e2:68:7f:d0:df:25:44:ef:34:87:17:ba:ed:55:dd:15:d0:39:a8:c1:a3:23:c6:67:84:1e:fd:15:e5:52:d8:0b:cf:63:c3:9d:29:2f:6c:9e:2e:2f:a4:66:58:05:9d:9f:a4:d9:62:58:e8:3b:b8:0d:23:43:13:6e:ad:63:d8:6d:89:3c:6f:91:ad:c1:88:57:79:fd:1e:a8:5b:db:e8:d9:b6:a4:5e:15:0a:11:6c:e3:9e:7e:b0:87:c7:72:dd:33:ed:76:66:0b:21:df:3f:4c:5b:20:31:a5:5c:f6:a2:40:67:9d:a5:88:34:39:2a:9d:07:09:dc:69:7b:aa:38:de:41:10:36:91:8b:13:a1:69:4b:b3:9d:83:d3:24:42:9c:66:4b:1a:07:91:21:56:9e:a7:ce:b8:28:c0:5f:59:d0:f0:d3:e7:58:9e:cd:4a:ee:d3:c4:7b:17:7a:86:71:42:97:44:2e:75:22:ab:48:f9:da:90:3e:08:9a:59:08:ba:ec:9b:38:35:28:ef:a2:28:0e:36:f5:4c:b6:a4:2f:36:3b:55:dc:0d:be:a3:73:18:75:7b:7f:80:2c:74:81:30:ae:35:e3:c0:5a:57:bf:fe:b2:97:5c:f4:38:88:11:58:64:67:2f:33:21:8e:b5:3b:01:0c:81:ef:43:82:a5:a8:13:3c:ce:45:5a:48:53:8f:3b:67:f9:f2:f7:29:cf:7d:f5:04:60:49:01:38:a4:5d:e1:ab:a9:9a:a6:86:df:f7:0f:bf:8d:27:81:73:03:34:c6:7d:3f:6a:0e:c0:a9:a6:12:69:90:98:9f:93:96:ad:5e:ae:19:9a:50:8e:e5:b1:93:29:9d:72:8e:7a:11:4d:1f:9c:25:a6:34:8c:44:f2:5e:00:de:01:11:73:b1:08:f0:81:98:54:53:44:0b:53:9a:87:4e:ec:d1:bb:b4:f1:ce:ab:08:ce:91:ae:97:d9:67:e2:4a:c3:24:f3:84:da:25:1b:52:58:16:77:c1:c4:0d:29:20:e4:f2:34:2b:b4:73:a0:c9:13:f7:ad:3b:5a:e0:18:90:7a:a3:b8:d3:ad:22:28:02:29:3a:b6:4c:7a:f6:e5:7f:34:f0:86:a3:37:61:bb:61:87:fa:b0:87:6e:bf:f0:56:65:9d:83:94:d7:ea:92:cf:3d:f9:16:ea:db:4f:5b:ec:1e:e9:f6:62:f0:1c:e3:54:61:b6:88:b4:64:2c:23:a8:37:9a:9b:8f:0a:c8:be:cc:d9:d3:0e:05:62:ca:f8:ab:25:87:db:61:82:21:71:94:e0:24:a4:84:e5:8e:54:e4:89:5c:b6:5e:7b:2d:28:98:34:b9:de:6a:1f:c0:3f:61:e0:bb:32:f4:28:01:fb:6c:45:2e:33:8f:a2:52:6b:2f:3f:cf:90:68:77:a4:df:07:e0:2c:4a:80:ed:85:38:c9:1b:ac:c4:c2:9a:5a:84:39:3b:3a:87:61:6b:7d:44:3f:fb:67:9e:c9:79:a0:30:a0:70:d2:dd:63:4c:a2:32:fa:dd:af:06:d4:7a:6e:26:d5:f4:fc:52:1c:3f:ce:c3:57:a4:fc:4c:45:39:19:ae:b6:6c:73:cf:9b:38:d4:76:d0:e5:b2:95:f6:b3:62:e6:ce:d6:58:c9:fa:c1:1b:10:d3:4c:af:d0:45:93:c6:4f:29:9b:da:d3:3d:92:2d:8a:7b:50:18:02:4e:91:b2:af:7f:7a:6e:ea:de:69:fe:d0:44:6b:48:c8:46:c4:db:7a:db:be:05:4f:91:97:53:a3:b0:29:66:a6:c8:9a:27:28:10:19:9d:3d:a1:93:4a:11:9d:1e:60:83:44:5d:41:e7:04:08:9b:f9:0e:f1:07:f2:a5:62:a1:7c:a3:04:78:88:3d:ef:cb:41:ce:59:7d:5a:88:8b:78:ac:7b:6b:22:af:fb:1f:81:64:88:4f:c4:f5:24:18:92:27:b3:17:b6:03:ef:31:5a:81:12:f7:55:c2:33:0b:b5:cb:e6:f5:31:97:2a:c1:d4:a8:8a:87:d5:d9:cd:35:c3:71:48:36:74:4d:3d:a0:fe:5c:15:2a:a8:5e:b1:71:66:1c:5a:c1:5c:cb:8a:6c:91:7e:64:05:0d:20:51:7f:36:f6:e8:8c:33:bd:1e:28:73:02:15:b5:7a:fc:0c:f1:98:13:db:4c:9c:d0:69:87:ed:aa:ed:9f:00:d1:bd:74:55:53:3b:6b:1e:de:24:53:d1:97:7a:f1:19:ac:82:44:2f:3a:84:ad:a5:44:a6:f0:37:01:fe:ba:82:f9:f9:8c:a4:f9:f1:b9:c2:86:64:59:62:ae:02:bc:59:17:aa:d2:30:e8:36:55:fb:0b:3a:a4:6e:1d:05:92:d0:79:6c:b2:4f:eb:7b:24:23:dc:c5:78:99:c2:8c:a0:26:c5:28:0a:62:86:bc:ac:ab:de:df:04:9a:55:ed:ab:f4:40:f5:87:c9:6b:5c:a0:1b:18:d2:1f:77:a0:19:35:28:35:83:1a:88:a6:88:ff:13:31:9a:27:0e:93:b8:52:e6:4d:67:02:ff:2d:df:57:59:a9:4e:a0:75:8b:d8:ec:3e:33:9b:f6:11:48:45:08:af:bf:15:97:c4:1a:93:b9:d0:48:7c:5b:2c:a7:cc:e5:07:b5:d8:2f:a8:bb:36:78:ff:a2:05:ca:ba:5c:a6:db:4c:3c:40:5e:64:64:8e:41:87:43:56:6a:71:82:86:34:fe:22:18:50:1b:f2:68:8e:a6:7b:52:ad:29:bb:72:ad:1a:a0:b9:9d:3d:df:e8:9f:27:a1:ac:7e:e3:09:11:83:b5:a4:b6:60:cc:75:e1:96:e7:4e:6b:9a:68:7b:c1:6d:dc:bd:60:14:9d:e0:47:90:10:20:35:c0:55:6b:e9:d4:61:9d:69:a5:c1:3c:48:16:f7:57:bf:10:89:64:6a:5b:59:59:ef:55:67:73:1c:f9:94:09:85:57:da:88:e9:95:38:d1:e4:07:2b:5f:53:57:93:be:26:94:12:39:c9:9e:75:77:8f:25:f3:24:c6:7a:93:23:08:fc:64:7c:09:d5:3d:6a:d5:1e:cb:41:20:80:94:a7:1f:99:30:78:72:ba:23:00:45:38:68:0d:4a:34:a1:bd:c5:17:ad:e0:12:52:2d:86:2d:f1:4c:83:8b:c2:26:ab:74:f6:61:a8:78:d1:8b:71:be:70:35:3a:03:5b:a0:65:c5:fa:2c:a5:d7:da:6c:8c:b1:a4:70:c8:fd:42:d4:13:11:9a:d8:0f:22:3c:56:cd:e8:fa:86:69:a2:a6:9d:46:be:ae:64:eb:a4:2d:bd:cc:98:cc:7b:ab:3d:89:d8:68:bd:89:ff:54:f3:7f:50:21:00:a2:e7:ee:f4:5c:1c:53:e6:a1:44:fe:04:64:97:10:27:22:c2:92:8d:33:3a:3b:54:c1:6d:66:89:19:15:5d:e9:7a:4a:d0:60:35:e0:6d:32:d9:5d:6d:85:d6:f1:0b:ae:5c:f0:35:5a:56:8e:9c:5e:d5:f2:bb:5c:f3:f8:94:93:cb:1c:4a:15:a4:8f:77:f7:f1:14:d0:fa:b9:14:a3:2b:c4:45:93:5b:8a:11:73:d6:22:4d:90:eb:9d:fa:63:2a:bb:4c:8c:05:e6:88:c3:36:8b:10:17:98:46:69:4a:0f:08:f0:47:9b:49:94:1f:1d:e7:c8:b9:6b:0d:db:6a:ba:76:d3:7e:ce:ed:fb:4e:00:31:ed:de:ad:bb:88:84:e2:54:b6:8a:6a:44:dd:c8:35:62:d6:0b:e6:9a:84:79:d5:91:bf:d2:2a:4b:c2:f9:ba:1b:62:b5:54:cb:f3:0f:79:14:b1:9b:38:eb:96:4e:a8:45:a6:0f:17:b2:31:e2:63:f6:26:84:ac:47:3b:0d:d5:18:df:08:f3:dd:e3:ea:7e:0c:00:a8:c2:6d:42:dc:9d:e0:32:2d:85:96:93:21:44:a0:26:f3:f8:28:f4:4a:0e:fd:44:c7:fa:ed:4e:dc:69:51:b1:fb:fa:a5:1d:bb:52:9b:2c:5d:e4:6e:d8:d8:78:cf:14:89:c5:88:9c:1e:03:50:7f:9c:98:6c:d1:ce:1b:fa:59:b7:85:ad:78:5b:e6:a8:ed:04:b2:16:83:97:e1:ea:70:33:cd:07:76:d4:fe:45:e1:a2:ca:35:95:ab:3e:0f:09:c1:56:ba:67:04:b4:34:f4:d7:9d:7b:c8:c3:55:3f:a8:c1:7d:00:00:ec:51:56:a5:7d:85:60:4e:99:77:4c:4f:d1:ab:32:e6:19:a4:b0:12:7c:0a:24:0f:7b:2b:5d:34:01:48:76:89:38:a0:cd:c9:17:46:90:d2:61:e0:32:18:fe:34:f3:de:84:23:a8:e0:43:ff:7d:88:e7:ef:ce:92:fc:a7:fc:5a:d4:15:41:f1:1e:37:23:de:3f:b7:f1:9e:43:4b:ca:01:de:51:0c:df:f9:0d:1b:32:28:06:83:da:18:fb:22:a2:47:ad:bf:55:ea:71:f2:c6:7c:7a:30:b7:da:32:ef:70:38:85:32:4a:bb:2b:14:93:db:56:94:61:e5:10:cd:18:69:19:06:d5:21:35:e4:ac:86:d0:2b:e8:6c:d9:91:00:60:85:32:69:2a:77:cd:55:49:0e:08:0c:31:d6:40:16:11:31:28:73:69:ce:ae:f5:44:29:ad:6c:18:2e:d7:0a:12:f8:af:da:3a:9c:8d:a4:13:ec:a1:e7:fa:9f:92:c1:ac:3c:76:c6:a5:df:f4:64:cb:87:84:7e:ad:e6:ce:07:20:bc:76:ab:ae:5b:c0:fd:c4:86:1a:4f:ab:a3:29:16:a7:ba:41:a8:c1:74:12:73:55:17:03:03:04:6c:b0:cc:35:a9:52:37:55:fd:6b:f0:c4:50:c1:b0:73:7d:76:98:b0:e6:f9:94:9b:08:0a:d7:22:56:9f:0c:7e:ae:2d:01:b2:e7:3e:95:82:fe:67:4b:41:79:39:16:61:83:da:90:57:e7:50:fe:93:a3:37:e9:34:f1:19:3f:67:29:04:46:cb:44:15:d3:48:d8:ba:57:8e:0b:ce:e7:76:4f:c4:e0:dc:6a:a2:db:59:a7:88:8d:02:39:4c:c8:ed:a7:32:69:8b:80:d7:40:f2:f6:85:77:d4:f5:e8:96:69:c7:d8:4c:62:5d:27:a6:20:99:94:73:a5:ef:d0:fa:15:35:ac:a2:cd:37:d0:40:c6:fd:68:12:7c:a3:3a:8f:94:98:62:5d:a7:dd:68:2a:79:8d:69:a1:ec:2d:3c:fe:7b:42:c5:4b:58:9d:3f:01:5b:59:a0:ae:d4:43:7f:1d:59:02:11:d9:08:05:0c:fc:ae:a0:69:38:03:35:55:e9:23:f2:70:6c:de:9a:44:01:56:9a:f0:f2:84:2d:d7:f5:4d:7e:04:ba:98:e8:f1:1d:55:47:cd:1e:cb:3b:a8:40:29:71:2f:64:9e:be:1b:fa:70:55:06:3e:99:90:45:50:27:34:ae:61:db:bb:83:a9:8e:a1:93:25:8d:51:9e:9a:66:db:15:e1:30:95:6c:6d:0b:70:04:c2:c1:96:94:e3:bc:32:cf:28:7d:9c:1f:fa:ad:1f:78:52:21:a7:87:c2:a8:49:53:a9:6a:32:37:d9:db:42:32:2a:9c:76:ad:57:15:8d:20:be:99:e0:dd:1f:6e:33:57:ef:cc:61:d8:c8:ed:e4:97:8c:43:95:fd:81:3b:47:e7:a0:8e:53:4c:c8:65:8e:bc:82:f1:f7:d3:a6:0b:6c:e5:29:93:9d:17:18:8a:fb:3d:87:97:85:17:62:c9:15:b3:25:be:e4:a9:c0:a5:97:f5:17:e5:9a:6a:58:d3:12:e1:22:c0:2c:88:4c:af:97:6c:70:90:06:af:51:f0:83:88:41:19:e3:98:9c:06:5c:ca:39:61:dd:87:39:1e:7c:64:1a:70:a2:e5:90:57:e7:db:12:10:d0:23:01:b9:3b:69:e3:63:58:d9:c2:b6:b7:6c:51:fd:62:1b:99:cb:72:c9:14:d8:04:d3:df:e3:10:b9:73:e1:8f:0b:83:19:d0:4f:6d:5c:65:0e:57:b1:95:98:00:95:7b:1f:61:88:9e:e9:4d:9b:f1:b4:86:59:2f:03:05:99:81:98:f6:f5:91:98:27:1f:51:77:e9:13:f2:a4:3a:32:ce:f3:f0:ab:73:ce:d8:da:56:d0:23:21:08:9c:12:1e:0d:ad:e3:82:b7:e7:cb:27:fb:51:80:5c:ce:10:5a:00:4d:e6:3f:12:ee:45:b6:1d:8c:8d:dd:12:c6:eb:d7:06:45:d4:81:b8:5b:b5:ff:f5:20:e7:a2:cc:bb:9e:29:e3:57:11:07:55:d1:f4:14:7d:0c:54:f6:bf:1f:be:46:9b:2d:d6:51:12:56:b1:55:a7:90:72:c8:fd:1a:2c:dc:74:de:80:26:88:92:c0:9b:84:57:40:fb:14:2f:e4
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 16311
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 16311 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 16311
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m eacd326252f64da23892522f1044c4f86953dfc52b52ad5b1fca2c5ebbf415df60f9226a6d82da5b04a00b128e94a97d91d08e4198e3d60d4883c53e87e80a698649d0ec4ecad2e2d4cbc21c2ec09b77bc106fdeb9200dd4c01f5948e3688649e368c6c66fd324620bca805acfc619a5955
+[0m[1m[32m	Connection window size (before):[0m[1m 15643886
+[0m[1m[32m	Connection window size (after):[0m[1m 15627575
+[0m[1m[32m	Stream window size (before):[0m[1m 6206692
+[0m[1m[32m	Stream window size (after):[0m[1m 6190381
+[0m
+
+  提取的帧数据长度: 2911 字节
+  提取的帧数据(十六进制): cf3014bb3fee8f0e8d623d16ece7d8352afb16e18127396e00d3d4113f4e859a1709bb13a8cd1688f3835ce5db037cc13a93...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 5822 字符
+  十六进制数据: cf3014bb3fee8f0e8d623d16ece7d8352afb16e18127396e00d3d4113f4e859a1709bb13a8cd1688f3835ce5db037cc13a9356e79bf083f87ced6dc045998692ab6242e0b429bfb408152064e2bb2c7f9d1e55287e113229c0491de147266ccc0bd6998727670591ded5b2815ae27756288f79129f67eb4865d816a5af6201d70e2763affbee3794ad4c69023f28d685d67c2d26276a3498822846bc35e2adcf77a86bc78c6644dbd91f4b69e501ed7f833611493aed407cbb53f6d52aa7a19ad47756b842af7a54ee96f0a6640e813afd97f07a938607154d247f4d428526b344456124a1dfb1b95f6e80ccc71b8a55fdd3643ddbdf5222d33115139e82286762a5cf214a1af955bbbb10e60871a440279ef955c59108511b39874e92cfcbd8e511c2a95bc439e3fdf492afda308266b7242b4f936832b82ebad270dfb689c15c10cc42f4274853874bc96cae53dd612385a46e0fe0c5de76328cfd54af1fe1380a38748f910ba8fbb488b920bf4193c54201588b2df09e710f8c81d64251dcb1f23214f9afcbf28ba4528543ce33c8ffe7b5ee4e66ebc3bab228b11d839b30e8cf0188fe9376ef9c27db2ada910d30a9251ef43431621816eea8c0a5a05c6069298ab48bdb7387a5d5b54061581ae2687fd0df2544ef348717baed55dd15d039a8c1a323c667841efd15e552d80bcf63c39d292f6c9e2e2fa46658059d9fa4d96258e83bb80d2343136ead63d86d893c6f91adc1885779fd1ea85bdbe8d9b6a45e150a116ce39e7eb087c772dd33ed76660b21df3f4c5b2031a55cf6a240679da58834392a9d0709dc697baa38de411036918b13a1694bb39d83d324429c664b1a079121569ea7ceb828c05f59d0f0d3e7589ecd4aeed3c47b177a86714297442e7522ab48f9da903e089a5908baec9b383528efa2280e36f54cb6a42f363b55dc0dbea37318757b7f802c748130ae35e3c05a57bffeb2975cf43888115864672f33218eb53b010c81ef4382a5a8133cce455a48538f3b67f9f2f729cf7df50460490138a45de1aba99aa686dff70fbf8d2781730334c67d3f6a0ec0a9a6126990989f9396ad5eae199a508ee5b193299d728e7a114d1f9c25a6348c44f25e00de011173b108f081985453440b539a874eecd1bbb4f1ceab08ce91ae97d967e24ac324f384da251b52581677c1c40d2920e4f2342bb473a0c913f7ad3b5ae018907aa3b8d3ad222802293ab64c7af6e57f34f086a33761bb6187fab0876ebff056659d8394d7ea92cf3df916eadb4f5bec1ee9f662f01ce35461b688b4642c23a8379a9b8f0ac8beccd9d30e0562caf8ab2587db6182217194e024a484e58e54e4895cb65e7b2d289834b9de6a1fc03f61e0bb32f42801fb6c452e338fa2526b2f3fcf906877a4df07e02c4a80ed8538c91bacc4c29a5a84393b3a87616b7d443ffb679ec979a030a070d2dd634ca232faddaf06d47a6e26d5f4fc521c3fcec357a4fc4c453919aeb66c73cf9b38d476d0e5b295f6b362e6ced658c9fac11b10d34cafd04593c64f299bdad33d922d8a7b5018024e91b2af7f7a6eeade69fed0446b48c846c4db7adbbe054f919753a3b02966a6c89a272810199d3da1934a119d1e6083445d41e704089bf90ef107f2a562a17ca30478883defcb41ce597d5a888b78ac7b6b22affb1f8164884fc4f524189227b317b603ef315a8112f755c2330bb5cbe6f531972ac1d4a88a87d5d9cd35c3714836744d3da0fe5c152aa85eb171661c5ac15ccb8a6c917e64050d20517f36f6e88c33bd1e28730215b57afc0cf19813db4c9cd06987edaaed9f00d1bd7455533b6b1ede2453d1977af119ac82442f3a84ada544a6f03701feba82f9f98ca4f9f1b9c286645962ae02bc5917aad230e83655fb0b3aa46e1d0592d0796cb24feb7b2423dcc57899c28ca026c5280a6286bcacabdedf049a55edabf440f587c96b5ca01b18d21f77a019352835831a88a688ff13319a270e93b852e64d6702ff2ddf5759a94ea0758bd8ec3e339bf611484508afbf1597c41a93b9d0487c5b2ca7cce507b5d82fa8bb3678ffa205caba5ca6db4c3c405e64648e418743566a71828634fe2218501bf2688ea67b52ad29bb72ad1aa0b99d3ddfe89f27a1ac7ee3091183b5a4b660cc75e196e74e6b9a687bc16ddcbd60149de04790102035c0556be9d4619d69a5c13c4816f757bf1089646a5b5959ef5567731cf994098557da88e99538d1e4072b5f535793be26941239c99e75778f25f324c67a932308fc647c09d53d6ad51ecb41208094a71f99307872ba23004538680d4a34a1bdc517ade012522d862df14c838bc226ab74f661a878d18b71be70353a035ba065c5fa2ca5d7da6c8cb1a470c8fd42d413119ad80f223c56cde8fa8669a2a69d46beae64eba42dbdcc98cc7bab3d89d868bd89ff54f37f502100a2e7eef45c1c53e6a144fe046497102722c2928d333a3b54c16d668919155de97a4ad06035e06d32d95d6d85d6f10bae5cf0355a568e9c5ed5f2bb5cf3f89493cb1c4a15a48f77f7f114d0fab914a32bc445935b8a1173d6224d90eb9dfa632abb4c8c05e688c3368b10179846694a0f08f0479b49941f1de7c8b96b0ddb6aba76d37eceedfb4e0031eddeadbb8884e254b68a6a44ddc83562d60be69a8479d591bfd22a4bc2f9ba1b62b554cbf30f7914b19b38eb964ea845a60f17b231e263f62684ac473b0dd518df08f3dde3ea7e0c00a8c26d42dc9de0322d8596932144a026f3f828f44a0efd44c7faed4edc6951b1fbfaa51dbb529b2c5de46ed8d878cf1489c5889c1e03507f9c986cd1ce1bfa59b785ad785be6a8ed04b2168397e1ea7033cd0776d4fe45e1a2ca3595ab3e0f09c156ba6704b434f4d79d7bc8c3553fa8c17d0000ec5156a57d85604e99774c4fd1ab32e619a4b0127c0a240f7b2b5d340148768938a0cdc9174690d261e03218fe34f3de8423a8e043ff7d88e7efce92fca7fc5ad41541f11e3723de3fb7f19e434bca01de510cdff90d1b32280683da18fb22a247adbf55ea71f2c67c7a30b7da32ef703885324abb2b1493db569461e510cd18691906d52135e4ac86d02be86cd99100608532692a77cd55490e080c31d640161131287369ceaef54429ad6c182ed70a12f8afda3a9c8da413eca1e7fa9f92c1ac3c76c6a5dff464cb87847eade6ce0720bc76abae5bc0fdc4861a4faba32916a7ba41a8c174127355170303046cb0cc35a9523755fd6bf0c450c1b0737d7698b0e6f9949b080ad722569f0c7eae2d01b2e73e9582fe674b417939166183da9057e750fe93a337e934f1193f67290446cb4415d348d8ba578e0bcee7764fc4e0dc6aa2db59a7888d02394cc8eda732698b80d740f2f68577d4f5e89669c7d84c625d27a620999473a5efd0fa1535aca2cd37d040c6fd68127ca33a8f9498625da7dd682a798d69a1ec2d3cfe7b42c54b589d3f015b59a0aed4437f1d590211d908050cfcaea06938033555e923f2706cde9a4401569af0f2842dd7f54d7e04ba98e8f11d5547cd1ecb3ba84029712f649ebe1bfa7055063e999045502734ae61dbbb83a98ea193258d519e9a66db15e130956c6d0b7004c2c19694e3bc32cf287d9c1ffaad1f785221a787c2a84953a96a3237d9db42322a9c76ad57158d20be99e0dd1f6e3357efcc61d8c8ede4978c4395fd813b47e7a08e534cc8658ebc82f1f7d3a60b6ce529939d17188afb3d8797851762c915b325bee4a9c0a597f517e59a6a58d312e122c02c884caf976c709006af51f083884119e3989c065cca3961dd87391e7c641a70a2e59057e7db1210d02301b93b69e36358d9c2b6b76c51fd621b99cb72c914d804d3dfe310b973e18f0b8319d04f6d5c650e57b1959800957b1f61889ee94d9bf1b486592f0305998198f6f59198271f5177e913f2a43a32cef3f0ab73ced8da56d02321089c121e0dade382b7e7cb27fb51805cce105a004de63f12ee45b61d8c8ddd12c6ebd70645d481b85bb5fff520e7a2ccbb9e29e357110755d1f4147d0c54f6bf1fbe469b2dd6511256b155a79072c8fd1a2cdc74de80268892c09b845740fb142fe4
+
+================================================================================
+
+数据包 #804 (第11个)
+时间戳: 2025-07-03 10:03:01.691906
+------------------------------------------------------------
+TCP信息:
+  Stream: 12
+  Sequence: 168704
+  Payload: 79:6e:1e:b9:32:a8:2f:b6:f1:00:53:ba:f7:0c:9c:17:b8:a6:0d:d4:be:66:10:7f:92:05:56:76:b3:99:9f:d8:88:54:db:bc:d7:33:e4:33:2a:84:f4:36:43:c1:a2:d4:74:17:9f:90:69:d9:df:8a:ee:bc:b3:07:dc:1c:4f:fd:c8:09:c1:89:41:ab:47:89:8f:fe:3e:be:35:cd:49:ab:3b:94:a6:7f:f2:bb:3a:c9:40:17:0a:62:4a:37:83:01:eb:dc:8c:fb:4f:b0:3b:af:07:79:a1:81:23:b0:ab:cd:19:9a:ef:fc:b4:c3:f0:c5:07:fc:22:5f:09:76:ed:01:ff:a1:74:cf:e5:0f:ad:aa:2a:2e:1b:e7:60:6c:2f:65:aa:ae:bd:5f:b9:bf:a4:82:59:b4:0d:dc:11:98:f5:78:7d:f2:0e:d0:23:2f:65:9e:a6:8c:15:b6:ca:67:93:9e:b6:63:fa:c0:ab:0b:25:f4:d0:3b:69:26:38:37:58:60:8f:9c:c1:93:6f:8c:e7:af:f2:b0:58:61:ea:e4:57:3f:67:db:fc:98:a1:57:5c:c8:d9:59:71:64:f8:e6:31:36:20:f5:0e:83:82:8f:f2:79:54:93:8a:0d:a3:38:40:2d:4b:2a:24:a7:52:4d:cf:d7:94:2a:e7:9b:f5:b1:8d:ef:44:d1:df:63:62:ec:31:2d:15:48:6e:31:ae:40:83:77:63:06:1e:e8:9e:f1:0f:61:f5:cc:4a:de:d8:e8:7a:0c:ce:e7:fb:21:ad:8a:7b:0b:2f:4d:4b:f3:ab:71:7d:62:72:63:d8:37:c0:fb:16:6e:5b:b0:ca:37:6c:9f:42:2f:0e:ef:ba:9d:de:e8:81:9e:ba:f2:69:2b:dd:61:6c:d0:6d:71:4f:a2:ed:2d:9e:21:75:43:9d:8e:88:bf:83:b8:28:1b:5c:f6:89:a9:15:16:f0:f2:06:e6:22:3b:38:ec:aa:14:df:43:d2:06:c2:e1:38:be:5e:42:13:fd:a7:80:1c:f7:f6:c7:4b:33:99:5a:f6:7b:8e:87:a3:73:50:41:95:29:9e:85:c8:0f:ce:b4:28:71:7f:55:de:69:80:5d:0b:f2:c4:3b:dc:5e:2d:4d:64:b4:5c:43:0c:25:dd:c9:e7:b8:ef:7d:b5:62:b8:2e:33:76:76:3c:0b:2c:ab:14:04:13:c7:c8:46:be:10:aa:15:ab:4f:5f:6e:4f:52:31:e3:5d:65:c1:36:fc:b2:55:ca:d4:b7:a5:f2:03:61:d2:04:1b:dd:88:89:43:72:df:8a:63:ef:3f:ca:c4:91:2f:c9:4a:b9:b4:e1:b9:68:77:2c:10:99:6c:dd:87:02:0e:64:a0:d9:a2:03:16:9a:e1:ac:12:54
+
+HTTP/2信息:
+  Type: 0
+  Stream ID: 21
+  Length: 1097
+  Flags: 0x00
+  Raw Layer: [1m[33mLayer HTTP2
+:[0m[1m[32m	Stream:[0m[1m DATA, Stream ID: 21, Length 1097 (partial entity body)
+[0m[1m[32m	Length:[0m[1m 1097
+[0m[1m[32m	Type:[0m[1m DATA (0)
+[0m[1m[32m	Flags:[0m[1m 0x00
+[0m[1m[32m	0000 .00. = Unused:[0m[1m 0x00
+[0m[1m[32m	.... 0... = Padded:[0m[1m False
+[0m[1m[32m	.... ...0 = End Stream:[0m[1m False
+[0m[1m[32m	0... .... .... .... .... .... .... .... = Reserved:[0m[1m 0x0
+[0m[1m[32m	.000 0000 0000 0000 0000 0000 0001 0101 = Stream Identifier:[0m[1m 21
+[0m[1m[32m	Pad Length:[0m[1m 0
+[0m[1m[32m	Data […]:[0m[1m d7df3b08d307e2e3cf9ee1bfe97df60737b38cf7b9986949e87392d2787e06ee6e1b845e53946db7f027814edf4d1fe289ee4375f945cdd3c19e5bceb2ac22567cc92da7dae8a3d3541bf75d9beafa466d6f464f1ceafb43154c87ffaa44cea63b39a9d0a4f6f68e8e814efef3edd6a1e28
+[0m[1m[32m	Connection window size (before):[0m[1m 15627575
+[0m[1m[32m	Connection window size (after):[0m[1m 15626478
+[0m[1m[32m	Stream window size (before):[0m[1m 6190381
+[0m[1m[32m	Stream window size (after):[0m[1m 6189284
+[0m
+
+  提取的帧数据长度: 514 字节
+  提取的帧数据(十六进制): 0053baf70c9c17b8a60dd4be66107f92055676b3999fd88854dbbcd733e4332a84f43643c1a2d474179f9069d9df8aeebcb3...
+
+🔒 加密数据:
+  类型: ENCRYPTED_BINARY
+  大小: 1028 字符
+  十六进制数据: 0053baf70c9c17b8a60dd4be66107f92055676b3999fd88854dbbcd733e4332a84f43643c1a2d474179f9069d9df8aeebcb307dc1c4ffdc809c18941ab47898ffe3ebe35cd49ab3b94a67ff2bb3ac940170a624a378301ebdc8cfb4fb03baf0779a18123b0abcd199aeffcb4c3f0c507fc225f0976ed01ffa174cfe50fadaa2a2e1be7606c2f65aaaebd5fb9bfa48259b40ddc1198f5787df20ed0232f659ea68c15b6ca67939eb663fac0ab0b25f4d03b6926383758608f9cc1936f8ce7aff2b05861eae4573f67dbfc98a1575cc8d9597164f8e6313620f50e83828ff27954938a0da338402d4b2a24a7524dcfd7942ae79bf5b18def44d1df6362ec312d15486e31ae40837763061ee89ef10f61f5cc4aded8e87a0ccee7fb21ad8a7b0b2f4d4bf3ab717d627263d837c0fb166e5bb0ca376c9f422f0eefba9ddee8819ebaf2692bdd616cd06d714fa2ed2d9e2175439d8e88bf83b8281b5cf689a91516f0f206e6223b38ecaa14df43d206c2e138be5e4213fda7801cf7f6c74b33995af67b8e87a373504195299e85c80fceb428717f55de69805d0bf2c43bdc5e2d4d64b45c430c25ddc9e7b8ef7db562b82e3376763c0b2cab140413c7c846be10aa15ab4f5f6e4f5231e35d65c136fcb255cad4b7a5f20361d2041bdd88894372df8a63ef3fcac4912fc94ab9b4e1b968772c10996cdd87020e64a0d9a203169ae1ac1254
+
+================================================================================
+
