@@ -53,14 +53,14 @@ def format_html_content(html_text):
         # 提取body内容预览
         if soup.body:
             body_text = soup.body.get_text(strip=True)
-            formatted_info['body_content_preview'] = body_text[:500]
+            formatted_info['body_content_preview'] = body_text
         
         return formatted_info
         
     except Exception as e:
         return {
             'error': f'格式化失败: {str(e)}',
-            'raw_preview': html_text[:500],
+            'raw_preview': html_text,
             'total_length': len(html_text)
         }
 
@@ -235,7 +235,7 @@ def save_comparison_data(packet_data_list, name):
                 # 添加提取的帧数据信息
                 if 'extracted_frame_data' in http2:
                     f.write(f"  提取的帧数据长度: {http2['extracted_frame_data_length']} 字节\n")
-                    f.write(f"  提取的帧数据(十六进制): {http2['extracted_frame_data']}...\n\n")
+                    f.write(f"  提取的帧数据(十六进制): {http2['extracted_frame_data']}\n\n")
             
             # 加密数据
             if packet_data['encrypted_data']:
