@@ -22,7 +22,7 @@ def format_html_content(html_text):
             'stylesheets': [],
             'body_content_preview': '',
             'total_length': len(decoded_html),
-            'formatted_html': soup.prettify()[:2000]  # 限制长度
+            'formatted_html': soup.prettify()
         }
         
         # 提取meta标签
@@ -151,7 +151,7 @@ def extract_raw_data(packet):
                         'type': 'HTML_CONTENT',
                         'size': len(frame_data_hex),
                         'hex_data': frame_data_hex,
-                        'text_preview': frame_data_text[:500],
+                        'text_preview': frame_data_text,
                         'formatted_content': formatted_content,  # 新增格式化字段
                         'contains_html': True
                     }
@@ -235,7 +235,7 @@ def save_comparison_data(packet_data_list, name):
                 # 添加提取的帧数据信息
                 if 'extracted_frame_data' in http2:
                     f.write(f"  提取的帧数据长度: {http2['extracted_frame_data_length']} 字节\n")
-                    f.write(f"  提取的帧数据(十六进制): {http2['extracted_frame_data'][:100]}...\n\n")
+                    f.write(f"  提取的帧数据(十六进制): {http2['extracted_frame_data']}...\n\n")
             
             # 加密数据
             if packet_data['encrypted_data']:
