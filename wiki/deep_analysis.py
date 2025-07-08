@@ -17,11 +17,11 @@ plt.rcParams['axes.unicode_minus'] = False
 
 # 配置信息
 name_package_dict = {
-    "奥特曼": "(tcp.stream eq 8 and http2) && (ip.src == 198.18.0.7)",
-    "假面骑士": "(tcp.stream eq 33 and http2) && (ip.src == 198.18.0.21)",
-    "尼亚加拉瀑布": "(tcp.stream eq 70 and http2) && (ip.src == 198.18.0.14)",
-    "孙策": "(tcp.stream eq 12 and http2) && (ip.src == 198.18.0.14)",
-    "五大湖": "(tcp.stream eq 37 and http2) && (ip.src == 198.18.0.14)",
+    "奥特曼": "(tcp.stream eq 31 and http2.streamid eq 45) && (ip.src == 198.18.0.51)",
+    "假面骑士": "(tcp.stream eq 33 and http2.streamid eq 19) && (ip.src == 198.18.0.21)",
+    "尼亚加拉瀑布": "(tcp.stream eq 70 and http2.streamid eq 15) && (ip.src == 198.18.0.14)",
+    "孙策": "(tcp.stream eq 12 and http2.streamid eq 21) && (ip.src == 198.18.0.14)",
+    "五大湖": "(tcp.stream eq 37 and http2.streamid eq 23) && (ip.src == 198.18.0.14)",
 }
 
 tshark_path = "D:\\else\\wireshark\\tshark.exe"

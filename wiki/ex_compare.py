@@ -277,12 +277,12 @@ def main():
     print("开始分析HTTP/2数据包的密文和明文数据...")
     
     name_package_dict = {
-        "奥特曼": "tcp.stream eq 8 and http2.streamid eq 1",
-        "假面骑士": "tcp.stream eq 33 and http2.streamid eq 19",
-        "尼亚加拉瀑布": "tcp.stream eq 70 and http2.streamid eq 15",
-        "孙策": "tcp.stream eq 12 and http2.streamid eq 21",
-        "五大湖": "tcp.stream eq 37 and http2.streamid eq 23",
-    }
+    "奥特曼": "(tcp.stream eq 31 and http2.streamid eq 45) && (ip.src == 198.18.0.51)",
+    "假面骑士": "(tcp.stream eq 33 and http2.streamid eq 19) && (ip.src == 198.18.0.21)",
+    "尼亚加拉瀑布": "(tcp.stream eq 70 and http2.streamid eq 15) && (ip.src == 198.18.0.14)",
+    "孙策": "(tcp.stream eq 12 and http2.streamid eq 21) && (ip.src == 198.18.0.14)",
+    "五大湖": "(tcp.stream eq 37 and http2.streamid eq 23) && (ip.src == 198.18.0.14)",
+}
 
     for name, filter in name_package_dict.items():
         cap = pyshark.FileCapture(f'wiki/{name}.pcapng', 
